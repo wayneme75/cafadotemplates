@@ -1,0 +1,254 @@
+﻿Project: Windows Virtual Desktop    Server: dev.azure.com/wayneme    Query: all items    List type: Flat    ,,,,,,,
+ID,Parent,Work Item Type,Priority,Value Area,Title,Tags,Description
+3544,,Epic,2,Business,Strategy/Plan,Plan,Milestone 1: Assess and Review
+3545,,Epic,2,Business,Ready - Landing zone,Ready,"Milestone 2: Ready - Landing zone
+"
+3546,,Epic,2,Architectural,Adopt - Windows Virtual Desktop,Adopt,"Milestone 3: Adopt - Windows Virtual Desktop
+
+https://docs.microsoft.com/en-us/azure/architecture/example-scenario/wvd/windows-virtual-desktop?WT.mc_id=devops_userstory_service_wvd-inproduct-devopsportal
+"
+3547,,Epic,2,Architectural,Govern - Windows Virtual Desktop,Govern,"Milestone 4: Govern - Windows Virtual Desktop
+"
+3548,,Epic,2,Architectural,Manage - Windows Virtual Desktop,Manage,"Milestone 5: Managing the ongoingoperation of the digital assets that deliver business outcomes is a key to thisprocess. Unless, we have a plan to manage the operations, the efforts put inplanning, readiness and adoption will yield little value. The following detailswill help develop the business approach to provide cloud management.
+"
+3549,3548,Feature,2,Architectural,Optimize Windows Virtual Desktop in Microsoft Azure,Manage,"When you move from Remote Desktop Services to Windows Virtual Desktop, you no longer have to manage basic infrastructure components like RDSH servers and gateways. Windows Virtual Desktop includes new ways to componentize compute environments, enabling you to separate the operating system layer from the user profile layer. You can then take advantage of Microsoft 365 and Microsoft Azure services for file management options at the user and file share level.There are post-deployment steps to optimize Windows Virtual Desktop:using dynamic FSLogix profiles, enabling and configuring OneDrive for Business and OneDrive Files on Demand, and synchronizing on-premises or hosted file shares with Azure using Azure File Sync.https://docs.microsoft.com/en-us/azure/virtual-desktop/fslogix-containers-azure-files?WT.mc_id=devops_userstory_service_wvd-inproduct-devopsportal"
+3550,3547,Feature,2,Architectural,Configure Azure governance policies for WVD,Govern,"Governance creates guardrails that keep the company on a safe path throughout the journey. Governance guides that describe the experiences of fictional companies that are based on the experiences of real customers. Governance is an iterative process. For organizations with existing policies that govern on-premises IT environments, governance should complement those policies. The level of corporate policy integration between on-premises and the cloud varies depending on governance maturity and a digital estate in the cloud. 
+"
+3551,3546,Feature,2,Architectural,Deploy Windows Virtual Desktop in Microsoft Azure,Adopt,"Review your options for:
+ *  Creating pooled or personal virtual machines
+ *  Choosing images, including the Windows images available in the Azure gallery
+ *  Using domain-joined user accounts versus service identities.
+
+https://docs.microsoft.com/en-us/azure/virtual-desktop/create-host-pools-azure-marketplace?WT.mc_id=devops_userstory_service_wvd-inproduct-devopsportal
+"
+3552,3545,Feature,2,Architectural,Windows 10 Image Customization and Deployment,Ready,"Create a custom image. In Azure, we create VM to install our business apps. With the help of custom image, we can create multiple session hosts. Below are some of the approaches to create custom images:
+ *  Managed image
+ *  Shared Image Gallery
+ *  VHD in a storage account
+
+https://docs.microsoft.com/en-us/azure/virtual-desktop/set-up-customize-master-image?WT.mc_id=devops_userstory_service_wvd-inproduct-devopsportal
+"
+3553,3545,Feature,2,Architectural,Configure Azure landing zone for domain (Greenfield),Ready,Configure Azure landing zone for domain (Greenfield)
+3554,3545,Feature,2,Architectural,Configure Azure landing zone for domain (Hybrid),Ready,"Hosts(Azure VMs) will be created on azure portal and these hosts will be joined to on premises domain controller. So AD users in that domain can access these hosts.
+
+https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/enterprise-scale/?WT.mc_id=devops_userstory_service_wvd-inproduct-devopsportal
+"
+3555,3545,Feature,2,Architectural,Configure Azure landing zone for Azure Tenant,Ready,"Windows Virtual Desktop is an elastically scalable service to deliver remote desktop and remote app experiences - without having to manage the underlying server infrastructure. Review the prerequisites and tools provided by Microsoft to get ready to provision your first Windows Virtual Desktop host pool.
+
+https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/wvd/ready?WT.mc_id=devops_userstory_service_wvd-inproduct-devopsportal
+"
+3556,3544,Feature,2,Business,Assess the Digital landscape for current infrastructure,Plan,During this phase assess the environment readiness
+3557,3603,Task,2,,Azure Bastion Configuration to access azure virtual machine,Ready,Azure Bastion Configuration to access azure virtual machine
+3558,3603,Task,2,,Configure Azure Virtual Network,Ready,Azure Virtual Network
+3559,3603,Task,2,,Configure Azure VPN Gateway (Site-to-Site VPN),Ready,Azure VPN Gateway (Site-to-Site VPN)
+3560,3603,Task,2,,Configure Site2Site VPN between Azure and on-premises network / firewall,Ready,Configure Site2Site VPN between Azure and on-premises network / firewall
+3561,3602,Task,2,,Extend on-premises AD Forest to Azure,Ready,"Extend on-premises AD Forest to Azure
+
+https://docs.microsoft.com/en-us/azure/architecture/example-scenario/wvd/multi-forest-azure-managed?WT.mc_id=devops_userstory_service_wvd-inproduct-devopsportal
+"
+3562,3602,Task,2,,Create 2x Domain Controllers in Azure (one in each geo redundant data center region),Ready,"Create 2x Domain Controllers in Azure (one in each geo redundant data center region)
+
+https://docs.microsoft.com/en-us/azure/architecture/example-scenario/wvd/multi-forest?WT.mc_id=devops_userstory_service_wvd-inproduct-devopsportal
+"
+3563,3602,Task,2,,Add to on-premises forest,Ready,Add to on-premises forest
+3564,3600,Task,2,,Azure Bastion Configuration to access azure virtual machine,Ready,Azure Bastion Configuration to access azure virtual machine
+3565,3599,Task,2,,Validate custom images,Ready,Validate custom images
+3566,3595,Task,2,,Validate pre-requirements Fs logix container have been completed,Adopt,Validate pre-requirements Fs logix container have been completed
+3567,3595,Task,2,,Deploy and Configure FS-Logix container,Adopt,"Deploy and Configure FS-Logix container
+
+https://docs.microsoft.com/en-us/fslogix/install-ht?WT.mc_id=devops_userstory_service_wvd-inproduct-devopsportal
+"
+3568,3594,Task,2,,Migration to Personal/Pooled Desktops,Adopt,Migration to Personal/Pooled Desktopshttps://docs.microsoft.com/en-us/azure/virtual-desktop/configure-host-pool-personal-desktop-assignment-type?WT.mc_id=devops_userstory_service_wvd-inproduct-devopsportal
+3569,3594,Task,2,,Migrate existing user profiles to FS-Logix Profile Containers,Adopt,Migrate existing user profiles to FS-Logix Profile Containers
+3570,3593,Task,2,,Create and manage policies,Govern,"Business has their own “Policies” to protect data and workloads in their infrastructures. Most of the time end goal of these policies is to make sure if“ IT department” done their part to support business compliance requirements.  There are two great tools available from Microsoft to make it easier for enterprises to reach their corporate compliance requirements within Azure environments. *  Compliance Manager: This service can scan your azure environment and provide report of your compliance level against most common industry standard such as GDPR, ISO 27000 etc.
+*  Azure Policy: This is more to review continues compliance in corporate infrastructure policies. As an example, a corporate need to make sure all their Azure resources are deployed under west us region. With help of Azure policy, we can continuously monitor resources and make sure it does stay compliance with that policy. in event of breach it will flag it up as well.
+"
+3571,3588,Task,2,,Disaster recovery plan,Manage,"Setup a disaster recovery plan.
+
+https://docs.microsoft.com/en-us/azure/virtual-desktop/disaster-recovery?WT.mc_id=devops_userstory_service_wvd-inproduct-devopsportal
+"
+3572,3590,Task,2,,Review the marketplace images like predefined Azure Gallery OS Images,Plan,Review the marketplace images like predefined Azure Gallery OS Images
+3573,3590,Task,2,,Review the custom OS images requirements,Plan,"Review the custom OS images requirements
+
+https://docs.microsoft.com/en-us/azure/virtual-machines/windows/quick-create-portal#create-virtual-machine?WT.mc_id=devops_userstory_service_wvd-inproduct-devopsportal
+"
+3574,3610,Task,2,,Confirm licensing requirements have been met,Plan,"Confirm licensing requirements have been met.
+
+https://docs.microsoft.com/en-us/azure/virtual-desktop/apply-windows-license?WT.mc_id=devops_userstory_service_wvd-inproduct-devopsportal
+"
+3575,3599,Task,2,,Create a custom image in Azure,Ready,Create a custom image in Azure
+3576,3589,Task,2,,Review Microsoft applications requirements like office apps,Plan,Microsoft applications
+3577,3589,Task,2,,Confirm in-scope application(s) that require GPU acceleration,Plan,Confirm in-scope application(s) that require GPU accelerationhttps://docs.microsoft.com/en-us/azure/virtual-desktop/configure-vm-gpu?WT.mc_id=devops_userstory_service_wvd-inproduct-devopsportal
+3578,3589,Task,2,,Review requirements for custom applications like customer business apps,Plan,Custom applications
+3579,3589,Task,2,,Review requirements for third party commercial applications,Plan,Third party commercial applications
+3580,3610,Task,2,,Review Azure Active Directory requirements,Plan,Review Azure Active Directory requirements
+3581,3610,Task,2,,Confirm Operating Systems to deploy,Plan,Confirm Operating Systems to deploy
+3582,3610,Task,2,,Review supported Operation Systems and licensing requirements,Plan,Review supported Operation Systems and licensing requirements
+3583,3610,Task,2,,Align assets to cloud offerings to calculate pricing,Plan,Align assets to cloud offerings to calculate pricing
+3584,3553,User Story,2,Architectural,Configure Azure AD Domain Services,Ready,Configure Azure AD Domain Services
+3585,3549,User Story,2,Architectural,Migrate files from local file shares into Azure storage using Azure File Sync,Manage,"If your current Remote Desktop architecture uses file shares in Windows Server to access shared files, folders, and locations, you can use Azure File Sync to synchronize your on-premises file server contents into the same file share location you created for user profile virtual disks. You can also use Azure NetApp files with local NetApp technology to migrate files and properties to Azure storage.Azure File Sync enables seamless access for files that were initially generated in Azure or on-premises - Windows Virtual Desktop session hosts can access the files from a nearby location stored in Azure. You can also map drives using SMB 3.0 protocols (as you may have already configured if you’re migrating from on-premises Remote Desktop Services infrastructure to Windows Virtual Desktop), so users don’t experience changes in their workflow.If you’re already using FSLogix in your on-premises implementation of Remote Desktop Services, you can also use Azure File Sync to migrate and synchronize your user profile virtual disks into Azure storage to use with Windows Virtual Desktop.https://docs.microsoft.com/en-us/azure/virtual-desktop/create-host-pools-user-profile?WT.mc_id=devops_userstory_service_wvd-inproduct-devopsportal"
+3586,3549,User Story,2,Architectural,Configure OneDrive in Office 365 in Windows Virtual Desktop host pools,Manage,"In Windows Virtual Desktop, you can leverage Office and OneDrive Group Policy settings to direct files to Office 365 storage locations. This lets you take advantage of the 1 TB and greater storage available in OneDrive, plus collaboration capabilities like improved sharing, seamless secure access across devices, improved discovery of recently used files, and real-time coauthoring with coworkers and partners.You can use Active Directory Group Policy with Office 365 ProPlus and Office 2019 Volume Licensing editions. You can download administrative template files (.ADMX) from the Microsoft Download Center.After you provision accounts for OneDrive, you can use policies to configure Office default save locations and implement OneDrive Known Folder Move.https://docs.microsoft.com/en-us/azure/virtual-desktop/install-office-on-wvd-master-image?WT.mc_id=devops_userstory_service_wvd-inproduct-devopsportal"
+3587,3549,User Story,2,Architectural,Separate user profiles from virtual machines with FS-Logix profiles,Manage,"You can use FSLogix profiles to separate user profiles from virtual machines, persist these profiles as user-assigned virtual disks in Azure storage, Azure NetApp Files, and Storage Spaces Direct, and then dynamically attach them to a user. Each time the user signs in to a remote resource, their profile is attached to the resource, and they're able to access all of their data.
+Compared to classic roaming user profiles in Windows, separating the user profiles and data enables a seamless roaming experience for apps that rely on %localappdata% locations, like Outlook and OneDrive. It's fast and stateful - as far as users can tell, their data loads as fast as locally stored data. FSLogix profiles let you use cached mailboxes for local-like access to email and OneDrive Files on Demand.
+https://docs.microsoft.com/en-us/azure/virtual-desktop/store-fslogix-profile?WT.mc_id=devops_userstory_service_wvd-inproduct-devopsportal
+https://docs.microsoft.com/en-us/azure/virtual-desktop/fslogix-containers-azure-files?WT.mc_id=devops_userstory_service_wvd-inproduct-devopsportal
+
+"
+3588,3549,User Story,2,Architectural,Backup & Recovery (BUR),Manage,"Azure backup options:
+ *  On-premises - Back up files, folders, system state using the Microsoft Azure Recovery Services (MARS) agent. Or use the DPM or Azure Backup Server (MABS) agent to protect on-premises VMs (Hyper-V and VMWare) and other on-premises workloads
+*  Azure VMs - Back up entire Windows (using backup extensions) or back up files, folders, and system state using the MARS agent.  
+*  Azure Files shares - Back up Azure File shares to a storage account
+
+https://docs.microsoft.com/en-us/azure/virtual-desktop/disaster-recovery?WT.mc_id=devops_userstory_service_wvd-inproduct-devopsportal
+"
+3589,3556,User Story,2,Business,Review document in-scope Users and their Application requirements,Plan,"Review document in-scope Users and their Application requirements:
+
+ *  Review Microsoft applications requirements like office apps
+ *  Review requirements for third party commercial applications
+ *  Review requirements for custom applications like customer business apps
+ *  Confirm in-scope application(s) that require GPU acceleration
+
+"
+3590,3556,User Story,2,Business,Review and confirm OS images to deploy,Plan,"Review and confirm OS images to deploy:
+
+ *  Review the marketplace images like predefined Azure Gallery OS Images
+ *  Review the custom OS images requirements
+ *  Align assets to cloud offerings to calculate pricing
+
+"
+3591,3556,User Story,2,Business,Review and document Windows Virtual Desktop session hosts and host pool requirements,Plan,Review and document Windows Virtual Desktop session hosts and host pool requirements
+3592,3549,User Story,2,Architectural,Automate depth and breadth scaling for Windows Virtual Desktop host pools,Manage,"The Windows Virtual Desktop scaling scripts include logic to periodically determine activity levels in VMs before draining underutilized user session hosts and shutting them down. During off-peak usage (usually after hours) the script can reduce the number of running VMs; during peak usage, the script can dynamically provision additional VMs when user density exceeds defined thresholds that trigger scaling.
+
+https://docs.microsoft.com/en-us/azure/virtual-desktop/set-up-scaling-script
+
+"
+3593,3550,User Story,2,Architectural,Azure Security Center for policies,Govern,"Azure Security Center is a unified infrastructure security management system that strengthens the security posture of your data centers, and provides advanced threat protection across your hybrid workloads in the cloud - whether they're in Azure or not - as well as on premises.
+"
+3594,3551,User Story,2,Architectural,Migrate RDS Workloads to WVD,Adopt,"Whether it is migratingRemote Desktop Services (RDS) or Virtual Desktop Infrastructure (VDI)environments to Windows Virtual Desktop, Azure enables to migrate existingvirtual desktop workloads to Microsoft Azure as part of Windows Virtual Desktopeven if you are working with a greenfield scenario (i.e. building a newenvironment from the ground up) or a brownfield scenario (i.e. transformingexisting RDS resources and Windows 10 single-session virtual machines). Thesemigration processes are described below in this section.
+"
+3595,3551,User Story,2,Architectural,Configure FS Logix container  to store user profiles,Adopt,"The Windows Virtual Desktop service offers FSLogix profile containers as the recommended user profile solution.
+
+FSLogix profile configuration for WVD options:
+
+ 
+ *  VM     based file share
+ 
+ *  NetApp     Files
+ 
+ *  Azure     Files and Azure AD
+ 
+ *  Azure     Files and ADDS
+
+
+"
+3596,3551,User Story,2,Architectural,Configure apps and desktops for users,Adopt,"Windows Virtual Desktop uses app groups to share RemoteApps with users. When you share an app, the user sees and can use only the application window, not the entire desktop.Use PowerShell cmdlets to create an app group.https://docs.microsoft.com/en-us/azure/virtual-desktop/manage-app-groups?WT.mc_id=devops_userstory_service_wvd-inproduct-devopsportal"
+3597,3551,User Story,2,Architectural,Provision a Windows Virtual Desktop host pool,Adopt,"You can use your host pool to provision full desktops and remote apps for users.
+There's a Resource Manager template in the Azure marketplace that helps you build out Windows Virtual Desktop environments in repeatable way. The template includes the basic steps that you need to go through. Start by finding the template:
+
+ *  Sign in to the Azure portal.
+ *  In the upper-left corner, select Create a Resource.
+ *  In Search the Marketplace, search for ""Windows Virtual Desktop.""
+ *  In the search results, select Windows Virtual Desktop – Provision a host pool.
+
+https://docs.microsoft.com/en-us/azure/virtual-desktop/create-host-pools-powershell?WT.mc_id=devops_userstory_service_wvd-inproduct-devopsportal
+https://docs.microsoft.com/en-us/azure/virtual-desktop/create-host-pools-azure-marketplace?WT.mc_id=devops_userstory_service_wvd-inproduct-devopsportal
+
+"
+3598,3551,User Story,2,Architectural,Configure Windows Virtual Desktop host pool,Adopt,"Additional configuration: 
+https://docs.microsoft.com/en-us/azure/virtual-desktop/configure-host-pool-load-balancing?WT.mc_id=devops_userstory_service_wvd-inproduct-devopsportal
+https://docs.microsoft.com/en-us/azure/virtual-desktop/customize-rdp-properties?WT.mc_id=devops_userstory_service_wvd-inproduct-devopsportal
+https://docs.microsoft.com/en-us/azure/virtual-desktop/configure-host-pool-personal-desktop-assignment-type?WT.mc_id=devops_userstory_service_wvd-inproduct-devopsportal
+"
+3599,3552,User Story,2,Architectural,Create custom images with business line apps,Ready,"Create a managed image of a generalized VM in Azure:
+A managed image resource can be created from a generalized virtual machine (VM) that is stored as either a managed disk or an unmanaged disk in a storage account. The image can then be used to create multiple VMs.
+
+https://docs.microsoft.com/en-us/azure/virtual-machines/windows/capture-image-resource?WT.mc_id=devops_userstory_service_wvd-inproduct-devopsportal
+"
+3600,3553,User Story,2,Architectural,Network configuration for WVD,Ready,"Provision the Azure Bastion service in your virtual network, the seamless RDP/SSH experience is available to all of the VMs in the same virtual network. Azure Bastion deployment is per virtual network, not per subscription/account or virtual machine.
+
+Createan Azure Bastion host using the portal
+"
+3601,3554,User Story,2,Architectural,Integrate Azure AD with Active Directory Domain Services,Ready,"
+Azure Active Directory Domain Services (Azure AD DS) provides managed domain services such as domain join, group policy, lightweight directory access protocol (LDAP), and Kerberos / NTLM authentication. You use these domain services without the need to deploy, manage, and patch domain controllers (DCs) in the cloud.
+
+Createand configure an Azure Active Directory Domain Services managed domain
+"
+3602,3554,User Story,2,Architectural,Resilient Identity Pattern (RIP),Ready,"Identity synchronization and duplicate attribute resiliency:
+Duplicate Attribute Resiliency is a feature in Azure Active Directory that will eliminate friction caused by UserPrincipalName and SMTP ProxyAddress conflicts when running one of Microsoft’s synchronization tools.
+
+https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-syncservice-duplicate-attribute-resiliency?WT.mc_id=devops_userstory_service_wvd-inproduct-devopsportal
+
+These two attributes are generally required to be unique across all User, Group, or Contact objects in a given Azure Active Directory tenant.
+
+"
+3603,3554,User Story,2,Architectural,Network configuration for WVD,Ready,"To join the hosts(Azure VMs) to on premise domain controller you need setup Network configuration.
+
+Site to Site VPN configurations options:
+
+ *  Createa Site-to-Site connection
+ *  Adda Site-to-Site connection to a VNet with an existing VPN gateway connection
+ *  ConnectAzure VPN gateways to multiple on-premises policy-based VPN devices
+ *  ConfigureExpressRoute and Site-to-Site coexisting connections
+
+
+"
+3604,3555,User Story,2,Architectural,Set up the Windows Virtual Desktop tenant,Ready,"Create a Windows Virtual Desktop tenant. The tenant is used to group your host pools and to identify your resources in later provisioning and customization steps.
+
+https://docs.microsoft.com/en-us/azure/virtual-desktop/tenant-setup-azure-active-directory?WT.mc_id=devops_userstory_service_wvd-inproduct-devopsportal
+
+"
+3605,3555,User Story,2,Architectural,Provision the required administrator roles in Azure AD,Ready,"After you establish your network and directory connections, you can provision the Microsoft Azure services required for your Windows Virtual Desktop VMs.
+Configure the following resources in Microsoft Azure:
+
+ *  One or more resource groups as a foundation to group services in Azure.
+ *  A storage account in Azure to store virtual disk files used with FSLogix profiles and to synchronize or provision file share services for Windows Virtual Desktop session hosts. You can also use Azure NetApp Files and Storage Spaces Direct.
+ *  Administrator, user, and system accounts required to manage services.
+
+In large organizations, it's a good idea to assign administrator roles to different people and establish multiple people per role. If you’re just starting out or you have a small IT department, these can be the same person if needed.
+https://docs.microsoft.com/en-us/azure/virtual-desktop/create-service-principal-role-powershell?WT.mc_id=devops_userstory_service_wvd-inproduct-devopsportal
+https://docs.microsoft.com/en-us/azure/virtual-desktop/delegated-access-virtual-desktop?WT.mc_id=devops_userstory_service_wvd-inproduct-devopsportal
+
+
+"
+3606,3555,User Story,2,Architectural,Provision an Azure tenant and set up Azure Active Directory,Ready,"Once you've got your Azure tenant, you need to populate Azure Active Directory (Azure AD) with administrators and users. Azure AD is used for multiple identity and access management aspects for Windows Virtual Desktop, including access to remote sessions, administration elements, and user provisioning.
+
+https://docs.microsoft.com/en-us/azure/virtual-desktop/tenant-setup-azure-active-directory?WT.mc_id=devops_userstory_service_wvd-inproduct-devopsportal
+
+"
+3607,3556,User Story,2,Business,Extend to Azure vs Connect to on-premises,Plan,"Extend to Azure vs Connect to on-premises: Partner should analyze and gather requirement from customer want to extend their environment to Azure or connect to on-premises
+"
+3608,3556,User Story,2,Business,Present SMB File Share: Prerequisites and requirements,Plan,"SMB File Share: Prerequisites and requirements
+Azure Files supports identity-based authentication over Server Message Block (SMB) through on-premises Active Directory Domain Services (AD DS) and Azure Active Directory Domain Services (Azure AD DS).
+
+Collect the SMB File share requirements from customer.
+https://docs.microsoft.com/en-us/azure/storage/files/storage-files-identity-auth-active-directory-domain-service-enable#prerequisites?WT.mc_id=devops_userstory_service_wvd-inproduct-devopsportal
+"
+3609,3556,User Story,2,Business,Present FSLogix Prerequisites and requirements,Plan,"FSLogix Prerequisites and requirements:
+The Windows Virtual Desktop service recommends FSLogix profile containers as a user profile solution. FSLogix is designed to roam profiles in remote computing environments, such as Windows Virtual Desktop. It stores a complete user profile in a single container. At sign in, this container is dynamically attached to the computing environment using natively supported Virtual Hard Disk (VHD) and Hyper-V Virtual Hard disk (VHDX). The user profile is immediately available and appears in the system exactly like a native user profile.
+"
+3610,3556,User Story,2,Business,Present Windows Virtual Desktop: Prerequisites and requirements,Plan,Present Windows Virtual Desktop: Prerequisites and requirementshttps://docs.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/wvd/?WT.mc_id=devops_userstory_service_wvd-inproduct-devopsportal
+3612,3544,Feature,2,Business,Skilling Plan,Plan,"Address skilling needs through self-paced learning and tutorials.
+"
+3613,3612,User Story,2,Business,Learning Paths,Plan,"Microsoft Docs | Learn platform - self paged learning
+"
+3614,3612,User Story,2,Business,Tutorials,Plan,"Microsoft Docs tutorials specific to workload
+"
+3615,3614,Task,2,,Tutorial: Create a host pool with the Azure portal,Plan,"https://docs.microsoft.com/en-us/azure/virtual-desktop/create-host-pools-azure-marketplace?WT.mc_id=devops_userstory_service_wvd-inproduct-devopsportal
+
+"
+3616,3614,Task,2,,Tutorial: Manage app groups with the Azure portal,Plan,"https://docs.microsoft.com/en-us/azure/virtual-desktop/manage-app-groups?WT.mc_id=devops_userstory_service_wvd-inproduct-devopsportal
+"
+3617,3614,Task,2,,Tutorial: Create a host pool to validate service updates,Plan,"https://docs.microsoft.com/en-us/azure/virtual-desktop/create-validation-host-pool?WT.mc_id=devops_userstory_service_wvd-inproduct-devopsportal
+"
+3618,3614,Task,2,,Tutorial: Set up service alerts,Plan,"https://docs.microsoft.com/en-us/azure/virtual-desktop/set-up-service-alerts?WT.mc_id=devops_userstory_service_wvd-inproduct-devopsportal
+"
+3619,3613,Task,2,,Deliver remote desktops and apps from Azure with Windows Virtual Desktop,Plan,"https://docs.microsoft.com/en-us/learn/paths/m365-wvd/?WT.mc_id=devops_userstory_service_wvd-inproduct-devopsportal
+"
+3620,3613,Task,2,,Prepare for Windows Virtual Desktop in Microsoft Azure,Plan,"https://docs.microsoft.com/en-us/learn/modules/m365-prepare-for-wvd/?WT.mc_id=devops_userstory_service_wvd-inproduct-devopsportal
+"
+3621,3613,Task,2,,Introduction to Windows Virtual Desktop in Microsoft Azure,Plan,"https://docs.microsoft.com/en-us/learn/modules/m365-wvd-intro/?WT.mc_id=devops_userstory_service_wvd-inproduct-devopsportal
+"
+3622,3613,Task,2,,Optimize Windows Virtual Desktop in Microsoft Azure,Plan,"https://docs.microsoft.com/en-us/learn/modules/m365-optimize-wvd/?WT.mc_id=devops_userstory_service_wvd-inproduct-devopsportal
+"
+3623,3613,Task,2,,Deploy Windows Virtual Desktop in Microsoft Azure,Plan,"https://docs.microsoft.com/en-us/learn/modules/m365-deploy-wvd/?WT.mc_id=devops_userstory_service_wvd-inproduct-devopsportal
+"
