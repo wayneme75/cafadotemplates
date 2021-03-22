@@ -7,11 +7,12 @@ The templates we have in the Azure DevOps Generator are simple ways to create pr
 Each CSV has the following fields:
 - ID
 - Work Item Type
+- Priority
+- Value Area
 - Title
 - Tags
-- Business Value
 - Description
-- Priority
+
 
 The Microsoft project files
 
