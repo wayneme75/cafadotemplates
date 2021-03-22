@@ -1,0 +1,259 @@
+﻿Project: Knowledge Mining    Server: dev.azure.com/wayneme    Query: all items    List type: Flat    ,,,,,,,
+ID,Parent,Work Item Type,Priority,Value Area,Title,Tags,Description
+3628,3671,Feature,2,Architectural,Implement monitoring for Knowledge Mining Solution,Adopt,"Monitor Usage
+
+Monitor Statistics
+GET Service Statistics
+GET Index Statistics
+GET Document Counts
+GET Indexer Status
+
+
+
+
+"
+3629,3671,Feature,2,Architectural,Implement Reporting for Knowledge Mining Solution,Adopt,"Create Knowledge Store
+
+Refer on how to create Projections
+"
+3630,3671,Feature,2,Architectural,Implement Knowledge Mining Solution,Adopt,"Leverage REST API  or Azure Portal UI
+"
+3631,3670,Feature,2,Business,Planning for Knowledge Mining Solution,Plan,"Review Resources as necessary
+
+https://docs.microsoft.com/en-us/azure/search/cognitive-search-resources-documentation
+"
+3632,3663,Task,2,,Create Azure Cognitive Search resource,Adopt,"Create the resource using Portal
+
+Cognitive Search Service
+"
+3633,3663,Task,2,,Create Azure Cognitive Service Resource,Adopt,"Create  Azure cognitive services resource.
+Details
+This will be needed if the index enrichment pipeline includes any custom skill.
+
+"
+3634,3663,Task,2,,Create Index,Adopt,"Create the resource using Portal
+
+Details
+
+
+"
+3635,3663,Task,2,,Create Skillset,Adopt,"Create skillset using the portal
+Details
+
+Refer to Built-in skillset 
+
+
+"
+3636,3663,Task,2,,Create Indexer Job,Adopt,"Create Indexer Job using REST API
+
+Details
+"
+3637,3663,Task,2,,"Create Optional components based on sources - Logic App, Function App",Adopt,"For any custom skill, leverage other compute options. This includes Azure Functions and Web Jobs
+Details
+
+For fetching data from data sources like SharePoint, Documentum etc.. provision Logic App for integration
+"
+3638,3668,Task,2,,Implement Security Trimming in the Search results,Plan,"Apply Trimming
+Apply filters on user identity
+
+"
+3639,3668,Task,2,,Implement outbound security,Plan,"Apply below options as necessary
+
+Access Over IP Range
+
+Access through trusted Service exception
+
+Access through Private Endpoint
+"
+3640,3668,Task,2,,Implement inbound Security,Plan,"Apply below options as necessary
+
+API Access
+
+Configure IP Firewall
+
+Create a Private Endpoint
+"
+3641,3628,Task,2,,Implement Custom Analyzer (optional),Adopt,"Create Custom Analyzer
+"
+3642,3629,Task,2,,Create Knowledge Store,Adopt,"Create the Knowledge Store
+"
+3643,3660,Task,2,,Solution Scenario - Contract Management,Plan,"Many companies create products for multiple sectors, hence the business opportunities with different vendors and buyers increases exponentially. Knowledge mining can help organizations to scour thousands of pages of sources to create an accurate bid. Minor details in the bidding process can make the difference between a healthy profit or lost opportunity on a project.
+
+Contract Management
+"
+3644,3649,Task,2,,Solution Scenario - Digital Asset Management,Plan,"Given the amount of unstructured data created daily, many companies are struggling to make use of or find information within their files. Knowledge mining through a search index makes it easy for end customers and employees to locate what they are looking for faster.
+
+Digital Asset Management
+"
+3645,3660,Task,2,,Solution Scenario - Customer Feedback and Analytics,Plan,"Every company is looking to enhance the customer experience. Knowledge mining can aggregate and analyze data to discover trends about what customers are saying and use that information to improve products and services
+
+Customer Feedback and Analytics
+"
+3646,3660,Task,2,,Solution Scenario - Business Process Management,Plan,"When organizations task employees with the review and research of technical data, it can be tedious to read page after page of dense text. Knowledge mining helps employees quickly review these materials. In industries where bidding competition is fierce, or when the diagnosis of a problem must be quick or in near real-time, companies can use knowledge mining to avoid costly mistakes.
+
+Business Process Management
+"
+3647,3660,Task,2,,"Solution Scenario - Auditing, risk, and compliance management",Plan,"In the ever-changing world of regulations, organizations face the challenge of staying on top of audits and compliance. Mistakes in contracts and record-keeping can have serious financial ramifications. At the enterprise level, teams of lawyers might not be enough to catch everything. Knowledge mining can provide helpful assistance for organizations looking to stay above board.
+
+Auditing, risk, and compliance management
+"
+3648,3660,Task,2,,Solution Scenario - Content Research,Plan,"When organizations task employees to review and research of technical data, it can be tedious to read page after page of dense text. Knowledge mining helps employees quickly review these dense materials. In industries where bidding competition is fierce, or when the diagnosis of a problem must be quick or in near real-time, companies can use knowledge mining to avoid costly mistakes.
+
+Content Research
+
+
+"
+3649,3631,User Story,2,Business,"Readiness Skills, training and samples for the team",Plan,"With respect to skills, ,ensure the appropriate members of your migration team are trained in Azure cloud fundamentals, Azure Blob Store, Azure Data Lake Storage, Azure Logic App (optional), Azure Functions (Optional)
+"
+3650,3660,Task,2,,Assemble Team - Key roles in implementing Knowledge Mining Solution,Plan,Assemble Team - Key roles in implementing Knowledge Mining Solution
+3651,3661,Task,2,,Execute Fuzzy Search,Adopt,"Create a Fuzzy Search request
+"
+3652,3661,Task,2,,Execute Advanced queries,Adopt,"Create an advanced query
+"
+3653,3661,Task,2,,Execute Simple query,Adopt,"Create a Simple Query
+"
+3654,,Task,2,,Create Skillset,,Create Skillset
+3655,3662,Task,2,,Relational Data,Plan,"Support for SQL database content is provided natively
+Relational Data Source
+"
+3656,3662,Task,2,,Social Media Data Collection,Plan,"Plan:
+Integrate Azure function app to fetch social media contents and Meta data using REST API calls
+Refer to social media developer support to fetch the contents
+
+Facebook for Developers
+Twitter API Documentation | Docs | Twitter Developer
+Instagram Graph API - Instagram Platform (facebook.com)
+
+Store the data into centralized, secured data lake for indexing.
+
+"
+3657,3662,Task,2,,O365 Emails,Plan,"Plan:
+Integrate Azure logic app to fetch contents and Meta data using REST API calls  - Refer to this link
+
+Store the data into centralized, secured data lake for indexing.
+"
+3658,3662,Task,2,,Documentum,Plan,"Plan:
+Integrate Azure function app to fetch document contents and Mets data using REST API calls
+File 360 - Collections | Store & Manage | OpenText APIs | Developer | OpenText
+
+Store the data into centralized, secured data lake for indexing.
+"
+3659,3662,Task,2,,SharePoint Libraries,Plan,"Plan:
+Integrate Azure logic app with SharePoint connector  to fetch document contents and Meta data using REST API calls
+
+Store the data into centralized, secured data lake for indexing.
+
+"
+3660,3631,User Story,2,Business,Preparation,Plan,Preparation
+3661,3630,User Story,2,Architectural,Query Data,Adopt,"Query Types Overview
+
+Apply filters
+
+Apply Pagination
+
+Apply Ranking
+
+
+"
+3662,3667,User Story,2,Business,Data Source Design,Plan,"Azure cognitive search supports accessing data natively for belo list of data sources
+
+ *  Azure Blob Storage
+ *  Azure Data Lake Storage Gen2 (in preview)
+ *  Azure Table Storage
+ *  Azure Cosmos DB
+ *  Azure SQL Database
+ *  SQL Managed Instance
+ *  SQL Server on Azure Virtual Machines
+
+
+For any additional data sources, apply integration using Logic App, Function App, Connector etc.
+"
+3663,3630,User Story,2,Architectural,Create Infrastructure in Azure Resource Group,Adopt,Create Infrastructure in Azure Resource Group
+3664,3680,User Story,2,Business,Plan for Results Consumption,Plan,"Web App Implementation
+Details
+
+Bot Implementation
+Details
+
+"
+3665,3679,User Story,2,Business,Plan for Monitoring ,Manage,"Monitor Knowledge Mining Solution
+
+Details
+"
+3666,3680,User Story,2,Business,Plan for Search Analyzers and Scoring Profile (optional),Plan,"Full Text Search
+
+Scoring Profiles
+
+"
+3667,3680,User Story,2,Business,Plan for Required Object Model in Enrichment Pipeline,Plan,"Overview
+
+Required Object Models
+Indexers
+Data Sources
+Skillset
+Index
+
+
+
+"
+3668,3679,User Story,2,Business,Plan for Security,Plan,"Review Baseline Security
+
+Overview
+
+Accessing Protected Content
+
+Regulatory Compliance
+
+"
+3669,3679,User Story,2,Business,Plan for Infrastructure,Plan,"Review :
+                   Capabilities
+Scalability
+Performance Consideration
+Key Performance considerations
+Service tier and number of partitions/replicas - Adding partitions and increasing your tier will both increase indexing speeds.
+Index Schema - Adding fields and adding additional properties to fields (such as searchable, facetable, or filterable) both reduce indexing speeds.
+Batch size - The optimal batch size varies based on your index schema and dataset.
+Number of threads/workers - a single thread won't take full advantage of indexing speeds
+Retry strategy - An exponential backoff retry strategy should be used to optimize indexing.
+Network data transfer speeds - Data transfer speeds can be a limiting factor. Index data from within your Azure environment to increase data transfer speed
+
+
+Tiers
+Components
+AzureServices : Azure Cognitive Search, Azure Cognitive services, Azure Functions,Azure Logic App, Virtual Network
+
+Tools: Power BI Desktop, Postman, Visual Studio Code
+
+
+
+
+"
+3670,,Epic,2,Business,Knowledge Mining Planning,Plan,"Review content in the Cloud Adoption Framework:
+https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/innovate/ai/knowledge-mining?WT.mc_id=devops_userstory_service_knwldgemining-inproduct-devopsportal
+"
+3671,,Epic,2,Architectural,Knowledge Mining Implementation,Adopt,"A Developer’s Guide to Building AI-Driven Knowledge Mining Solutions:
+
+https://azure.microsoft.com/en-us/resources/a-developers-guide-to-building-ai-driven-knowledge-mining-solutions/?WT.mc_id=devops_userstory_service_knwldgemining-inproduct-devopsportal
+"
+3672,3649,Task,2,,Course: Azure Cloud Fundamentals,Plan,"https://docs.microsoft.com/en-us/learn/modules/intro-to-azure-fundamentals/?WT.mc_id=devops_userstory_service_knwldgemining-inproduct-devopsportal
+"
+3673,3649,Task,2,,Tutorial: Azure Blob Store,Plan,"https://docs.microsoft.com/en-us/azure/storage/blobs/storage-upload-process-images?tabs=dotnet?WT.mc_id=devops_userstory_service_knwldgemining-inproduct-devopsportal
+"
+3674,3649,Task,2,,Tutorial: Azure Data Lake Storage,Plan,"https://docs.microsoft.com/en-us/azure/databricks/scenarios/databricks-extract-load-sql-data-warehousehttps://docs.microsoft.com/en-us/azure/storage/blobs/storage-upload-process-images?tabs=dotnet?WT.mc_id=devops_userstory_service_knwldgemining-inproduct-devopsportal
+"
+3675,3649,Task,2,,Tutorial: Azure Logic App,Plan,"https://docs.microsoft.com/en-us/azure/logic-apps/tutorial-build-schedule-recurring-logic-app-workflow?WT.mc_id=devops_userstory_service_knwldgemining-inproduct-devopsportal
+"
+3676,3649,Task,2,,Tutorial: Azure Functions,Plan,"https://docs.microsoft.com/en-us/azure/azure-functions/functions-twitter-email?WT.mc_id=devops_userstory_service_knwldgemining-inproduct-devopsportal
+"
+3677,3649,Task,2,,Sample: Knowledge Mining in Github,Plan,"Azure-Samples/azure-search-knowledge-mining: Azure Search Knowledge Mining Accelerator (github.com)
+"
+3678,3669,Task,2,,Verify Landing Zone is ready,Ready,"Enterprise-scale
+https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/enterprise-scale/?WT.mc_id=devops_userstory_service_knwldgemining-inproduct-devopsportal
+"
+3679,3670,Feature,2,Business,Planning for the platform,Plan,
+3680,3670,Feature,2,Business,Planning for the data,Plan,
+3681,3631,User Story,2,Business,Cloud Adoption Plan,Plan,"Microsoft Cloud Adoption Framework for Azure documentation - Cloud Adoption Framework | Microsoft Docs
+"
+3682,3681,Task,2,,Review principles defined by CCOE / Cloud Strategy team ,Plan,"https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/plan/plan-intro?WT.mc_id=devops_userstory_service_knwldgemining-inproduct-devopsportal
+"
+3683,3681,Task,2,,Maintain and Update Cloud Adoption Plan,Plan,
