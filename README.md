@@ -15,7 +15,7 @@ Each CSV has the following fields:
 
 The Microsoft project files
 
-Should you need additional fields in the CSV, you can create a new Azure DevOps organization, deploy the template and use Excel to create the CSV:
+Should you need additional fields in the CSV, you can [create a new Azure DevOps organization](https://docs.microsoft.com/en-us/azure/devops/organizations/accounts/create-organization?view=azure-devops), deploy the template and use Excel to create the CSV:
 
 - How to use [Excel to connect to Azure DevOps](https://docs.microsoft.com/en-us/azure/devops/boards/backlogs/office/bulk-add-modify-work-items-excel?view=azure-devops&tabs=agile-process)
 
