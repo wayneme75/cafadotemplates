@@ -1,0 +1,841 @@
+Project: Modern IOT    Server: dev.azure.com/wayneme    Query: all items    List type: Flat    ,,,,,,,,,,
+ID,Parent,Work Item Type,Priority,Value Area,Title,Tags,Description,Links & Attachments,,
+4668,,Epic,2,Business,IOT Solution Planning,,IOT Solution Planning,Yes,,
+4669,,Epic,2,Business,IOT Solution Implementation,,IOT Solution Implementation,Yes,,
+4670,4668,Feature,2,Business,Planning for IOT on Azure,,Planning for IOT on Azure,Yes,,
+4671,4669,Feature,2,Business,1 - Design Considerations,,Design Considerations,Yes,,
+4672,4669,Feature,2,Business,2 - Review IOT Patterns,,"Study Reference Architecture
+
+Complete conceptual understanding
+measure and control loop,
+monitor and manage loop
+event routing
+
+
+
+",Yes,,
+4673,4669,Feature,2,Business,Solution Scenario : Predictive Maintenance for Industrial IoT,,"Imagine if you could predict equipment failures before they happen, and systematically prevent them. That?s what predictive maintenance offers. It involves using data to identify warning signs of potential problems, predict when equipment needs maintenance and preemptively service that equipment before problems occur. 
+
+Predictive modeling helps you identify conditions that indicate future equipment problems. With this information, you can adjust processes and systems to trigger preventative actions when those conditions occur. In other words, you can translate insights from the model into operational changes, which is where you see significant business value. 
+
+Identify the target outcome
+Start by figuring out the outcome you are looking to achieve ? this determines the predictive question you need to answer, and helps you measure the success of your effort.
+
+Inventory data sources
+Once you identify what you want to predict, determine whether you have the data needed to create a robust predictive model.
+
+Capture and combine data
+Now you?re ready to lay the groundwork for predictive analysis. Connect data into a consistent system and normalize it | Determine the relevant data for the problem you?re trying to solve | Identify any gaps in the data
+
+Model, test and refine
+With a defined problem and normalized data, the next step is to build a predictive model.
+
+Use your latest data to validate the model
+The true test of a predictive model is how well it predicts results in a live operational setting. Running a pilot is the recommended approach for validating a model?s performance
+
+Integrate into operations
+Once you?ve met pilot objectives and refined the model, you?re ready for broader implementation. 
+
+
+Please review architecture guidance
+
+",Yes,,
+4674,4669,Feature,2,Business,Solution Scenario : Condition Monitoring for Industrial IoT,,"Each remote monitoring project will be unique?tailored to the needs of your business and your equipment. But at its core, the principles and considerations for a remote monitoring solution are very similar.
+
+Identify the business objective
+Start by determining the business objectives of your remote monitoring project. Examples include faster response times to equipment issues, or better insight into asset performance. The more specific you can be about the outcomes you want to achieve, the better
+
+Profile the assets involved
+Map and categorize your assets?consider asset types, where they are located, whether they connect in a secure fashion, and what data they can collect.
+
+Determine additional components required
+Set up additional devices if needed to connect sensitive or legacy assets. Plan end-to-end security. Assess the integration and development work required to address your business needs.
+
+Understand your data
+Develop data profiles?including types and amounts of data your assets generate, how often new data is available, and where the data lives. Determine who needs what data, and how soon they need it for it to be valuable
+
+Define business rules
+Identify conditions that will trigger an alert, such as when data exceeds a threshold. Define the actions that should occur next?for instance, a technician is dispatched and given instructions on how to investigate the issue.
+
+Operationalize and deliver business value
+Complete solution development and implement business process changes. Scale and integrate with back-end systems and applications. Gain real-time visibility and new insights and use this information to improve operations.
+",Yes,,
+4675,4669,Feature,2,Business,Solution Scenario : Process real-time vehicle data using IoT,,"The automotive industry is rapidly transforming. With today?sbreakthrough digital technologies, the pace of innovation has accelerated toAutobahn speeds, with seemingly no limits to where the industry can go.
+Vehicle data ingestion, processing, and visualization are keycapabilities needed to create connected car solutions. By capturing andanalyzing this data, we can decipher valuable insights and create newsolutions.
+
+Forexample, with vehicles equipped with telematics devices, we can monitor thelive location of vehicles, plan optimized routes, provide assistance todrivers, and support industries that consume or benefit from telematics datasuch as insurers, etc. For vehicle manufacturers, diagnostic information canprovide important information for vehicle servicing and warranties.
+
+Process real-time vehicle data using IoT - Azure Example Scenarios | Microsoft Docs
+",Yes,,
+4676,4669,Feature,2,Business,Solution Scenario:  IoT Analytics,,"Data analytics has been implemented in the business world for some time, enriching all industries from manufacturing to marketing.
+The amount of data available to analytics programs has vastly increased with the rise of smartphone technology, but the Internet of Things (IoT) promises to take this data deluge to new heights. With home appliances, health monitors, transport infrastructure and many other everyday items soon to be equipped with online connectivity, the insights available to businesses will be staggering. IoT analytics will enable organizations to make sense of the IoT data explosion.
+",Yes,,
+4677,4669,Feature,2,Business,Solution Scenario:  Using Microsoft Azure IoT Solution Accelerators,,"A cloud based IoT solution typically uses custom code and cloud services to manage device connectivity, data processing and analytics, and presentation.
+
+The IoT solution accelerators are complete, ready-to-deploy IoT solutions that implement common IoT scenarios. The scenarios include connected factory and device simulation. When you deploy a solution accelerator, the deployment includes all the required cloud-based services along with any required application code.
+
+The solution accelerators are starting points for your own IoT solutions. The source code for all the solution accelerators is open source and is available in GitHub. You're encouraged to download and customize the solution accelerators to meet your requirements.
+
+You can also use the solution accelerators as learning tools before building a custom IoT solution from scratch. The solution accelerators implement proven practices for cloud based IoT solutions for you to follow.
+",Yes,,
+4678,4669,Feature,2,Business,Solution Scenario:  IoT Edge Analytics,,"Azure IoT Edge extends IoT Hub. Analyze device data locally instead of in the cloud to send less data to the cloud, react to events quickly, and operate offline.
+
+Azure IoT Edge moves cloud analytics and custom business logic to devices so that your organization can focus on business insights instead of data management. Scale out your IoT solution by packaging your business logic into standard containers, then you can deploy those containers to any of your devices and monitor it all from the cloud.
+
+What is Azure IoT Edge | Microsoft Docs
+Operate devices offline - Azure IoT Edge | Microsoft Docs
+",Yes,,
+4679,4669,Feature,2,Business,3 - Post Implementation,,Post Implementation,Yes,,
+4680,4769,Task,2,,1 - Create Azure Sphere Tenant,,"Please review this guidance
+",Yes,,
+4681,4779,Task,2,,1 - Using Azure advisor for cost control,,"Optimize across, security, reliability, operations and cost
+Please refer to this guidance
+
+
+",Yes,,
+4682,4769,Task,2,,2 - On-board device to the tenant,,"Please review this guidance
+",Yes,,
+4683,4800,Task,2,,Azure Digital Twins use cases in different industries,,"Azure Digital Twins use cases in different industries
+
+",Yes,,
+4684,4801,Task,2,,Ingest Data into Azure Digital Twins,,"Ingest Data into Azure Digital Twins
+
+",Yes,,
+4685,4800,Task,2,,Azure Digital Twins (ADT) Explorer,,"Azure Digital Twins (ADT) Explorer
+
+",Yes,,
+4686,4800,Task,2,,Explore Azure Digital Twins with a sample app - ADT Explorer,,"Explore Azure Digital Twin with a sample app - ADT Explorer
+
+",Yes,,
+4687,4800,Task,2,,Explore Azure Digital Twins with a sample client app,,"Explore Azure Digital Twins with a sample client app
+
+",Yes,,
+4688,4783,Task,2,,1 - Discover your assets,,"The discovery module supports network scanning which will be used to find all OPC UA assets
+
+Note: You must put correct I/P address (CIDR) format in the engineering tool. The address range is the IP range of the Azure VNet one where your simulation serves are located. In the real-world scenarios, it should map to the on-premises network (peered with Azure VNet through S2S VPN or Express route)
+
+Please review below guidance's
+
+Discover using Engineering Tool or REST API
+
+
+",Yes,,
+4689,4779,Task,2,,2 - Monitoring,,"Please review this guidance  and 1 more
+
+
+
+",Yes,,
+4690,4801,Task,2,,Integrate Digital Twins with Azure Map,,"Integrate Digital Twins with Azure Map
+
+",Yes,,
+4691,4769,Task,2,,3 - Configure Networking for Azure Sphere device,,"Please review this guidance
+",Yes,,
+4692,4779,Task,2,,3 - Automatic Device Management,,"Automatic device management in Azure IoT Hub automates many of the repetitive and complex tasks of managing large device fleets.
+
+Please review this guidance
+
+",Yes,,
+4693,4783,Task,2,,2 - Define Asset Hierarchy,,"Please review this guidance
+
+",Yes,,
+4694,4769,Task,2,,4 - Build a High level Application,,"Review this
+",Yes,,
+4695,4779,Task,2,,4 - Device Update Management,,"Please review this guidance
+",Yes,,
+4696,4783,Task,2,,3 - Publish data from your Assets,,"To publish data the platform makes use the deployed OPC Publisher modules. The OPC Publisher module receives publish instructions (?jobs?) and executes these long running jobs. A publish job specifies the server and its nodes (Variables/events) that should be monitored and whose samples should be sent to Azure IoT Hub.
+
+Please review this guidance
+
+",Yes,,
+4697,4800,Task,2,,Coding with the Azure Digital Twins APIs,,"Coding with the Azure Digital Twins APIs
+
+",Yes,,
+4698,4783,Task,2,,4 - Reference Data or Complementary Data Upload (optional),,"Please review this guidance
+Use the Azure portal to configure file upload | Microsoft Docs
+",Yes,,
+4699,4783,Task,2,,5 - Review or Implement Calculation Engine,,"For Simple calculations, use Time Series Insights
+For Complex/Advanced Calculation use Azure Stream Analytics
+
+Please review this guidance
+
+",Yes,,
+4700,4783,Task,2,,6 - Review or Implement Rules Engine,,"For a Rules Engine, a custom web application can be developed that allows users to author alerts and actions. The web application creates associated Jobs in Azure Stream Analytics using the Steam Analytics REST API. To trigger actions, a Stream Analytics Job calls an Azure Function output. The Azure Function can call a Logic App or Power Automate task that sends an Email alert or invokes Azure SignalR to display a message in the web application.
+
+To display visual alerts in your web application, we recommend creating an Azure Stream Analytics job to detect specific events and send those to either:
+
+ *  An Event Hub output - Then connect the Event Hub to Time Series Insights. Use the Azure Time Series Insights JavaScript SDK (tsiclient) to display the event in your web application.
+
+or,
+
+ *  An Azure Functions output - Then develop an Azure Function that sends the events to your web application using SignalR.
+
+Please review this guidance
+
+
+",Yes,,
+4701,4783,Task,2,,7 - Visualize telemetry,,"The OPC Publisher module connects to OPC UA servers and publishes data from these servers to IoT Hub. The Telemetry processor in the Industrial IoT platform processes these events and forwards contextualized samples to TSI and other consumers.
+
+Please use this guidance a s reference
+
+",Yes,,
+4702,4769,Task,2,,5 - Build a real-time capable application,,"Study the background
+
+Reference Sample application : Use the app that connects to Azure IoT hub, Azure IoT Edge
+
+",Yes,,
+4703,4779,Task,2,,5 - Device Update Caching (optional),,"Review caching support for disconnected device update
+",Yes,,
+4704,4769,Task,2,,6 - Deploy Applications to the device through cloud deployment,,"Please review this guidance
+",Yes,,
+4705,4770,Task,2,,1 - Create IoT Hub Instance,,"Refer to this
+",Yes,,
+4706,4784,Task,2,,1 - Perform Data Analysis,,"There are many options for visualizing your industrial data. Your IIoT analytics solution may use some or all of these options, depending on the personas using your solution.
+Please review this guidance
+
+",Yes,,
+4707,4785,Task,2,,1 - Understand your Industrial devices communication protocols and requirements.,,Understand your Industrial devices communication protocols and requirements.,Yes,,
+4708,4802,Task,2,,Integrate Azure Digital Twins with Azure Time Series Insights,,"Integrate Azure Digital Twins with Azure Time Series Insights
+
+",Yes,,
+4709,4802,Task,2,,Visualize your data in Time Series Insights,,"Visualize your data in Time Series Insights
+
+",Yes,,
+4710,4785,Task,2,,"2 - Review Microsoft guidance for Azure Industrial IoT, in order to define your field gateway and cloud gateway",,"Please review this guidance
+
+",Yes,,
+4711,4785,Task,2,,3 - Review the availability and network consideration for azure IoT edge,,"Please review this guidance
+
+",Yes,,
+4712,4785,Task,2,,4 - Review the services that will be deploy using the deployment tool in the next task,,"Please review this guidance
+
+",Yes,,
+4713,4770,Task,2,,2 - Analyze and Transform incoming data in real-time,,"Create Azure Stream Analytics Instance to process incoming streams in real-time
+",Yes,,
+4714,4776,Task,2,,3 - Readiness Skills and training for the team,,"With respect to skills, expertise is important in a IoT Solution . Therefore, ensure the appropriate members of your migration team are trained in Azure cloud fundamentals, Azure Blob Store, Azure Data Lake Storage, Azure ExpressRoute, Azure identity management, Azure IoT Hub, and Azure Time Series Insight.
+
+Courses and Learning paths can be found on Microsoft Learn.
+",Yes,,
+4715,4776,Task,2,,2 - Assemble Team - Key roles in a IoT Solution Implementation,,"Key roles in a IoT project include:
+
+ *  Business owner
+ *  Project manager (with agile methodology experience e.g. scrum)
+ *  Project coordinator
+ *  Cloud engineer (Infrastructure focused)
+ *  IoT Developer
+ *  Data virtualization specialist
+ *  Testing engineer
+ *  Business analysts (to help test BI tool queries, reports and analyses
+
+",Yes,,
+4716,4776,Task,2,,1 - Review and Align OKRs,,"Please review this guidance
+
+",Yes,,
+4717,4788,Task,2,,1 - Implement Business Process Integration (optional),,"Please review this guidance
+
+
+",Yes,,
+4718,4788,Task,2,,2 - Implement Alert / Alarm : For detected Annamolies,,"Please review this guidance
+
+
+",Yes,,
+4719,4788,Task,2,,3 - Perform Data Analysis,,"There are many options for visualizing your industrial data. Your IIoT analytics solution may use some or all of these options, depending on the personas using your solution.
+Please review this guidance
+
+
+",Yes,,
+4720,4787,Task,2,,1 - Implement Cold/Warm Path storage (CosmosDB),,"Cosmos DB is ideally suited for IoT solutions. Cosmos DB can ingest device telemetry data at high rates and can serve indexed queries back with low latency and high availability.
+
+Please review this guidance
+
+
+
+",Yes,,
+4721,4787,Task,2,,2 - Visualize telemetry,,"The OPC Publisher module connects to OPC UA servers and publishes data from these servers to IoT Hub. The Telemetry processor in the Industrial IoT platform processes these events and forwards contextualized samples to TSI and other consumers.
+
+Please use this guidance a s reference
+
+
+",Yes,,
+4722,4787,Task,2,,3 - Review or Implement Rules Engine,,"For a Rules Engine, a custom web application can be developed that allows users to author alerts and actions. The web application creates associated Jobs in Azure Stream Analytics using the Steam Analytics REST API. To trigger actions, a Stream Analytics Job calls an Azure Function output. The Azure Function can call a Logic App or Power Automate task that sends an Email alert or invokes Azure SignalR to display a message in the web application.
+
+To display visual alerts in your web application, we recommend creating an Azure Stream Analytics job to detect specific events and send those to either:
+
+ *  An Event Hub output - Then connect the Event Hub to Time Series Insights. Use the Azure Time Series Insights JavaScript SDK (tsiclient) to display the event in your web application.
+
+or,
+
+ *  An Azure Functions output - Then develop an Azure Function that sends the events to your web application using SignalR.
+
+Please review this guidance
+
+
+
+",Yes,,
+4723,4787,Task,2,,4 - Review or Implement Calculation Engine,,"For Simple calculations, use Time Series Insights
+For Complex/Advanced Calculation use Azure Stream Analytics
+
+Please review this guidance
+
+
+",Yes,,
+4724,4787,Task,2,,5 - Reference Data or Complementary Data Upload (optional),,"Please review this guidance
+Use the Azure portal to configure file upload | Microsoft Docs
+
+",Yes,,
+4725,4787,Task,2,,6 - Publish data from your Assets,,"To publish data the platform makes use the deployed OPC Publisher modules. The OPC Publisher module receives publish instructions (?jobs?) and executes these long running jobs. A publish job specifies the server and its nodes (Variables/events) that should be monitored and whose samples should be sent to Azure IoT Hub.
+
+Please review this guidance
+
+
+",Yes,,
+4726,4787,Task,2,,7 - Define Asset Hierarchy,,"Please review this guidance
+
+
+",Yes,,
+4727,4787,Task,2,,8 - Discover your assets,,"The discovery module supports network scanning which will be used to find all OPC UA assets
+
+Note: You must put correct I/P address (CIDR) format in the engineering tool. The address range is the IP range of the Azure VNet one where your simulation serves are located. In the real-world scenarios, it should map to the on-premises network (peered with Azure VNet through S2S VPN or Express route)
+
+Please review below guidance's
+
+Discover using Engineering Tool or REST API
+
+
+
+",Yes,,
+4728,4785,Task,2,,5 - Setup Local Development,,"The Industrial IoT Microservices provide a RESTful API exposing the platform capabilities
+Run Locally
+
+This article explains how to deploy only the Azure services needed to do local development and debugging
+
+
+",Yes,,
+4729,4785,Task,2,,6 - Deploy IoT Edge Modules,,"The industrial assets (machines and systems) are connected to Azure through modules running on an Azure IoT Edge industrial gateway. Review this guidance
+
+Deploy the Industrial IoT Edge modules to Azure IOT Edge
+Using the Azure Portal and Marketplace. OR Using CLI
+
+Review Publisher Module
+https://github.com/azure/iot-edge-opc-publisher
+
+
+",Yes,,
+4730,4785,Task,2,,7 - Provision Microservices on a separate host (AKS) - Optional,,"By default the OPC-Registry-Service is hosted as Azure App services. For the production use, we recommend deploying the services in the AKS cluster
+
+Deploy the Platform Microservices to a new AKS cluster
+Azure Kubernetes Service (AKS)
+OR
+Into an existing Kubernetes cluster using Helm.
+OR
+Azure Kubernetes Service (AKS) cluster on top of Azure Industrial IoT Platform created by deployment script and adding Azure Industrial IoT components into the cluster
+
+
+
+",Yes,,
+4731,4785,Task,2,,9 - Deploy Azure IoT Platform : Provision Essential Resources,,"Deploy the Azure Industrial IoT Platform and Simulation in Azure using the deployment scripts
+and one more
+
+Note:
+Please ensure the person executing the script is a Azure AD tenant global administrator.  If the admin is from a centralized IT department then pre-create the AAD application registration and pass it a parameter to the script. 
+
+",Yes,,
+4732,4771,Task,2,,1 - Create Presentation Layer,,"Web, mobile, BI, and mixed reality applications can be built on the serving layer. For example, you can expose serving layer data using APIs for third-party uses (for example, insurance companies, suppliers, etc.).
+
+Study this reference application -
+https://github.com/Azure-Samples/MyDriving
+
+",Yes,,
+4733,4770,Task,2,,3 - Create serving layer to store data,,"Different databases are used depending on the data. Azure Cosmos DB stores the messages, while Azure SQL DB stores relational and transactional data, and acts as a data source for the presentation and action layer. Azure Synapse contains aggregated data and acts as the data source for Business Intelligence (BI) tools.
+
+
+",Yes,,
+4734,4783,Task,2,,8 - Implement Cold/Warm Path storage (CosmosDB),,"Cosmos DB is ideally suited for IoT solutions. Cosmos DB can ingest device telemetry data at high rates and can serve indexed queries back with low latency and high availability.
+
+Please review this guidance
+
+
+",Yes,,
+4735,4802,Task,2,,End-to-End Digital Twin solution,,"End-to-End Digital Twin solution 
+
+",Yes,,
+4736,4799,Task,2,,Realtime application using Azure RTOS,,"Realtimeapplication using Azure RTOS
+",Yes,,
+4737,4799,Task,2,,End-to-end IoT device security with Azure Sphere,,"https://azure.microsoft.com/en-us/resources/videos/azure-friday-end-to-end-iot-device-security-with-azure-sphere/
+",Yes,,
+4738,4799,Task,2,,Setting up IoT Edge for Azure Sphere,,"https://docs.microsoft.com/en-us/azure-sphere/app-development/setup-iot-edge
+",Yes,,
+4739,4797,Task,2,,Connecting downstream devices to IoT Edge Devices in secured manner,,"https://docs.microsoft.com/en-us/azure/iot-edge/how-to-connect-downstream-device?view=iotedge-2018-06
+",Yes,,
+4740,4797,Task,2,,Authenticating Devices to IoT Hub,,"https://docs.microsoft.com/en-us/azure/iot-edge/how-to-authenticate-downstream-device?view=iotedge-2018-06
+",Yes,,
+4741,4798,Task,2,,Provisioning IoT Edge devices with TPM ,,"Provisioning IoT Edge devices with a TPM on Linux
+Provisioning IoT Edge devices with a TPM on Windows
+
+",Yes,,
+4742,4797,Task,2,,Securing IoT Edge Devices using Certificates,,"https://docs.microsoft.com/en-us/azure/iot-edge/iot-edge-certs?view=iotedge-2018-06
+",Yes,,
+4743,4796,Task,2,,1 - AML solution on IoT Edge,,"Capability to deploy machine learningalgorithms on the edge devices enables predictive analytics on the devices;Data no need to be transmitted to cloud for predictive analytics; Situationscan be predicted upfront in the edge devices near to the field and actions canbe triggered immediately.
+Azure IoT Edge Runtime enables deployment ofvarious workloads in the form of modules; Trained machine learning module canbe deployed to edge using a container. 
+In this resource, we will see an end-to-end machine learning solution on IoT edge
+
+MachineLearning on the Edge
+",Yes,,
+4744,4794,Task,2,,1 - Deploy Azure Services on IoT Edge,,"Deploying various Azure Services on IoT Edge  
+
+ 
+Capabilities of the various Azure services can be leveraged on Azure IoT Edge runtime. These modules can work with Azure Blob storage. Azure Notebooks can be used to develop & deploy machine learning modules to perform predictive analytics on devices. Data can be stored in edge devices using Azure SQL Edge, which is a RDBMS engine optimized for Azure IoT edge devices. Code blocks implementing business logic can be deployed to the edge devices using Azure Functions. For any telemetry stream processing, we can move Azure Stream Analytics logic to edge devices, which helps in reducing amount of data that is uploaded to cloud & time required for actionable insights. Following resources provides guidance on extending these various Azure services to Azure IoT edge devices
+
+ 
+AzureBlob Storage  
+AzureMachine Learning 
+AzureSQL Edge
+ 
+AzureFunctions 
+AzureStream Analytics
+ 
+
+ 
+",Yes,,
+4745,4793,Task,2,,1 - Configure Customization & gather insights,,"Connected Factory:
+Configure the Connected Factory topology - Azure | Microsoft Docs
+Customize how the Connected Factory solution displays data from your OPC UA servers - Azure | Microsoft Docs
+
+Device Simulation:
+Modify simulated device code as needed for your scenario. Common scenarios:
+
+ *  Load Testing ? Customers will be able to perform large scale tests using Device Simulation. Individual simulations will support up to 20,000 simulated devices.
+ *  IoT Demos ? Device Simulation now includes sample simulations that can be started with a click. This allows for instant demos highlighting device data flowing to an IoT Hub.
+ *  Simple POCs ? This scenario was supported in the initial release of Device Simulation. However, there are more capabilities here. Customers can create device models and re-use them for easily repeatable simulations. Individual simulations can also now support a mix of multiple device types.
+ *  Advanced device behaviors ? Customers will be able to write custom JSON device definition files and script device behaviors using JavaScript. This allows for complex scenarios allowing a device to mimic the behavior of the real thing (e.g. vehicles following roads, interior temperature varying based on exterior temperature, etc.)
+ *  Simulation-driven development ? Customers can use Device Simulation to generate both expected and unexpected telemetry for continuous testing while developing their solution on top of Azure IoT.
+
+
+",Yes,,
+4746,4792,Task,2,,1 - Deploy the template solution,,"Connected Factory:
+Try a solution to manage my industrial IoT devices - Azure | Microsoft Docs
+Azure/azure-iot-connected-factory: Azure IoT connected factory preconfigured solution (github.com)
+
+Device Simulation:
+Azure/azure-iot-pcs-device-simulation: Azure IoT Device Simulations (github.com)
+",Yes,,
+4747,4796,Task,2,,2 - Visualizing & acting on analytics,,"Real-Time Analytics capability enables various use case scenarios where data can be consumed continuously, and actions can be triggered as immediate response.  Basic real-time dashboards can be enabled with the OOB configuration of Azure IoT Hub and PowerBI. Azure IoT Hub provides the flexibility to extend the OOB feature with custom coding to address various real-time analytical requirements. Azure Machine Learning can be used along with Azure IoT Hub to enable real-time predictive analytical scenarios like anomaly detection. 
+
+ 
+Real-time data visualization of data from Azure IoT Hub ? Power BI | Microsoft Docs
+ 
+",Yes,,
+4748,4795,Task,2,,1 - Developing & deploying analytics to the Edge,,"Analytics at the Edge
+ 
+Enabling Analytics on the ?Edge? devicesprovides various advantages. 
+It will minimize the amount of data that issent to cloud over network and hence reduces cost. 
+Rather than processing data in the cloud, IoTEdge processes it on the device itself. It uses a field-programmablegate array (FPGA) to make real-time AI calculations, giving us the immediateinsights, we need to make critical business decisions.  
+Operate edge devices reliably and securely,even when they are offline, or they have intermittent connectivity to the cloud 
+Azure Stream Analytics on IoT Edge enablesdeployment of near real-time analytical intelligence closer to IoT devices sothat value of the device generated data can be unlocked in short span of time. 
+Analytical models can be trained in the cloudand run on edge devices. 
+
+ 
+Tutorial - Custom Python module tutorial using Azure IoT Edge | Microsoft Docs
+ 
+Tutorial develop Node.js module for Linux - Azure IoT Edge | Microsoft Docs
+ 
+Tutorial - Custom Java module tutorial using Azure IoT Edge | Microsoft Docs
+ 
+Tutorial develop C module for Linux - Azure IoT Edge | Microsoft Docs
+ 
+Tutorial - Develop C# module for Linux using Azure IoT Edge | Microsoft Docs
+ 
+
+ 
+
+ 
+Analytics in the Cloud from Edge data: 
+Sync data from Azure SQL Edge by using Azure Data Factory | Microsoft Docs
+ 
+Sync data from Azure SQL Edge by using SQL Data Sync | Microsoft Docs
+ 
+
+ 
+",Yes,,
+4749,4794,Task,2,,2 - Deploy IoT Edge modules,,"Workloads can be deployed to Azure IoT Edge runtime, running on the devices as IoT Edge modules. Modules can be custom built or can be fromAzure Marketplace. These IoT Edge modules can connect with other Azure services andcontribute to your larger cloud data pipeline. To deploy your program on an IoTEdge device, it must first be containerized and run with a Docker-compatibleengine
+ 
+
+ 
+Tutorial - Stream Analytics at the edge using Azure IoT Edge | Microsoft Docs
+ 
+Tutorial - Store data with SQL module using Azure IoT Edge | Microsoft Docs
+ 
+Tutorial - Deploy Custom Vision classifier to a device using Azure IoT Edge | Microsoft Docs
+ 
+Tutorial - Deploy Azure Machine Learning to a device using Azure IoT Edge | Microsoft Docs
+ 
+",Yes,,
+4750,4794,Task,2,,3 - Deploy Azure IoT Edge,,"Azure IoT Edge allows remote management of the code on our devices , enabling  us to send more workloads to the edge. Workloads can be deployed as modules on the Azure IoT Edge runtime , running on the devices. Modules can be custom built or can be from Azure Marketplace. Following resources provides guidance on how to develop & deploy IoT edge devices.
+
+ 
+Quickstart create an Azure IoT Edge device on Linux | Microsoft Docs
+ 
+Tutorial - Develop module for Linux devices using Azure IoT Edge | Microsoft Docs
+ 
+
+ 
+",Yes,,
+4751,4791,Task,2,,1 - Visualizing & acting on analytics,,"Real-time streaming in Power BI - Power BI | Microsoft Docs
+Best practices for using Power BI to query and visualize Azure Data Explorer data | Microsoft Docs
+Connect your environment to Power BI - Azure Time Series Insights | Microsoft Docs
+
+",Yes,,
+4752,4790,Task,2,,1 - Deploy analytics code to Azure services,,"Azure Stream Analytics:
+Process real-time IoT data streams with Azure Stream Analytics | Microsoft Docs
+Build an IoT solution by using Azure Stream Analytics | Microsoft Docs
+Configurable threshold-based rules in Azure Stream Analytics | Microsoft Docs
+Real-time Twitter sentiment analysis with Azure Stream Analytics | Microsoft Docs
+
+Azure Databricks:
+How to Use Databricks to Scale Modern Industrial IoT Analytics - Part 1 - The Databricks Blog
+How to Use Databricks to Scale Modern Industrial IoT Analytics - Part 2 - The Databricks Blog
+How to Use Databricks to Scale Modern Industrial IoT Analytics - Part 3 - The Databricks Blog
+Tutorial: Stream data into Azure Databricks using Event Hubs | Microsoft Docs
+Structured Streaming Demo notebooks - Azure Databricks - Workspace | Microsoft Docs
+Structured Streaming in production - Azure Databricks - Workspace | Microsoft Docs
+
+Azure Time Series Insights:
+How to add an IoT hub event source - Azure Time Series Insights | Microsoft Docs
+Add an Event Hubs event source - Azure Time Series Insights | Microsoft Docs
+Data modeling in Gen2 environments - Azure Time Series Insights | Microsoft Docs
+
+Azure Data Explorer:
+Azure Data Explorer data ingestion overview | Microsoft Docs
+Tutorial: Ingest monitoring data in Azure Data Explorer without code | Microsoft Docs
+KQL quick reference | Microsoft Docs
+Azure Data Explorer data visualization | Microsoft Docs
+",Yes,,
+4753,4789,Task,2,,1 - Deploy Cloud Analytics services,,"Azure Stream Analytics:
+Quickstart - Create a Stream Analytics job by using the Azure portal | Microsoft Docs
+Quickstart - Create an Azure Stream Analytics job by Azure Resource Manager template | Microsoft Docs
+
+and/or
+
+Azure Databricks:
+Stream processing with Azure Databricks - Azure Reference Architectures | Microsoft Docs
+Quickstart - Run a Spark job on Azure Databricks Workspace using Azure portal | Microsoft Docs
+Quickstart - Create an Azure Databricks workspace by Azure Resource Manager template | Microsoft Docs
+
+
+Azure Time Series Insights:
+Tutorial: Set up a Gen2 environment - Azure Time Series Insights Gen2 | Microsoft Docs
+Model synchronization between Azure Digital Twins and Time Series Insights | Microsoft Docs
+
+Azure Data Explorer:
+Quickstart: Create an Azure Data Explorer cluster & DB | Microsoft Docs
+
+",Yes,,
+4754,4777,Task,2,,Solution Scenario: IoT Edge Analytics (Live Video Analytics),,"Please review common scenarios here
+
+IoT solutions that combine video analytics with signals from other IoT sensors and/or business data can help you automate or semi-automate business decisions, resulting in productivity improvements.
+
+Review the details on Video Analytics on IoT edge
+
+",Yes,,
+4755,4784,Task,2,,2 - Implement Business Process Integration (optional),,"Please review this guidance
+
+",Yes,,
+4756,4783,Task,2,,9 - Implement Predictive Model,,"For advanced modeling, use Azure Machine Learning
+For simple scenarios use Azure Cognitive Services
+
+Please review this guidance  and  ML on IoT Edge
+
+",Yes,,
+4757,4784,Task,2,,3 - Implement Alert / Alarm : For detected Annamolies,,"Please review this guidance
+
+",Yes,,
+4758,4781,Task,2,,1 - Setup Local Development,,"The Industrial IoT Microservices provide a RESTful API exposing the platform capabilities
+Run Locally
+
+This article explains how to deploy only the Azure services needed to do local development and debugging
+
+
+",Yes,,
+4759,4781,Task,2,,2 - Deploy IoT Edge Modules,,"The industrial assets (machines and systems) are connected to Azure through modules running on an Azure IoT Edge industrial gateway. Review this guidance
+
+Deploy the Industrial IoT Edge modules to Azure IOT Edge
+Using the Azure Portal and Marketplace. OR Using CLI
+
+Review Publisher Module
+https://github.com/azure/iot-edge-opc-publisher
+
+
+",Yes,,
+4760,4781,Task,2,,3 - Provision Microservices on a separate host (AKS) - Optional,,"By default the OPC-Registry-Service is hosted as Azure App services. For the production use, we recommend deploying the services in the AKS cluster
+
+Deploy the Platform Microservices to a new AKS cluster
+Azure Kubernetes Service (AKS)
+OR
+Into an existing Kubernetes cluster using Helm.
+OR
+Azure Kubernetes Service (AKS) cluster on top of Azure Industrial IoT Platform created by deployment script and adding Azure Industrial IoT components into the cluster
+
+
+
+",Yes,,
+4761,4781,Task,2,,4 - Deploy Azure IoT Platform : Provision Essential Resources,,"Deploy the Azure Industrial IoT Platform and Simulation in Azure using the deployment scripts
+and one more
+
+Note:
+Please ensure the person executing the script is a Azure AD tenant global administrator.  If the admin is from a centralized IT department then pre-create the AAD application registration and pass it a parameter to the script. 
+",Yes,,
+4762,4777,Task,2,,Solution Scenario: Using Microsoft Azure IoT Solution Accelerators,,"A cloud-based IoT solution typically uses custom code and cloud services to manage device connectivity, data processing and analytics, and presentation.
+The IoT solution accelerators are complete, ready-to-deploy IoT solutions that implement common IoT scenarios. The scenarios include connected factory and device simulation. When you deploy a solution accelerator, the deployment includes all the required cloud-based services along with any required application code.
+
+Please review this guidance
+
+Refer to below solution accelerators
+Connected Factory
+Device Simulation
+",Yes,,
+4763,4777,Task,2,,Solution Scenario : IoT analytics,,"This architecture pattern demonstrates near real-time analytics over fast flowing, high volume streaming data from IoT devices, sensors, connected buildings and vehicles, and so on. It focuses on integration of Azure Data Explorer with other IoT services to cater to both operational and analytical workloads using Cosmos DB and Azure Data Explorer.
+
+Please review these details
+",Yes,,
+4764,4780,Task,2,,Tutorial: Enterprise-scale learning path,,"Follow the tutorial as a preparation effort
+",Yes,,
+4765,4780,Task,2,,Verify Landing Zone implementation,,"Please review this guidance
+",Yes,,
+4766,4777,Task,2,,Solution Scenario : Process real-time vehicle data using IoT,,"Vehicle data ingestion, processing, and visualization are key capabilities needed to create connected car solutions. By capturing and analyzing this data, we can decipher valuable insights and create new solutions.
+
+Please review these details
+
+",Yes,,
+4767,4777,Task,2,,Solution Scenario : Condition Monitoring for Industrial IoT,,"Each remote monitoring project will be unique?tailored to the needs of your business and your equipment. But at its core, the principles and considerations for a remote monitoring solution are very similar. In the next sections of this document, you will see details you should consider when getting started on a remote monitoring project
+
+This example scenario demonstrates how end manufacturers can connect their assets to the cloud using OPC UA (Open Platform Communication Unified Architecture) and the Industrial Components. They can monitor their equipment's key parameters to discover anomalies before they become critical issues
+
+Please review this details
+
+",Yes,,
+4768,4777,Task,2,,Solution Scenario : Predictive Maintenance for Industrial IoT,,"Imagine if you could predict equipment failures before they happen, and systematically prevent them. That?s what predictive maintenance offers. It involves using data to identify warning signs of potential problems, predict when equipment needs maintenance and preemptively service that equipment before problems occur.
+
+his example scenario demonstrates how end manufacturers can connect assets to the cloud using OPC UA (Open Platform Communication Unified Architecture) and the Industrial Components. This will enable the use of Predictive Maintenance to improve the efficiency of your machines, while reducing the costs by optimizing the production.
+
+
+Please review details here
+
+",Yes,,
+4769,4675,User Story,2,Business,"""Things"" Implementation",,"""Things"" Implementation",Yes,,
+4770,4675,User Story,2,Business,"""Insight"" Implementation",,"""Insight"" Implementation",Yes,,
+4771,4675,User Story,2,Business,"""Action"" Implementation",,"""Action"" Implementation",Yes,,
+4772,4671,User Story,2,Business,1 - Implement Reliability,,"Review the guidance on implementing reliable messaging using client  SDK
+
+e.g. C SDK details are here
+
+
+",Yes,,
+4773,4671,User Story,2,Business,2 - Implement Security,,"Study IoT Security best practices and Security Baseline
+
+When designing a system, it is important to understand the potential threats to that system, and add appropriate defenses accordingly, as the system is designed and architected. It is important to design the product from the start with security in mind because understanding how an attacker might be able to compromise a system helps make sure appropriate mitigations are in place from the beginning.
+
+Please Review
+Architecture
+Deployment Security
+IoT Hub Security  and using IP filters
+SaaS Solution using defender
+
+",Yes,,
+4774,4671,User Story,2,Business,3 - Implement Scalability,,"Please review this guidance and 1 more
+
+
+",Yes,,
+4775,4671,User Story,2,Business,4 - High Availability and Disaster Recovery,,"Please review this guidance
+",Yes,,
+4776,4670,User Story,2,Business,1 - Preparation,,Preparation,Yes,,
+4777,4670,User Story,2,Business,2 - Review the scope and align with the scenarios,,"Review Scenarios to being the scoping ::
+
+Conceptual Overview  and Examples
+
+
+
+",Yes,,
+4778,4679,User Story,2,Business,1 - Implement Process Efficiency,,"Please review this guidance
+",Yes,,
+4779,4679,User Story,2,Business,2 - Implement Operational Excellence,,Implement Operational Excellence,Yes,,
+4780,4670,User Story,2,Business,3 - Review Landing Zone,,"Setup Azure Subscription
+Setup Enterprise scale Landing Zone
+
+",Yes,,
+4781,4673,User Story,2,Business,Things : Predictive Maintenance for Industrial IoT,,"The architecture we recommend for IoT solutions is cloud native, microservice, and serverless based. The IoT solution subsystems should be built as discrete services that are independently deployable, and able to scale independently. These attributes enable greater scale, more flexibility in updating individual subsystems, and provide the flexibility to choose appropriate technology on a per subsystem basis. It is critical to have the ability to monitor individual subsystems as well as the IoT application as a whole. We recommend subsystems communicate over REST/HTTPS using JSON (as it is human readable) though binary protocols should be used for high performance needs. The architecture also supports a hybrid cloud and edge compute strategy; i.e. some data processing is expected to happen on premise. We recommend use of an orchestrator (e.g. Azure Kubernetes Services - AKS or Service Fabric) to scale individual subsystems horizontally or PaaS services (e.g. Azure App Services) that offer built-in horizontal scale capabilities
+
+Azure Industrial IoT allows plant operators to discover OPC UA enabled servers in a factory network and register them in Azure IoT Hub.
+
+
+Architecture Components
+https://azure.github.io/Industrial-IoT/code-structure.html
+https://azure.github.io/Industrial-IoT/architecture.html
+https://github.com/Azure/Industrial-IoT
+https://azure.github.io/Industrial-IoT/services/     (Microservices)
+https://azure.github.io/Industrial-IoT/architecture-details.html
+https://azure.github.io/Industrial-IoT/architecture-flow.html
+https://azure.github.io/Industrial-IoT/api/  (REST APIs)
+https://azure.github.io/Industrial-IoT/services/dependencies.html
+
+e-book
+https://download.microsoft.com/download/A/4/D/A4DAD253-BC21-41D3-B9D9-87D2AE6F0719/Microsoft_Azure_IoT_Reference_Architecture.pdf
+
+
+
+",Yes,,
+4782,4673,User Story,2,Business,Historical Data Upload,,"Years of historical data likely exists in your current SCADA, MES, or historian system. In most cases, you will want to import your historical data into your IIoT analytics solution.
+
+Please review the guidance  and from Historian
+
+Also review details from OPC
+
+",Yes,,
+4783,4673,User Story,2,Business,Insight : Predictive Maintenance for Industrial IoT,,"Architecture Components
+https://azure.github.io/Industrial-IoT/code-structure.html
+https://azure.github.io/Industrial-IoT/architecture.html
+https://github.com/Azure/Industrial-IoT
+https://azure.github.io/Industrial-IoT/services/     (Microservices)
+https://azure.github.io/Industrial-IoT/architecture-details.html
+https://azure.github.io/Industrial-IoT/architecture-flow.html
+https://azure.github.io/Industrial-IoT/api/  (REST APIs)
+https://azure.github.io/Industrial-IoT/services/dependencies.html
+
+e-book
+https://download.microsoft.com/download/A/4/D/A4DAD253-BC21-41D3-B9D9-87D2AE6F0719/Microsoft_Azure_IoT_Reference_Architecture.pdf
+
+
+",Yes,,
+4784,4673,User Story,2,Business,Action : Predictive Maintenance for Industrial IoT,,"Architecture Components
+https://azure.github.io/Industrial-IoT/code-structure.html
+https://azure.github.io/Industrial-IoT/architecture.html
+https://github.com/Azure/Industrial-IoT
+https://azure.github.io/Industrial-IoT/services/     (Microservices)
+https://azure.github.io/Industrial-IoT/architecture-details.html
+https://azure.github.io/Industrial-IoT/architecture-flow.html
+https://azure.github.io/Industrial-IoT/api/  (REST APIs)
+https://azure.github.io/Industrial-IoT/services/dependencies.html
+
+e-book
+https://download.microsoft.com/download/A/4/D/A4DAD253-BC21-41D3-B9D9-87D2AE6F0719/Microsoft_Azure_IoT_Reference_Architecture.pdf
+
+
+",Yes,,
+4785,4674,User Story,2,Business,Things : Solution Scenario : Condition Monitoring for Industrial IoT,,"The architecture we recommend for IoT solutions is cloud native, microservice, and serverless based. The IoT solution subsystems should be built as discrete services that are independently deployable, and able to scale independently. These attributes enable greater scale, more flexibility in updating individual subsystems, and provide the flexibility to choose appropriate technology on a per subsystem basis. It is critical to have the ability to monitor individual subsystems as well as the IoT application as a whole. We recommend subsystems communicate over REST/HTTPS using JSON (as it is human readable) though binary protocols should be used for high performance needs. The architecture also supports a hybrid cloud and edge compute strategy; i.e. some data processing is expected to happen on premise. We recommend use of an orchestrator (e.g. Azure Kubernetes Services - AKS or Service Fabric) to scale individual subsystems horizontally or PaaS services (e.g. Azure App Services) that offer built-in horizontal scale capabilities
+
+Azure Industrial IoT allows plant operators to discover OPC UA enabled servers in a factory network and register them in Azure IoT Hub.
+
+
+Architecture Components
+https://azure.github.io/Industrial-IoT/code-structure.html
+https://azure.github.io/Industrial-IoT/architecture.html
+https://github.com/Azure/Industrial-IoT
+https://azure.github.io/Industrial-IoT/services/     (Microservices)
+https://azure.github.io/Industrial-IoT/architecture-details.html
+https://azure.github.io/Industrial-IoT/architecture-flow.html
+https://azure.github.io/Industrial-IoT/api/  (REST APIs)
+https://azure.github.io/Industrial-IoT/services/dependencies.html
+
+e-book
+https://download.microsoft.com/download/A/4/D/A4DAD253-BC21-41D3-B9D9-87D2AE6F0719/Microsoft_Azure_IoT_Reference_Architecture.pdf
+
+
+
+",Yes,,
+4786,4674,User Story,2,Business,Historical Data Upload,,"Years of historical data likely exists in your current SCADA, MES, or historian system. In most cases, you will want to import your historical data into your IIoT analytics solution.
+
+Please review the guidance  and from Historian
+
+Also review details from OPC
+
+
+",Yes,,
+4787,4674,User Story,2,Business,Insight : Solution Scenario : Condition Monitoring for Industrial IoT,,"Architecture Components
+https://azure.github.io/Industrial-IoT/code-structure.html
+https://azure.github.io/Industrial-IoT/architecture.html
+https://github.com/Azure/Industrial-IoT
+https://azure.github.io/Industrial-IoT/services/     (Microservices)
+https://azure.github.io/Industrial-IoT/architecture-details.html
+https://azure.github.io/Industrial-IoT/architecture-flow.html
+https://azure.github.io/Industrial-IoT/api/  (REST APIs)
+https://azure.github.io/Industrial-IoT/services/dependencies.html
+
+e-book
+https://download.microsoft.com/download/A/4/D/A4DAD253-BC21-41D3-B9D9-87D2AE6F0719/Microsoft_Azure_IoT_Reference_Architecture.pdf
+
+
+",Yes,,
+4788,4674,User Story,2,Business,Action : Solution Scenario : Condition Monitoring for Industrial IoT,,"Architecture Components
+https://azure.github.io/Industrial-IoT/code-structure.html
+https://azure.github.io/Industrial-IoT/architecture.html
+https://github.com/Azure/Industrial-IoT
+https://azure.github.io/Industrial-IoT/services/     (Microservices)
+https://azure.github.io/Industrial-IoT/architecture-details.html
+https://azure.github.io/Industrial-IoT/architecture-flow.html
+https://azure.github.io/Industrial-IoT/api/  (REST APIs)
+https://azure.github.io/Industrial-IoT/services/dependencies.html
+
+e-book
+https://download.microsoft.com/download/A/4/D/A4DAD253-BC21-41D3-B9D9-87D2AE6F0719/Microsoft_Azure_IoT_Reference_Architecture.pdf
+
+
+",Yes,,
+4789,4676,User Story,2,Business,Things:  IoT Analytics,,"Azure has many purpose-built analytics services in which customers build solutions that meet their needs. To gain the benefit from IoT analytics one or more of these services are often used:
+
+Azure Stream Analytics:  a real-time analytics and complex event-processing engine that is designed to analyze and process high volumes of fast streaming data from multiple sources simultaneously. Patterns and relationships can be identified in information extracted from several input sources including devices, sensors, clickstreams, social media feeds, and applications. These patterns can be used to trigger actions and initiate workflows such as creating alerts, feeding information to a reporting tool, or storing transformed data for later use. Also, Stream Analytics is available on Azure IoT Edge runtime, enabling to process data on IoT devices.
+
+Azure Databricks:  provides an interactive workspace that enables collaboration between data engineers, data scientists, and machine learning engineers. For a big data pipeline, the data (raw or structured) is ingested into Azure through Azure Data Factory in batches, or streamed near real-time using Apache Kafka, Event Hub, or IoT Hub.
+
+Azure Time Series Insights:  an open and scalable end-to-end IoT analytics service featuring best-in-class user experiences and rich APIs to integrate its powerful capabilities into your existing workflow or application. You can use it to collect, process, store, query and visualize data at Internet of Things (IoT) scale--data that's highly contextualized and optimized for time series. Azure Time Series Insights is designed for ad hoc data exploration and operational analysis allowing you to uncover hidden trends, spotting anomalies, and conduct root-cause analysis. It's an open and flexible offering that meets the broad needs of industrial IoT deployments.
+
+Azure Data Explorer:  a fast and highly scalable data exploration service for log and telemetry data. It helps you handle the many data streams emitted by modern software, so you can collect, store, and analyze data. Azure Data Explorer is ideal for analyzing large volumes of diverse data from any data source, such as websites, applications, IoT devices, and more. This data is used for diagnostics, monitoring, reporting, machine learning, and additional analytics capabilities. Azure Data Explorer makes it simple to ingest this data and enables you to do complex ad hoc queries on the data in seconds.
+",Yes,,
+4790,4676,User Story,2,Business,Insight:  IoT Analytics,,"It's important for any Iot analytics solution to be focused on actionable business outcomes and tuned for the specific use cases and data & device characteristics present in the solution. Some IoT use cases are more geared towards telemetry collection and storage while others may have unique needs. Each Azure IoT analytics service has capabilities which will fit for specific use cases. Refer to the documentation below which can be used to help find the right service:
+
+Azure IoT Products and Services | Microsoft Azure
+Azure IoT ? Internet of Things Platform | Microsoft Azure
+
+",Yes,,
+4791,4676,User Story,2,Business,Action:  IoT Analytics,,"Real-time data empowers users to make quick decisions on time-sensitive information, and to identify emergent trends as they happen. We?ve seen an explosion of powerful real-time use cases ? from factories using IoT sensors to monitor their equipment, to media agencies monitoring their social media campaigns as they go viral. Power BI further amplifies the power of real-time data with an easy setup process, and an array of powerful visualization and analysis tools.
+",Yes,,
+4792,4677,User Story,2,Business,Things:  Using Microsoft Azure IoT Solution Accelerators,,"Connected Factory Solution Accelerator
+Use the Connected Factory solution accelerator to collect telemetry from industrial assets with an OPC Unified Architecture interface and to control them. Industrial assets might include assembly and test stations on a factory production line. You can use the connected factory dashboard component of this solution accelerator to monitor and manage your industrial devices.
+
+Device Simulation Solution Accelerator
+Use the Device Simulation solution accelerator to run simulated devices that generate realistic telemetry. You can use this solution accelerator to test the behavior of the other solution accelerators or to test your own custom IoT solutions. You can use the device simulation web app to configure and run simulations.
+",Yes,,
+4793,4677,User Story,2,Business,Insight:  Using Microsoft Azure IoT Solution Accelerators,,"Deployment options
+You can deploy the solution accelerators from the Microsoft Azure IoT Solution Accelerators site or using the command line. The cost of running a solution accelerator is the combined cost of running the underlying Azure services. You see details of the Azure services used when you choose your deployment options.
+
+Architectures and languages
+The original solution accelerators were written using .NET using a model-view-controller (MVC) architecture. Microsoft is updating the solution accelerators to a new microservices architecture.
+",Yes,,
+4794,4678,User Story,2,Business,Things:  IoT Edge Analytics,,"Azure IoT Edge lets you deploy and manage business logic on the edge in the form of modules. Azure IoT Edge modules are the smallest unit of computation managed by IoT Edge and can contain Azure services (such as Azure Stream Analytics) or your own solution-specific code. To understand how modules are developed, deployed, and maintained, consider the four conceptual elements of a module:
+
+IoT Edge module images contain applications that take advantage of the management, security, and communication features of the IoT Edge runtime. You can develop your own module images, or export one from a supported Azure service, such as Azure Stream Analytics. The images exist in the cloud and they can be updated, changed, and deployed in different solutions. For instance, a module that uses machine learning to predict production line output exists as a separate image than a module that uses computer vision to control a drone.
+
+Each time a module image is deployed to a device and started by the IoT Edge runtime; a new instance of that module is created. Two devices in various parts of the world could use the same module image. However, each device would have its own module instance when the module is started on the device.
+",Yes,,
+4795,4678,User Story,2,Business,Insight:  IoT Edge Analytics,,"Azure Stream Analytics on IoT Edge empowers developers to deploy near-real-time analytical intelligence closer to IoT devices so that they can unlock the full value of device-generated data. Azure Stream Analytics is designed for low latency, resiliency, efficient use of bandwidth, and compliance. Enterprises can deploy control logic close to the industrial operations and complement Big Data analytics done in the cloud.
+
+Azure Stream Analytics on IoT Edge runs within the Azure IoT Edge framework. Once the job is created in Stream Analytics, you can deploy and manage it using IoT Hub.
+",Yes,,
+4796,4678,User Story,2,Business,Action:  IoT Edge Analytics,,"In most cases data from the IoT edge will get collected into the cloud for historical analysis & visualization but sometimes you'll need to visualize data at the edge and for that there are open-source tools like Grafana that can be hosted & managed with Azure IoT Edge.
+
+Azure-Samples/iot-edge-influxdb-grafana: This repo sends simulated data to influxdb and displays it using grafana as an HMI. (github.com)
+
+iot-edge-for-iiot/2-DeployOfflineDashboard.md at master ú Azure-Samples/iot-edge-for-iiot (github.com)
+
+",Yes,,
+4797,,User Story,2,Business,Things : Securing IoT Edge Devices,,Things : Securing IoT Edge Devices,Yes,,
+4798,,User Story,2,Business,Action : Securing IoT Edge Devices,,Action : Securing IoT Edge Devices,Yes,,
+4799,,User Story,2,Business,Insight : Securing IoT Edge Devices,,Insight : Securing IoT Edge Devices,Yes,,
+4800,,User Story,2,Business,Things : IoT Digital Twin,,Things : IoT Digital Twin,Yes,,
+4801,,User Story,2,Business,Action : IoT Digital Twin,,Action : IoT Digital Twin,Yes,,
+4802,,User Story,2,Business,Insight : IoT Digital Twin,,Insight : IoT Digital Twin,Yes,,
+4803,4671,User Story,2,Business,5 - Device Configurations,,"Study details on Device Configurations  and Device Authentication
+Concepts details
+
+",Yes,,
+4804,4671,User Story,2,Business,6 - Networking,,"Please review
+IP addressing of IoT Hub and IoT Protocol gateway
+
+",Yes,,
