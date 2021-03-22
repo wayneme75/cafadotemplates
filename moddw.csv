@@ -1,0 +1,557 @@
+﻿Project: Modern Data Warehouse    Server: dev.azure.com/wayneme    Query: all items    List type: Flat    ,,,,,,,
+ID,Parent,Work Item Type,Priority,Value Area,Title,Tags,Description
+4096,,Epic,2,Business,Modern Data Warehouse Implementation,Implementation,Modern Data Warehouse Implementation
+4097,,Epic,2,Business,Modern Data Warehouse Planning ,Plan,Modern Data Warehouse Planning 
+4098,4097,Feature,2,Business,Planning for data warehouse migration or on boarding,Plan,Planning for data warehouse migration or on boarding
+4099,4096,Feature,2,Business,Implementation of Architecture Strategy and Execution,Implementation,"Big Data
+https://docs.microsoft.com/en-us/azure/architecture/data-guide/big-data/
+
+MDW
+https://docs.microsoft.com/en-us/azure/architecture/solution-ideas/articles/modern-data-warehouse
+https://azure.microsoft.com/en-in/solutions/architecture/modern-data-warehouse/
+
+"
+4100,4096,Feature,2,Business,Post migration,Implementation,Post migration
+4101,4187,Task,2,,1 - Data Loading Strategies ,Implementation,"While SQL pool supports many loading methods, including popular SQL Server options such as bcp and the SqlBulkCopy API, the fastest and most scalable way to load data is through PolyBase external tables and the COPY statement.
+
+With PolyBase and the COPY statement, you can access external data stored in Azure Blob storage or Azure Data Lake Store via the T-SQL language. For the most flexibility when loading, we recommend using the COPY statement.
+
+Please refer to this guidance
+
+"
+4102,4187,Task,2,,2 - Data preparation,Implementation,"Please refer to this guidance
+"
+4103,4186,Task,2,,1 - Table design for staging data,Implementation,"Review Data Distribution Design
+
+For fast inserts use round robin distribution:
+
+Indexing
+When you are temporarily landing data in dedicated SQL pool, you may find that using a heap table makes the overall process faster. This is because loads to heaps are faster than to index tables and in some cases the subsequent read can be done from cache. If you are loading data only to stage it before running more transformations, loading the table to heap table is much faster than loading the data to a clustered columnstore table
+Review Index Design
+
+
+"
+4104,4187,Task,2,,3 - Load data to Synapse Analytics using COPY INTO,Implementation,"The COPY statement is the recommended loading utility as it enables you to seamlessly and flexibly load data by providing functionality to:
+
+ *  Allow lower privileged users to load without needing strict CONTROL permissions on the data warehouse
+ *  Leverage only a single T-SQL statement without having to create any additional database objects
+ *  Leverage a finer permission model without exposing storage account keys using Share Access Signatures (SAS)
+ *  Specify a different storage account for the ERRORFILE location (REJECTED_ROW_LOCATION)
+ *  Customize default values for each target column and specify source data fields to load into specific target columns
+ *  Specify a custom row terminator for CSV files
+ *  Escape string, field, and row delimiters for CSV files
+ *  Leverage SQL Server Date formats for CSV files
+ *  Specify wildcards and multiple files in the storage location path
+
+
+https://docs.microsoft.com/en-us/sql/t-sql/statements/copy-into-transact-sql?toc=/azure/synapse-analytics/sql-data-warehouse/toc.json&bc=/azure/synapse-analytics/sql-data-warehouse/breadcrumb/toc.json&view=azure-sqldw-latest
+"
+4105,4186,Task,2,,2 - Data Ingestion to Synapse Analytics with Stream Analytics,Implementation,"Prerequisites:
+
+ *  Azure Stream Analytics Job - To create an Azure Stream Analytics job
+ *  Synapse dedicated SQL pool for your data warehouse - To create a new data warehouse, follow the steps in the Quickstart to create a new data warehouse.
+
+Please refer to details here
+"
+4106,4187,Task,2,,4 - Load data to Synapse Analytics using Polybase,Implementation,"While SQL pool supports many loading methods including non-Polybase options such as BCP and SQL BulkCopy API, the fastest and most scalable way to load date is through PolyBase. PolyBase is a technology that accesses external data stored in Azure Blob storage or Azure Data Lake Store via the T-SQL language.
+
+Please refer to this guidance
+
+"
+4107,4182,Task,2,,1 - Ingestion using HDInsight Kafka,Implementation,"Apache Kafka is an open-source distributed streaming platform that can be used to build real-time data pipelines and streaming applications. Kafka also provides message broker functionality similar to a message queue, where you can publish and subscribe to named data streams. It is horizontally scalable, fault-tolerant, and extremely fast. Kafka on HDInsight provides a Kafka as a managed, highly scalable, and highly available service in Azure.
+
+Review this details
+"
+4108,4187,Task,2,,5 - Dimensional Modeling,Implementation,"A star schema organizes data into fact and dimension tables. Some tables are used for integration or staging data before moving to a fact or dimension table. As you design a table, decide whether the table data belongs in a fact, dimension, or integration table.
+
+Please refer to the details here
+
+"
+4109,4186,Task,2,,3 - Dimensional modeling,Implementation,"A star schema organizes data into fact and dimension tables. Some tables are used for integration or staging data before moving to a fact or dimension table. As you design a table, decide whether the table data belongs in a fact, dimension, or integration table.
+
+Please refer to the details here
+
+"
+4110,4107,Task,2,,1 - Provision HDInsight Kafka Cluster,,"Provision Cluster
+
+Add Enterprise Security using ESP enablement  (optional)
+
+
+"
+4111,4196,Task,2,,Solution Scenario : Migrations from  SQL Server,Plan,"Please refer to this guidance
+
+"
+4112,4177,Task,2,,1 - Review and Align OKRs,Plan,"https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/strategy/business-outcomes/okr?WT.mc_id=devops_userstory_service_mdndatawrh_-inproduct-devopsportal
+"
+4113,4177,Task,2,,Tutorial: Integrate data with Azure Data Factory or Azure Synapse Pipeline,Plan,"https://docs.microsoft.com/en-us/learn/modules/data-integration-azure-data-factory?WT.mc_id=devops_userstory_service_mdndatawrh_-inproduct-devopsportal
+"
+4114,4177,Task,2,,Tutorial: Create production workloads on Azure Databricks with Azure Data Factory,Plan,"https://docs.microsoft.com/en-us/learn/modules/create-production-workloads-azure-databricks-azure-data-factory?WT.mc_id=devops_userstory_service_mdndatawrh_-inproduct-devopsportal
+"
+4115,4177,Task,2,,Tutorial: Azure Networking Services,Plan,"https://docs.microsoft.com/en-us/learn/modules/azure-networking-fundamentals?WT.mc_id=devops_userstory_service_mdndatawrh_-inproduct-devopsportal
+"
+4116,4177,Task,2,,Tutorial: Store Data in Azure,Plan,"https://docs.microsoft.com/en-us/learn/paths/store-data-in-azure?WT.mc_id=devops_userstory_service_mdndatawrh_-inproduct-devopsportal
+"
+4117,4177,Task,2,,Tutorial: Introduction to Azure Synapse,Plan,"https://docs.microsoft.com/en-us/learn/modules/introduction-azure-synapse-analytics?WT.mc_id=devops_userstory_service_mdndatawrh_-inproduct-devopsportal
+"
+4118,4197,Task,2,,Tutorial: Enterprise-scale learning path,Plan,"https://docs.microsoft.com/en-us/learn/browse/?products=azure%2Csql-server%2Cwindows-server&terms=enterprise%20scalehttps://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/enterprise-scale?WT.mc_id=devops_userstory_service_mdndatawrh_-inproduct-devopsportal
+"
+4119,4197,Task,2,,1 - Verify Landing Zone implementation ,Plan,"https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/enterprise-scale?WT.mc_id=devops_userstory_service_mdndatawrh_-inproduct-devopsportal
+"
+4120,4188,Task,2,,1 - Configure PowerBI embedded,Implementation,"Using Power BI with Azure Stream Analytics allows users of Power BI Embedded dashboards to easily visualize insights from streaming data within the context of the apps they use every day. With Power BI Embedded, users can also embed real-time dashboards right in their organization's web apps.
+
+Please refer to this guidance
+"
+4121,4188,Task,2,,2 - Configure output from Stream Analytics,Implementation,"You can use Power BI as an output for a Stream Analytics job to provide for a rich visualization experience of analysis results. You can use this capability for operational dashboards, report generation, and metric-driven reporting.
+
+Please refer to this guidance
+"
+4122,4189,Task,2,,1 - Performance Tuning,Implementation,"Performance Tuning:
+
+ *  Push transformation to the Source: Where to create your columns in Power BI | Data Modeling Best Practices - YouTube
+ *  Optimize Query Folding: Where to create your columns in Power BI | Data Modeling Best Practices - YouTube
+Please refer to this guidance
+ *  Remove Extra Columns:
+ *  Use this tool to see what fields are being used in your repots GitHub - stephbruno/Power-BI-Field-Finder
+ *  check the Model size and attributes using Vertipaq Analyzer: VertiPaq Analyzer - SQLBI
+ *  Reduce the calculated columns.
+ *  Avoid using Excel / SharePoint as possible and try to use relational databases or dataflows
+
+
+"
+4123,4193,Task,2,,1 - Monitoring,Implementation,"Use below set of guidance
+
+Azure Databricks
+Using Azure Monitor
+
+Data Factory
+Using Azure Monitor
+Using Alerts
+
+Synapse Analytics
+        Monitor Resource utilization and query activity
+Monitoring using DMVs
+
+Azure Storage
+Using Azure Monitor
+"
+4124,4185,Task,2,,1 - Create Transformations,Implementation,"Using Mapping Data flows
+Mappingdata flows
+
+Using Copy Activity
+Copyactivity
+
+
+"
+4125,4185,Task,2,,2 - Create Integration Runtimes,Implementation,"The Integration Runtime (IR) is the compute infrastructure used by Azure Data Factory to provide data integration capabilities across different network environments. For more information about IR, see Integration runtime.
+
+Createa self-hosted integration runtime
+CreateAzure integration runtime
+Createan Azure-SSIS integration runtime
+
+
+"
+4126,4185,Task,2,,3 - Security Consideration,Implementation,"Please refer to this guidance
+
+"
+4127,4191,Task,2,,1 - For Azure Synapse Analytics - Native feature,Implementation,"Please refer to this guidance
+"
+4128,4191,Task,2,,2 - For Cosmos DB - Native feature,Implementation,"Please refer to this guidance
+
+"
+4129,4194,Task,2,,1 - For Databricks - Native configuration,Implementation,"Please refer to this guidance
+"
+4130,4194,Task,2,,2 - For Azure Synapse Analytics - Native feature,Implementation,"Please refer to this guidance
+
+"
+4131,4193,Task,2,,2 - Using Azure advisor for insights into optimzation areas,Implementation,"Optimize across, security, reliability, operations and cost
+Please refer to this guidance
+
+"
+4132,4190,Task,2,,1 - For PowerBI - Enterprise Security,Implementation,"Please refer to this guidance
+"
+4133,4190,Task,2,,2 - For Azure ML - Enterprise Security,Implementation,"Please refer to this guidance
+"
+4134,4190,Task,2,,3 - For CosmosDB - Enterprise Security,Implementation,"Please refer to this guidance
+"
+4135,4190,Task,2,,4 - For Data Factory - Enterprise Security,Implementation,"Please refer to this guidance
+
+"
+4136,4190,Task,2,,5 - For Data Lake - Enterprise Security,Implementation,"Please refer to this guidance
+
+"
+4137,4190,Task,2,,6 - For Synapse Analytics -  Enterprise Security,Implementation,"Please refer to below guidance
+
+Access Control
+
+Using Managed Identity
+
+Data Exfiltration
+
+Using Managed Private Endpoint
+"
+4138,4190,Task,2,,7 - For Databricks - Enterprise Security,Implementation,"Please refer to this guidance
+
+"
+4139,4196,Task,2,,Solution Scenario : Migrations from Exadata (Oracle),Plan,"Please refer to this guidance
+
+"
+4140,4196,Task,2,,Solution Scenario : Migrations from Netezza,Plan,"Please refer to this guidance
+
+"
+4141,4196,Task,2,,Solution Scenario : Migrations from Teradata,Plan,"Please refer to this guidance
+
+"
+4142,4195,Task,2,,1 - Define Migration Scope,Plan,"Please review readiness session
+Study Migration Journey and Tools
+
+TODO
+Add any contextual scope definition
+
+
+
+
+"
+4143,4195,Task,2,,2 - Set Migration Approach,Plan,"Please review
+
+Design Decisions
+Development Best Practices
+
+"
+4144,4195,Task,2,,3 - Set Migration Goals,Plan,"Define Migration goals
+"
+4145,4185,Task,2,,4 - Data Preparation and Transformation using Azure Synapse Analytics Pipelines (Cold Path),Implementation,"Please refer to this guidance
+
+"
+4146,4184,Task,2,,1 - Data Preparation and Transformation using Azure Synapse Analytics Data flows (Hot Path),Implementation,"Use SQL Pool or Spark Pool (depending on the available skillset
+For SQL Pool, Please refer to this guidance
+For Apache Spark Pool, Please refer to this guidance and one more
+
+"
+4147,4183,Task,2,,1 - Ingestion using SSIS Packages,Implementation,"Please refer to this guidance
+
+
+
+"
+4148,4183,Task,2,,2 - Bulk Load using COPY command (Azure Synapse Analytics),Implementation,"Please refer to
+Bulk load data using the COPY statement
+"
+4149,4183,Task,2,,3 - Ingestion using Data Factory,Implementation,"Please refer to this guidance and one more
+
+
+"
+4150,4183,Task,2,,4 - Ingestion using Azure Synapse Analytics Pipelines,Implementation,"Please refer to this guidance
+
+"
+4151,4182,Task,2,,2 - Ingestion using IOT Hub (Device to Hub Messages),Implementation,"Message routing enables you to send messages from your devices to cloud services in an automated, scalable, and reliable manner.
+
+Please refer to this guidance
+
+"
+4152,4182,Task,2,,3 - Ingestion using Event Grid into Data bricks Delta Tables,Implementation,"Delta Lake is an open source storage layer that brings reliability to data lakes. Delta Lake provides ACID transactions, scalable metadata handling, and unifies streaming and batch data processing. Delta Lake runs on top of your existing data lake and is fully compatible with Apache Spark APIs. Delta Lake on Azure Databricks allows you to configure Delta Lake based on your workload patterns.
+
+Please refer to this guidance
+
+
+"
+4153,4182,Task,2,,4 - Ingestion using Event hub,Implementation,"Azure Event Hubs enables you to automatically capture the streaming data in Event Hubs in an Azure Blob storage or Azure Data Lake Storage Gen 1 or Gen 2 account of your choice, with the added flexibility of specifying a time or size interval.
+
+Please refer to - Capture streaming events into ADLS Gen2
+"
+4154,4182,Task,2,,5 - Ingestion using Azure Stream Analytics,Implementation,"To enable highly cost-effective, large volume of real-time data ingestion, direct output from the stream analytics into ADLS Gen2
+
+Please refer to this guidance
+
+"
+4155,4181,Task,2,,"1 - Create Raw zone,  Enriched Zone and Curated Zone containers",Implementation,"Create containers within ADLS Gen2 to define clear security boundaries to hold types of data
+
+Reference
+Ensure data lake storage design follows best practices
+Please review this details
+"
+4156,4189,Task,2,,2 - Transform and Model the Data,Implementation,"At the heart of implementation of Power BI is transformation and modeling the data. In cases that the model is built in Azure Analysis Services, Azure Synapse Analytics ( SQL DW), SQL Server and other sources and you are connecting to sources using direct query, import or composite models you may not need to perform any modeling or transformation in Power BI tools. The items below refers to the guidelines when you perform transformation and modeling using Power BI Desktop or other tools. Some general modeling practices indicated here would help in all cases:
+
+
+General:
+
+ *  Reference book for General Tabular Modeling Tabular Modeling in SQL Server Analysis Services (2nd Edition) - SQLBI
+ *  Understand STAR schema in PowerBI. Please refer to this guidance
+ *  Data Reduction technique in Data models.. Please refer to this guidance
+ *  Transform, Shape and Model. Please refer to this guidance
+ *  Using DAX. Please refer to this guidance
+ *  Refer to the General Resources task in this ADO for other great resources on modeling including Whitepaper on modeling for AS tabular scalability | Microsoft Docs
+
+
+"
+4157,4189,Task,2,,3 - Identify the Sources and Connect to the Data,Implementation,"As part of the MDW architectural design the sources are usually identified ahead of time. Below is the data connection guidelines depending on the data sources:
+
+ *  List of Data Sources . Refer to this
+ *  Connecting to Data Sources in the Power BI service using Dataflows:
+Dataflows white paper: https://go.microsoft.com/fwlink/?linkid=2034388&clcid=0x409
+ *  On Premise Data Gateways: (  Sizing, Best Practices, Configuration and etc.)
+
+ *  Architecture details
+ *  Please refer to this guidance and more
+ *  Installation details
+ *  High Availability of Gateways: details
+ *  Proactively Monitor Gateways: details
+ *  Gateway Performance Template Tool: https://download.microsoft.com/download/D/A/1/DA1FDDB8-6DA8-4F50-B4D0-18019591E182/GatewayPerformanceMonitoring.pbit
+ *  Using on-premises gateway app - details
+ *  Connect to on-premises SQL Server - details
+ *  How to Troubleshoot
+
+ *  If you already have Power BI datasets published to the services you can use dataset hub to discover your current organization datasets
+
+"
+4158,4189,Task,2,,4 - Planning a Power BI Enterprise Deployment,Implementation," *  Customer OnBoarding and Readiness:
+
+ *  Demos: Search Power BI in http://aka.ms/learning
+What is Power BI
+ *  Videos : Home - SQLBI, Guy in a Cube - YouTube
+ *  Learnings
+
+ *  Get Familiar with Power BI licensing structure and offers
+
+ *  Pricing & Product Comparison | Microsoft Power BI,
+Power BI licensing for users in your organization - Power BI | Microsoft Docs
+ *  Power Bi Premium: https://aka.ms/pbipremiumwhitepaper
+ *  Power BI for SAP: https://aka.ms/powerbiandsapbw
+ *  Power BI GDPR: https://aka.ms/power-bi-gdpr-whitepaper
+
+"
+4159,4189,Task,2,,5 - Preparation and General Resources,Implementation,"There are critical tools and resources that helps field and customers in developing Power BI content.
+
+Tools:
+
+DAX Studio: A tool for working with DAX queries
+DAX Studio - The ultimate client tool for working with DAX queries
+
+Vertipaq Analyzer: is a useful tool to analyze VertiPaq storage structures for a data model in Power BI and Analysis Services Tabular.
+VertiPaq Analyzer - SQLBI
+
+
+Tabular Editor: Tabular Editor is an editor alternative to SSDT for authoring Tabular models for Analysis Services even without a workspace server.
+Tabular Editor - SQLBI
+
+BISM Normalizer:is a free and open-source tool to manage Microsoft Analysis Services tabular models
+Home Page - BISM Normalizer (bism-normalizer.com)
+
+
+Blogs and Articles:
+
+Power Bi Tips:
+Home - (powerbi.tips)
+
+Power Bi Whitepapers:
+
+
+Excellent Blogs on any aspects of Power BI / Tabular Model development
+Home - SQLBI
+https://radacad.com/category/power-bi
+
+"
+4160,4193,Task,2,,3 - Performance Optimization with Kafka HDInsight,Implementation,"Please refer to this guidance and one more
+
+"
+4161,4194,Task,2,,3 - For HDInsight Kafka - Native fetaure,Implementation,"Please refer to this guidance
+
+"
+4162,4186,Task,2,,4 - Fast performance caching data,Implementation,"Materialized views provide a low maintenance method for complex analytical queries to get fast performance without any query change
+
+Materialized Views
+
+Result set Cache Controls the result set caching behavior for the current client session.
+
+
+
+
+"
+4163,4187,Task,2,,6 - Fast performance caching data,Implementation,"Materialized views provide a low maintenance method for complex analytical queries to get fast performance without any query change
+
+Materialized Views
+
+Result set Cache Controls the result set caching behavior for the current client session.
+
+"
+4164,4190,Task,2,,8 - For Kafka - Provision cluster using Enterprise Security Package,Implementation,"Provision ESP enabled HDInsight Cluster
+Refer to this
+
+"
+4165,4191,Task,2,,3 - For HDInsight Kafka - Infrastructure Consideration,Implementation,"Please refer to this guidance and one more
+"
+4166,4184,Task,2,,2 - Data Preparation and Transformation using Databricks (Hot Path),Implementation,"Databricks is an Apache Spark-based analytics platform optimized for the Microsoft Azure cloud services platform.
+
+
+Please refer to this guidance and one more
+
+"
+4167,4107,Task,2,,2 - Create Kafka Topic for consumers,,"Setup Apache kafka Topics
+Enable Auto create topics  (if required)
+
+
+
+"
+4168,4179,Task,2,,1 - Analyze and ensure network bandwidth and infrastructure for data migration,Plan,"Current data volumes andnetwork speed will dictatewhich option you use tomigrate your historical datato Azure
+
+Run-time software is neededin your data center to enableAzure Data Factory to controlexecution of data export
+"
+4169,4179,Task,2,,2 - Obtain the necessary approvals to migrate your data,Plan,"Ensure you obtain thenecessary approvals tomigrate your data. Cloud Center of Excellence, Governance team sign-off
+Ready your on-premisesinfrastructure teams toenable smooth datamigration
+"
+4170,4178,Task,2,,1 - Analyze current data warehousing technologies,Plan,"Assess the strengths,weaknesses and gaps incurrent data warehousingtechnologies
+"
+4171,4178,Task,2,,2 - Analyze Security and change control management,Plan,"Assess how easy it is to makechanges to your existing datawarehouse
+"
+4172,4178,Task,2,,3 - Analyze  performance and scalability,Plan,"Understand what you do toenable performance andcurrent issues you have
+"
+4173,4178,Task,2,,"4 - Assess your existing ETL jobs, job dependencies, and data usage",Plan,"Assess your existing ETL jobs, job dependencies, and data usage"
+4174,4178,Task,2,,"5 - Analyze existing data sources, schema design and complexity",Plan,"Obtain a detailed understanding of your existing data sources, schema design and complexity, architecture, size, and growth rates
+"
+4175,4177,Task,2,,3 - Readiness Skills and training for the team,Plan,"With respect to skills, expertise is important in a data warehouse migration. Therefore,ensure the appropriate members of your migration team are trained in Azure cloudfundamentals, Azure Blob Store, Azure Data Lake Storage, Azure Databox, AzureExpressRoute, Azure identity management, Azure Data Factory, and Azure Synapse.Your data modelers will most likely need to fine tune your Azure Synapse datamodel(s) once migration from your existing data warehouse has occurred. 
+"
+4176,4177,Task,2,,2 - Assemble Team - Key roles in a data warehouse migration team,Plan,"Key roles in a migration project include:
+
+ *  Business owner
+ *  Project manager(with agile methodology experience e.g. scrum)
+ *  Project coordinator
+ *  Cloud engineer
+ *  Databaseadministrator (existing data warehouse DBMS and Azure Synapse)
+ *  Data modeler(s)
+ *  ETL developers
+ *  Data virtualizationspecialist (could be a DBA)
+ *  Testing engineer
+ *  Business analysts(to help test BI tool queries, reports and analyses
+ *  Support of youron-premises infrastructure team
+
+
+"
+4177,4098,User Story,2,Business,Preparation,Plan,Preparation
+4178,4098,User Story,2,Business,Assess your existing data warehouse,Plan,"Start by assessing yourexisting legacy datawarehouse to understand itsstrengths and weaknessesand gauge the extent of themigration challenge
+
+
+"
+4179,4098,User Story,2,Business,On-premises preparation for data migration,Plan,On-premises preparation for data migration
+4180,4099,User Story,2,Business,"Perform Decision - ETL, Ingest, Prepare, Train, Model, Visualization Technology Selection",Implementation,"Ensure Data read and Write patterns are well understood.  Refer to this tool for Assessing data patterns
+
+Technologies to consider for Ingestion
+HDInsight Kafka :
+Stream Analytics
+EventHub
+IoTHub
+Data Factory
+
+Technologies to consider for Storage
+ADLS Gen2
+
+Technologies to consider for Preparation
+Databricks
+Synapse Pools
+
+Technologies to consider for Training
+Databricks
+Azure Machine Learning
+
+Technologies to consider for Model and Serve
+Synapse Analytics
+CosmosDB
+Time Series Insight
+Azure Data Explorer
+
+Technologies to consider for Visualization
+PowerBI
+
+Technologies to consider for ML
+AML
+Databricks
+
+
+"
+4181,4099,User Story,2,Business,Implement Data Store (Cold Path),Implementation,"Please review this guidance
+
+
+
+"
+4182,4099,User Story,2,Business,Implement Data Ingestion (Hot Path),Implementation,"Real time processing deals with streams of data that are captured in real-time and processed with minimal latency. Many real-time processing solutions need a message ingestion store to act as a buffer for messages, and to support scale-out processing, reliable delivery, and other message queuing semantics.
+
+Choose the right technology for the real-time ingestion
+
+
+
+"
+4183,4099,User Story,2,Business,Implement Data Ingestion (Cold Path),Implementation,"A common big data scenario is batch processing of data at rest. In this scenario, the source data is loaded into data storage, either by the source application itself or by an orchestration workflow.
+
+Please refer to this guidance
+
+"
+4184,4099,User Story,2,Business,Implement Data Preparation And Transformation  (Hot Path),Implementation,"Choose the right technology -- Guidance
+
+For Hot Path, choose
+Azure Synapse Analytics,
+Azure Stream Analytics,
+Azure Data Bricks,
+HDInsight (SPARK, STORM, KAFKA)
+"
+4185,4099,User Story,2,Business,Implement Data Preparation (Cold Path),Implementation,"A data factory can have one or more pipelines. A pipeline is a logical grouping of activities that together perform a task. For example, a pipeline could contain a set of activities that ingest and clean log data, and then kick off a mapping data flow to analyze the log data. The pipeline allows you to manage the activities as a set instead of each one individually. You deploy and schedule the pipeline instead of the activities independently.
+
+Please refer to this guidance
+"
+4186,4099,User Story,2,Business,Implement Model & Serve  (Hot Path),Implementation,Implement Model & Serve  (Hot Path)
+4187,4099,User Story,2,Business,Implement Model & Serve  (Cold Path),Implementation,Implement Model & Serve  (Cold Path)
+4188,4099,User Story,2,Business,Implement Visualization  (Hot Path),Implementation,"Azure Stream Analytics enables you to take advantage of one of the leading business intelligence tools, Microsoft Power BI. In this article, you learn how create business intelligence tools by using Power BI as an output for your Azure Stream Analytics jobs. You also learn how to create and use a real-time dashboard that is continuously updated by the Stream Analytics job.
+
+Please refer to this guidance
+"
+4189,4099,User Story,2,Business,Implement Visualization  (Cold Path),Implementation,"The tasks under this user story show the steps needed to implement visualizations as consumption layer in the Modern Data Warehouse pattern. for general BI guidance refer to Power BI documentation
+
+https://docs.microsoft.com/en-us/power-bi/guidance/
+"
+4190,4099,User Story,2,Business,Implement Security,Implementation,"Review Security Baselines
+For Azure storage review this and one more
+
+For Azure SQL DB review this
+
+For Azure Data bricks review this and one more
+
+For Azure Synapse Analytics review this
+
+For Azure Stream Analytics review this
+
+For Azure HDInsight review this
+
+For Azure IOT Hub review this
+
+For Azure ML review this
+
+
+
+"
+4191,4099,User Story,2,Business,Implement Reliability,Implementation,"Azure Databricks
+Regionaldisaster recovery for Azure Databricks clusters
+Data Factory
+Create andconfigure a self-hosted integration runtime - High availability and scalability
+Synapse Analytics
+Geo-backupsand Disaster Recovery
+Geo-restorefor SQL Pool
+Azure Storage
+Disasterrecovery and storage account failover
+Best practicesfor using Azure Data Lake Storage Gen2 – High availability and DisasterRecovery
+Azure StorageRedundancy
+
+"
+4192,4100,User Story,2,Business,Implement Process Efficiency,Implementation,"A modern data warehouse (MDW) lets you easily bring all of your data together at any scale. It doesn't matter if it's structured, unstructured, or semi-structured data. You can gain insights to an MDW through analytical dashboards, operational reports, or advanced analytics for all your users.
+Setting up an MDW environment for both development (dev) and production (prod) environments is complex. Automating the process is key. It helps increase productivity while minimizing the risk of errors.
+
+
+Please refer to this guidance
+
+"
+4193,4100,User Story,2,Business,Implement Operational Excellence,Implementation,Implement Operational Excellence
+4194,4099,User Story,2,Business,Implement Scalability,Implementation,Implement Scalability
+4195,4098,User Story,2,Business,Define Migration Strategy,Plan,Define Migration Strategy
+4196,4098,User Story,2,Business,Review the scope and align with the scenarios,Plan,Review the scope and align with the scenarios
+4197,4098,User Story,2,Business,Review Landing Zone,Plan,"Setup Azure Subscription
+Setup Enterprise scale Landing Zone
+"
+4198,4177,Task,2,,Reference: Azure Quickstarts,,"There are over 900 Azure quickstarts which you could leverage as code in your projects.
+
+https://azure.microsoft.com/en-us/resources/templates?WT.mc_id=devops_userstory_service_mdndatawrh_-inproduct-devopsportal
+"
