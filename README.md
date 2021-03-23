@@ -14,6 +14,8 @@ Each CSV has the following fields:
 - Tags
 - Description
 
+NOTE: the description field provides detail on the work item. These details are further supported with content on the https://docs.microsoft.com platform.
+
 Microsoft project files (To Be Completed)
 
 
