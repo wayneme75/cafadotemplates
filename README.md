@@ -14,8 +14,8 @@ Each CSV has the following fields:
 - Tags
 - Description
 
+Microsoft project files (To Be Completed)
 
-The Microsoft project files
 
 Should you need additional fields in the CSV, you can [create a new Azure DevOps organization](https://docs.microsoft.com/en-us/azure/devops/organizations/accounts/create-organization?view=azure-devops), deploy the template and use Excel to create the CSV:
 
