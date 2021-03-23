@@ -1,0 +1,321 @@
+﻿"Project: Strat-Plan-Ready-Gov    Server: dev.azure.com/wayneme    Query: All items, all states    List type: Flat    ",,,,,,,
+ID,Parent,Work Item Type,Priority,Value Area,Title,Tags,Description
+4900,,Epic,2,Business,Cloud Adoption Strategy,Strategy,Cloud Adoption Strategy
+4901,,Epic,2,Business,Cloud Adoption Plan,Plan,Cloud Adoption Plan
+4902,,Epic,2,Business,Cloud Ready,Ready,"Cloud Ready - review the Cloud Ready checklist.
+
+In this section we provide links to content and topics which will influence some of the decisions
+"
+4903,,Epic,2,Business,Cloud Govern,Govern,"The cloud creates new paradigms for the technologies that support the business. Datacenters can be torn down and rebuilt with one line of code, we have to rethink traditional approaches."
+4904,4902,Feature,2,Business,Getting Started with Azure,Ready,"Review the Azure Readiness Guide to become familiar with the tools and approaches needed in landing zone creation.
+"
+4905,4902,Feature,2,Business,"Create the Landing zone, 3 potential paths: Enterprise Scale | Start Small and Grow | Partner built",Ready,https://docs.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone/
+4906,4901,Feature,2,Business,Build the Cloud Adoption Plan,Plan,"Define the Cloud Adoption Plan: https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/plan/plan-intro
+"
+4907,4900,Feature,2,Business,Define Adoption Strategy,Strategy,Define Adoption Strategy
+4908,4903,Feature,2,Business,Establish Governance Baseline & Governance Disciplines,Govern,"It is important to understand the gaps of governance that we have today, the Cloud Adoption Framework Governance Benchmark evaluation helps us determine where those gaps exist."
+4909,4903,Feature,2,Business,Tools to govern your Azure environment,Govern,Azure Fundamentals & Governance
+4910,5108,Task,2,,1 - Identity Management Best Practices,Ready,https://docs.microsoft.com/azure/security/fundamentals/identity-management-best-practices
+4911,5107,Task,2,,1 - Choose a networking architecture,Ready,https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/considerations/networking-options#choose-a-networking-architecture
+4912,5107,Task,2,,2 - Azure networking services overview,Ready,https://docs.microsoft.com/en-us/azure/networking/networking-overview
+4913,5107,Task,2,,3 - Common-Design-Principles-for-a-Hub-and-Spoke-VNET-Architecture,Ready,Hub-spoke network topology in Azurehttps://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/hub-spoke
+4914,5136,Task,2,,1 - Logs in Azure Monitor,Govern,https://docs.microsoft.com/en-us/azure/azure-monitor/platform/data-platform-logs
+4915,5137,Task,2,,1 - Azure Express Route | Tutorial: Connect a virtual network to an Express Route circuit,Govern,"Tutorial: Connect a virtual network to an Express Route circuit
+"
+4916,5134,Task,2,,1 - Manage Azure Monitor: Design a workspace deployment,Govern,https://docs.microsoft.com/en-us/azure/azure-monitor/platform/design-logs-deployment
+4917,5126,Task,2,,1 - What is AAD,Govern,- https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis?WT.mc_id=devops_userstory_service_sprg-inproduct-devopsportal - What is AAD
+4918,5140,Task,2,,1 - Alerts: Improve incident response with alerting on Azure (MS Learn),Govern,https://docs.microsoft.com/en-us/learn/modules/incident-response-with-alerting-on-azure/
+4919,5107,Task,2,,4 - Hub and spoke network topology,Ready,https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/hub-spoke-network-topology
+4920,5129,Task,2,,1 - Blueprint definitions,Govern,https://docs.microsoft.com/azure/governance/blueprints/overview#blueprint-definition?WT.mc_id=devops_userstory_service_sprg-inproduct-devopsportal - Blueprint definitions
+4921,5125,Task,2,,1 - Build a readiness plan and map roles,Ready,a) https://docs.microsoft.com/azure/cloud-adoption-framework/plan/adapt-roles-skills-processes | b) https://docs.microsoft.com/azure/cloud-adoption-framework/plan/suggested-skills
+4922,5108,Task,2,,2 - Identity Access Management | Least Privilege Access,Ready,https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-admin-roles-secure?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json
+4923,5139,Task,2,,1 - Visualizations: Create interactive reports with Azure Monitor workbooks,Govern,https://docs.microsoft.com/en-us/azure/azure-monitor/app/usage-workbooks
+4924,5126,Task,2,,2 - Compare AD with AAD,Govern,https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-compare-azure-ad-to-ad?WT.mc_id=devops_userstory_service_sprg-inproduct-devopsportal - Compare AD with AAD
+4925,5106,Task,2,,1 - EA Portal - Getting Started,Ready,"https://docs.microsoft.com/en-us/azure/cost-management-billing/manage/ea-portal-get-started
+"
+4926,5113,Task,2,,1 - Sustainability targets and goals,Strategy,https://azure.microsoft.com/blog/microsoft-sustainability-calculator-helps-enterprises-analyze-the-carbon-emissions-of-their-it-infrastructure
+4927,5110,Task,2,,1 - App discovery & dependency mapping with Azure Migrate,Plan,Gather inventory data. https://docs.microsoft.com/azure/cloud-adoption-framework/digital-estate/inventory
+4928,5107,Task,2,,5 - Best Practices for Network Security,Ready,https://docs.microsoft.com/azure/security/fundamentals/network-best-practices?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json
+4929,5136,Task,2,,2 - Logs querying: Get started with log queries in Azure Monitor,Govern,https://docs.microsoft.com/en-us/azure/azure-monitor/log-query/get-started-queries
+4930,5137,Task,2,,2 - Azure Express Route | Tutorial: Create and modify peering for an Express Route circuit,Govern,Tutorial: Create and modify peering for an Express Route circuit
+4931,5126,Task,2,,3 - AAD Deployment Guide,Govern,https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-deployment-checklist-p2?WT.mc_id=devops_userstory_service_sprg-inproduct-devopsportal - AAD Deployment Guide
+4932,5138,Task,2,,1 - Network Insights (Preview),Govern,https://docs.microsoft.com/en-us/azure/azure-monitor/insights/network-insights-overview
+4933,5140,Task,2,,"2 - Alerts: Create, view and manage alerts based on Log Queries",Govern,https://docs.microsoft.com/en-gb/azure/azure-monitor/platform/alerts-log
+4934,5134,Task,2,,2 - Cloud monitoring guide: Monitoring strategy for cloud deployment models,Govern,https://docs.microsoft.com/azure/cloud-adoption-framework/manage/monitor/cloud-models-monitor-overview - Cloud monitoring guide: Monitoring strategy for cloud deployment models
+4935,5126,Task,2,,4 - Tutorial Create a new tenant in AAD,Govern,https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-access-create-new-tenant?WT.mc_id=devops_userstory_service_sprg-inproduct-devopsportal
+4936,5104,Task,2,,1 - Subscription Design,Ready,"Plan your cloud deployment's subscription design and account structureto match your organization's ownership, billing, and management capabilities.
+"
+4937,5130,Task,2,,1 - View service health notifications by using the Azure portal,Govern,https://docs.microsoft.com/azure/service-health/service-notifications?WT.mc_id=devops_userstory_service_sprg-inproduct-devopsportal
+4938,5131,Task,2,,1 - Get started with Azure Advisor,Govern,https://docs.microsoft.com/azure/advisor/advisor-get-started?WT.mc_id=devops_userstory_service_sprg-inproduct-devopsportal - Get started with Azure Advisor
+4939,5131,Task,2,,2 - Tutorial: Create Azure Advisor alerts on new recommendations,Govern,https://docs.microsoft.com/azure/advisor/advisor-alerts-portal?WT.mc_id=devops_userstory_service_sprg-inproduct-devopsportal - Tutorial: Create Azure Advisoralerts on new recommendations
+4940,5130,Task,2,,2 - Tutorial: Create activity log alerts on service notifications,Govern,https://docs.microsoft.com/azure/service-health/alerts-activity-log-service-notifications-portal?WT.mc_id=devops_userstory_service_sprg-inproduct-devopsportal
+4941,5107,Task,2,,6 - Network segmentation,Ready,"Secure and govern workloads with network level segmentation
+"
+4942,5136,Task,2,,3 - Logs querying: Azure Monitor log queries,Govern,https://docs.microsoft.com/en-us/azure/azure-monitor/log-query/query-language
+4943,5106,Task,2,,2 - Initial subscriptions,Ready,https://docs.microsoft.com/azure/cloud-adoption-framework/ready/azure-best-practices/initial-subscriptions?WT.mc_id=devops_userstory_service_sprg-inproduct-devopsportal -
+4944,5139,Task,2,,2 - Visualizations: Create and share Azure Dashboards,Govern,https://docs.microsoft.com/azure/azure-portal/azure-portal-dashboards
+4945,5108,Task,2,,3 - Manage access to your Azure environment with role-based access controls,Ready,https://docs.microsoft.com/azure/cloud-adoption-framework/ready/azure-setup-guide/manage-access?WT.mc_id=devops_userstory_service_sprg-inproduct-devopsportal
+4946,5129,Task,2,,2 - Define standard resources with Azure Blueprints,Govern,https://docs.microsoft.com/learn/modules/intro-to-governance/5-azure-blueprints?WT.mc_id=devops_userstory_service_sprg-inproduct-devopsportal
+4947,5125,Task,2,,2 - Microsoft Learn Platform,Ready,"https://docs.microsoft.com/learn/paths/azure-fundamentals/?WT.mc_id=devops_userstory_service_sprg-inproduct-devopsportal - Azure Fundamentals on Microsoft Learn
+"
+4948,5129,Task,2,,3 - Azure Blueprint Samples,Govern,"https://docs.microsoft.com/azure/governance/blueprints/samples/?WT.mc_id=devops_userstory_service_sprg-inproduct-devopsportal
+"
+4949,5129,Task,2,,4 - Azure Blueprints as code,Govern,"https://github.com/Azure/azure-blueprints
+"
+4950,5129,Task,2,,5 - Tutorial: Define and assign a blueprint in the portal,Govern,https://docs.microsoft.com/azure/governance/blueprints/create-blueprint-portal?WT.mc_id=devops_userstory_service_sprg-inproduct-devopsportal
+4951,5126,Task,2,,5 - Tutorial: View your organization’s groups and members in AAD,Govern,https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-view-azure-portal?WT.mc_id=devops_userstory_service_sprg-inproduct-devopsportal
+4952,5126,Task,2,,6 - Getting Started with Identity Governance,Govern,"https://www.microsoft.com/en-us/security/business/identity/governance#:~:text=%20Azure%20Active%20Directory%20identity%20governance%20features%20,to%20the%20resources%20they%20need.%20%20More%20
+"
+4953,5126,Task,2,,7 - Enable MFA,Govern,https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-mfa-get-started?WT.mc_id=devops_userstory_service_sprg-inproduct-devopsportal - Enable MFA
+4954,5126,Task,2,,8 - Using security defaults,Govern,https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults?WT.mc_id=devops_userstory_service_sprg-inproduct-devopsportal - What are security defaults?
+4955,5127,Task,2,,"1 - Governance, security and compliance in Azure",Govern,https://docs.microsoft.com/azure/cloud-adoption-framework/ready/azure-setup-guide/govern-org-compliance?tabs=AzurePolicy?WT.mc_id=devops_userstory_service_sprg-inproduct-devopsportal
+4956,5137,Task,2,,3 - Azure Express Route | Tutorial: Create and modify an Express Route circuit,Govern,Tutorial: Create and modify an Express Route circuit
+4957,5106,Task,2,,3 - Scale subscriptions,Ready,https://docs.microsoft.com/azure/cloud-adoption-framework/ready/azure-best-practices/scale-subscriptions?WT.mc_id=devops_userstory_service_sprg-inproduct-devopsportal - Scale subscriptions
+4958,5107,Task,2,,7 - Virtual Networking planning,Ready,https://docs.microsoft.com/en-us/azure/virtual-network/virtual-network-vnet-plan-design-arm
+4959,5107,Task,2,,8 - Azure VPN Gateway,Ready,https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways
+4960,5106,Task,2,,4 - Organize subscriptions,Ready,https://docs.microsoft.com/azure/cloud-adoption-framework/ready/azure-setup-guide/organize-resources?WT.mc_id=devops_userstory_service_sprg-inproduct-devopsportal
+4961,5106,Task,2,,5 - Organize Resources,Ready,https://docs.microsoft.com/azure/governance/management-groups/overview?WT.mc_id=devops_userstory_service_sprg-inproduct-devopsportal
+4962,5128,Task,2,,1 - Use resource locks to protect resources (MS Learn),Govern,https://docs.microsoft.com/learn/modules/control-and-organize-with-azure-resource-manager/6-use-resource-locks-to-protect-resources?WT.mc_id=devops_userstory_service_sprg-inproduct-devopsportal
+4963,5132,Task,2,,1 - Manage costs and billing for your Azure resources,Govern,https://docs.microsoft.com/azure/cloud-adoption-framework/ready/azure-setup-guide/manage-costs?WT.mc_id=devops_userstory_service_sprg-inproduct-devopsportal
+4964,5132,Task,2,,2 - What is Azure Cost Management and Billing?,Govern,https://docs.microsoft.com/azure/cost-management-billing/cost-management-billing-overview?WT.mc_id=devops_userstory_service_sprg-inproduct-devopsportal
+4965,5132,Task,2,,3 - How to optimize your cloud investment with Azure Cost Management,Govern,https://docs.microsoft.com/azure/cost-management-billing/costs/cost-mgt-best-practices?WT.mc_id=devops_userstory_service_sprg-inproduct-devopsportal
+4966,5128,Task,2,,2 - Tutorial: Create a lock from Azure Portal,Govern,https://docs.microsoft.com/azure/azure-resource-manager/management/lock-resources#portal?WT.mc_id=devops_userstory_service_sprg-inproduct-devopsportal
+4967,5138,Task,2,,2 - Networking Analytics,Govern,https://docs.microsoft.com/en-us/azure/azure-monitor/insights/azure-networking-analytics
+4968,5140,Task,2,,3 - Alerts: Create Metric Alerts for Logs in Azure Monitor,Govern,https://docs.microsoft.com/en-us/azure/azure-monitor/platform/alerts-metric-logs
+4969,5134,Task,2,,3 - Cloud monitoring guide: Collect the right data,Govern,https://docs.microsoft.com/en-gb/azure/cloud-adoption-framework/manage/monitor/data-collection
+4970,5113,Task,2,,2 - Sustainability reporting tool,Strategy,Tool: https://appsource.microsoft.com/product/power-bi/coi-sustainability.sustainability_dashboard?WT.mc_id=devops_userstory_service_sprg-inproduct-devopsportal
+4971,5106,Task,2,,6 - Creating additional subscriptions,Ready,"https://docs.microsoft.com/en-us/azure/cost-management-billing/manage/create-subscription
+"
+4972,5110,Task,2,,2 - Dependency Analysis with Azure Migrate,Plan,Azure Migrate Dependency Analysis: https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization
+4973,5108,Task,2,,4 - RBAC Roles,Ready,https://docs.microsoft.com/azure/cloud-adoption-framework/ready/considerations/roles?WT.mc_id=devops_userstory_service_sprg-inproduct-devopsportal
+4974,5124,Task,2,,1 - How does Azure Work,Ready,The basics of Azure: https://docs.microsoft.com/azure/cloud-adoption-framework/get-started/what-is-azure?WT.mc_id=devops_userstory_service_sprg-inproduct-devopsportal
+4975,5107,Task,2,,9 - Create Virtual Networks,Ready,https://docs.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm
+4976,5124,Task,2,,2 - Terminologies,Ready,https://docs.microsoft.com/azure/cloud-adoption-framework/ready/considerations/fundamental-concepts#azure-terminology?WT.mc_id=devops_userstory_service_sprg-inproduct-devopsportal
+4977,5124,Task,2,,3 - Portfolio Hierarchy,Ready,https://docs.microsoft.com/azure/cloud-adoption-framework/reference/fundamental-concepts/hosting-hierarchy?WT.mc_id=devops_userstory_service_sprg-inproduct-devopsportal
+4978,5124,Task,2,,4 - Subscription purposes,Ready,https://docs.microsoft.com/azure/cloud-adoption-framework/ready/considerations/fundamental-concepts#azure-subscription-purposes?WT.mc_id=devops_userstory_service_sprg-inproduct-devopsportal
+4979,5124,Task,2,,5 - Principles of Resource Groups,Ready,https://docs.microsoft.com/azure/azure-resource-manager/management/manage-resource-groups-portal#create-resource-groups?WT.mc_id=devops_userstory_service_sprg-inproduct-devopsportal
+4980,5124,Task,2,,6 - Azure administrative roles,Ready,https://docs.microsoft.com/azure/cloud-adoption-framework/ready/considerations/fundamental-concepts#azure-administrative-roles?WT.mc_id=devops_userstory_service_sprg-inproduct-devopsportal
+4981,5124,Task,2,,7 - Azure Monitoring and Security on Governance,Ready,Monitoring and Security are important topics on Governance. On Azure those topics are covered by: *
+4982,5124,Task,2,,8 - Review Data Options,Ready,"When you prepare your landing zone environment for your cloud adoption, you need to determine the data requirements for hosting your workloads.
+"
+4983,5124,Task,2,,9 - Review Storage Options,Ready,"Storage capabilities are critical for supporting workloads and services that are hosted in the cloud.
+"
+4984,5124,Task,2,,10 - Review Network  Options,Ready,"Designing and implementing Azure networking capabilities is a critical part of your cloud adoption efforts
+"
+4985,5124,Task,2,,11 - Review Compute Options,Ready,"Determining the compute requirements for hosting your workloads is a key consideration as you prepare for your cloud adoption.
+"
+4986,5124,Task,2,,12 - Role-based Access Control,Ready,"Overview of role-based access control
+"
+4987,5137,Task,2,,4 - Azure Express Route | Prerequisites & Checklist,Govern,https://docs.microsoft.com/en-us/azure/expressroute/expressroute-prerequisites
+4988,5127,Task,2,,2 - Define IT compliance with Azure Policy,Govern,https://docs.microsoft.com/learn/modules/intro-to-governance/2-azure-policy?WT.mc_id=devops_userstory_service_sprg-inproduct-devopsportal - Define IT compliance with AzurePolicy
+4989,5108,Task,2,,5 - Secure resources with RBAC,Ready,https://docs.microsoft.com/learn/modules/control-and-organize-with-azure-resource-manager/5-role-based-access?WT.mc_id=devops_userstory_service_sprg-inproduct-devopsportal
+4990,5139,Task,2,,3 - Visualizations: Feed Power BI from Application Insights,Govern,https://docs.microsoft.com/en-us/azure/azure-monitor/app/export-power-bi
+4991,5136,Task,2,,4 - Logs querying: Tutorial - Create alert from log query,Govern,https://docs.microsoft.com/en-us/azure/azure-monitor/learn/tutorial-response
+4992,5106,Task,2,,7 - Associate or add an Azure subscription to you AAD Tenant,Ready,https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory?WT.mc_id=devops_userstory_service_sprg-inproduct-devopsportal
+4993,5107,Task,2,,10 - Create a Perimeter Network,Ready,https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz
+4994,5108,Task,2,,6 - Differences on RBAC Roles and Azure AD Roles,Ready,https://docs.microsoft.com/azure/role-based-access-control/rbac-and-directory-admin-roles?WT.mc_id=devops_userstory_service_sprg-inproduct-devopsportal
+4995,5138,Task,2,,3 - DNS,Govern,https://docs.microsoft.com/en-us/azure/azure-monitor/insights/dns-analytics
+4996,5140,Task,2,,"4 - Alerts: Create, view and manage alerts based on Activity Log signals",Govern,https://docs.microsoft.com/en-gb/azure/azure-monitor/platform/alerts-activity-log
+4997,5104,Task,2,,2 - Subscription decision guides,Ready,https://docs.microsoft.com/azure/cloud-adoption-framework/decision-guides/subscriptions/?WT.mc_id=devops_userstory_service_sprg-inproduct-devopsportal - Subscription decision guide
+4998,5134,Task,2,,4 - Cloud monitoring guide: Alerting,Govern,https://docs.microsoft.com/en-gb/azure/cloud-adoption-framework/manage/monitor/alerting
+4999,5135,Task,2,,1 - Azure Application Insights | Getting Started with Application Insights,Govern,https://docs.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview#get-started
+5000,5133,Task,2,,1 - Azure Resource Graph Explorer,Govern,https://docs.microsoft.com/azure/governance/resource-graph/first-query-portal?WT.mc_id=devops_userstory_service_sprg-inproduct-devopsportal - Azure Resource Graph Explorer
+5001,5133,Task,2,,2 - Tutorial: Create and share an Azure Resource Graph query in the Azure portal,Govern,https://docs.microsoft.com/azure/governance/resource-graph/tutorials/create-share-query?WT.mc_id=devops_userstory_service_sprg-inproduct-devopsportal
+5002,5133,Task,2,,3 - Starter Resource Graph query samples,Govern,https://docs.microsoft.com/azure/governance/resource-graph/samples/starter?WT.mc_id=devops_userstory_service_sprg-inproduct-devopsportal&tabs=azure-portal
+5003,5133,Task,2,,6 - Advanced Resource Graph query samples,Govern,https://docs.microsoft.com/azure/governance/resource-graph/samples/advanced?tabs=azure-portal?WT.mc_id=devops_userstory_service_sprg-inproduct-devopsportal
+5004,5133,Task,2,,4 - Starter Resource Graph query samples,Govern,https://docs.microsoft.com/azure/governance/resource-graph/samples/starter?WT.mc_id=devops_userstory_service_sprg-inproduct-devopsportal&tabs=azure-portal - Starter Resource Graph query samples
+5005,5133,Task,2,,5 - Advanced Resource Graph query samples,Govern,https://docs.microsoft.com/azure/governance/resource-graph/samples/advanced?tabs=azure-portal?WT.mc_id=devops_userstory_service_sprg-inproduct-devopsportal
+5006,5133,Task,2,,7 - Understanding the Azure Resource Graph query language,Govern,https://docs.microsoft.com/azure/governance/resource-graph/concepts/query-language?WT.mc_id=devops_userstory_service_sprg-inproduct-devopsportal
+5007,5133,Task,2,,8 - Explore your Azure resources with Resource Graph,Govern,https://docs.microsoft.com/azure/governance/resource-graph/concepts/explore-resources?WT.mc_id=devops_userstory_service_sprg-inproduct-devopsportal
+5008,5133,Task,2,,9 - Azure Resource Graph security baseline for Azure Security Benchmark,Govern,https://docs.microsoft.com/azure/governance/resource-graph/concepts/azure-security-benchmark-baseline?WT.mc_id=devops_userstory_service_sprg-inproduct-devopsportal
+5009,5133,Task,2,,10 - Get resource changes,Govern,Get resource changes - https://docs.microsoft.com/azure/governance/resource-graph/how-to/get-resource-changes?WT.mc_id=devops_userstory_service_sprg-inproduct-devopsportal
+5010,5108,Task,2,,7 - Tutorial: Add or remove role assignments using Azure RBAC and the Azure portal,Ready,https://docs.microsoft.com/azure/role-based-access-control/role-assignments-portal?WT.mc_id=devops_userstory_service_sprg-inproduct-devopsportal
+5011,5137,Task,2,,5 - Azure Express Route | Connectivity Models,Govern,https://docs.microsoft.com/en-us/azure/expressroute/expressroute-connectivity-models
+5012,5110,Task,2,,3 - Dependency Analysis with AppDynamics,Plan,"http://aka.ms/cafappd
+"
+5013,5106,Task,2,,8 - Creating Subscriptions Programmatically,Ready,"https://docs.microsoft.com/en-us/azure/cost-management-billing/manage/programmatically-create-subscription?tabs=rest
+"
+5014,5136,Task,2,,5 - Logs querying: Azure Monitor log query examples,Govern,https://docs.microsoft.com/en-us/azure/azure-monitor/log-query/examples
+5015,5107,Task,2,,11 - Deploy highly available network virtual appliances,Ready,"NVA provides a secure network boundary by checking all inbound and outbound network traffic and passing only the traffic that meets network security rules
+"
+5016,5113,Task,2,,"3 - Implementation and application of OKRs (objectives, key results)",Strategy,"Workboard - https://www.workboard.com/ is a potential partner to support in the implementation and adoption of OKRs to help drive alignment and accountability across the organizations.
+"
+5017,5127,Task,2,,3 - Organize policy with initiatives,Govern,https://docs.microsoft.com/learn/modules/intro-to-governance/3-initiatives?WT.mc_id=devops_userstory_service_sprg-inproduct-devopsportal - Organize policy with initiatives
+5018,5106,Task,2,,9 - Organizing resources with management groups,Ready,Management Groups: https://docs.microsoft.com/azure/cloud-adoption-framework/ready/azure-best-practices/organize-subscriptions?WT.mc_id=devops_userstory_service_sprg-inproduct-devopsportal
+5019,5106,Task,2,,10 - Tutorial: Create an additional Azure subscription,Ready,How to:https://docs.microsoft.com/azure/cost-management-billing/manage/create-subscription?WT.mc_id=devops_userstory_service_sprg-inproduct-devopsportal
+5020,5127,Task,2,,4 - Use policies to enforce standards,Govern,https://docs.microsoft.com/learn/modules/control-and-organize-with-azure-resource-manager/4-use-policies-to-enforce-standards?WT.mc_id=devops_userstory_service_sprg-inproduct-devopsportal
+5021,5125,Task,2,,3 - Microsoft Enterprise Skills Initiative,Ready,"Work with your Microsoft Account team:
+https://techskillsforbusiness.microsoft.com/about/
+
+"
+5022,5139,Task,2,,4 - Visualizations: Monitor your Azure services in Grafana,Govern,https://docs.microsoft.com/en-us/azure/azure-monitor/platform/grafana-plugin
+5023,5134,Task,2,,5 - Cloud monitoring guide: Monitoring platforms overview,Govern,https://docs.microsoft.com/en-gb/azure/cloud-adoption-framework/manage/monitor/platform-overview
+5024,5140,Task,2,,5 - Alerts: Creating action groups for notifications,Govern,https://docs.microsoft.com/en-gb/azure/azure-monitor/platform/action-groups
+5025,5138,Task,2,,4 - Network Performance Monitor,Govern,https://docs.microsoft.com/en-us/azure/azure-monitor/insights/network-performance-monitor
+5026,5138,Task,2,,5 - Monitor and troubleshoot your end-to-end Azure network infrastructure by using network monitoring tools (MS Learn),Govern,https://docs.microsoft.com/en-us/learn/modules/troubleshoot-azure-network-infrastructure/
+5027,5134,Task,2,,6 - Monitor Azure Service,Govern,https://docs.microsoft.com/en-us/azure/azure-monitor/insights/monitor-azure-resource
+5028,5134,Task,2,,7 - Monitor resource groups,Govern,https://docs.microsoft.com/en-us/azure/azure-monitor/insights/resource-group-insights
+5029,5134,Task,2,,8 - Logic Apps: How to trigger complex actions with Azure Monitor alerts,Govern,https://docs.microsoft.com/en-us/azure/azure-monitor/platform/action-groups-logic-app
+5030,5134,Task,2,,9 - Monitoring Azure virtual machines with Azure Monitor,Govern,https://docs.microsoft.com/en-us/azure/azure-monitor/insights/monitor-vm-azure
+5031,5134,Task,2,,10 - What is Azure Monitor for VMs,Govern,https://docs.microsoft.com/en-us/azure/azure-monitor/insights/vminsights-overview
+5032,5134,Task,2,,11 - Tutorial: Monitor an Azure Virtual Machine with Azure Monitor,Govern,https://docs.microsoft.com/en-us/azure/azure-monitor/learn/quick-monitor-azure-vm
+5033,5134,Task,2,,12 - Azure Monitor for Containers,Govern,https://docs.microsoft.com/en-us/azure/azure-monitor/insights/container-insights-overview
+5034,5134,Task,2,,13 - Logs querying: Log data ingestion time in Azure Monitor,Govern,https://docs.microsoft.com/en-us/azure/azure-monitor/platform/data-ingestion-time
+5035,5134,Task,2,,14 - Analyze your Azure infrastructure by using Azure Monitor logs (MS Learn),Govern,https://docs.microsoft.com/en-us/learn/modules/analyze-infrastructure-with-azure-monitor-logs/
+5036,5134,Task,2,,15 - Tutorial: Monitor an Azure resource with Azure Monitor,Govern,https://docs.microsoft.com/en-us/azure/azure-monitor/learn/quick-monitor-azure-resource
+5037,5127,Task,2,,5 - Tutorial: Create a policy assignment to identify non-compliant resources,Govern,https://docs.microsoft.com/azure/governance/policy/assign-policy-portal?WT.mc_id=devops_userstory_service_sprg-inproduct-devopsportal
+5038,5132,Task,2,,4 - Tutorial: Create and manage Azure budgets,Govern,https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-create-budgets?WT.mc_id=devops_userstory_service_sprg-inproduct-devopsportal
+5039,5107,Task,2,,12 - Tutorial: Create a Site to Site connection,Ready,https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-howto-site-to-site-resource-manager-portal Tutorial: Create a Site to Site connection
+5040,5136,Task,2,,6 - Logs querying: Writing efficient log queries,Govern,https://docs.microsoft.com/en-us/azure/azure-monitor/log-query/log-query-performance
+5041,5136,Task,2,,7 - Activity Log: View and retrieve Azure Activity log events,Govern,https://docs.microsoft.com/en-us/azure/azure-monitor/platform/activity-log-view
+5042,5107,Task,2,,13 - Tutorial: Create a Point to Site VPN (OpenVPN),Ready,https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-howto-openvpn
+5043,5136,Task,2,,8 - Tutorial: Collect and analyze resource logs from an Azure resource,Govern,https://docs.microsoft.com/en-us/azure/azure-monitor/learn/tutorial-resource-logs
+5044,5107,Task,2,,14 - Tutorial: Create a Point to Site VPN (Azure AD authentication),Ready,https://docs.microsoft.com/en-us/azure/vpn-gateway/openvpn-azure-ad-tenant
+5045,5107,Task,2,,15 - Tutorial: Create a Point to Site VPN (Radius authentication),Ready,https://docs.microsoft.com/en-us/azure/vpn-gateway/point-to-site-how-to-radius-ps
+5046,5107,Task,2,,16 - Tutorial: Create a Point to Site VPN (Azure certificate authentication),Ready,https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-howto-point-to-site-resource-manager-portal
+5047,5107,Task,2,,17 - Tutorial: Create a Vnet to Vnet VPN,Ready,https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-howto-vnet-vnet-resource-manager-portal
+5048,5107,Task,2,,18 - Tutorial: Create a Site to Site connection,Ready,https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-howto-site-to-site-resource-manager-portal Tutorial: Create a Site to Site connection
+5049,5107,Task,2,,19 - Tutorial: Create and Manage a VPN Gateway,Ready,https://docs.microsoft.com/en-us/azure/vpn-gateway/create-routebased-vpn-gateway-portal
+5050,5107,Task,2,,20 - Tutorial: Connect virtual networks with virtual network peering using the Azure portal,Ready,https://docs.microsoft.com/en-us/azure/virtual-network/tutorial-connect-virtual-networks-portal
+5051,5107,Task,2,,21 - Tutorial: Filter network traffic with a network security group using the Azure portal,Ready,https://docs.microsoft.com/en-us/azure/virtual-network/tutorial-filter-network-traffic
+5052,5132,Task,2,,5 - Tutorial: Create and manage exported data,Govern,https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-export-acm-data?WT.mc_id=devops_userstory_service_sprg-inproduct-devopsportal
+5053,5108,Task,2,,8 - Tutorial: Secure user sign-in events with Azure Multi-Factor Authentication,Ready,https://docs.microsoft.com/azure/active-directory/authentication/tutorial-enable-azure-mfa?WT.mc_id=devops_userstory_service_sprg-inproduct-devopsportal
+5054,5132,Task,2,,6 - Tutorial: Optimize costs from recommendations,Govern,https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations?WT.mc_id=devops_userstory_service_sprg-inproduct-devopsportal
+5055,5132,Task,2,,7 - Tutorial: Predict costs and optimize spending for Azure,Govern,https://docs.microsoft.com/learn/modules/predict-costs-and-optimize-spending/ - Predict costs and optimizespending for Azure (MS Learn)
+5056,5117,Task,2,,1 - Cloud Adoption Framework Governance Benchmark Tool,Govern,https://cafbaseline.com?WT.mc_id=devops_userstory_service_sprg-inproduct-devopsportal .
+5057,5117,Task,2,,"2 - AzGovViz (Azure Governance Visualizer), enables you to get insight into your Azure environment",Govern,https://github.com/julianhayward/azure-mg-sub-governance-reporting?WT.mc_id=devops_userstory_service_sprg-inproduct-devopsportal
+5058,5141,Task,2,,2 - Annotate your data,Govern,"https://docs.microsoft.com/en-us/azure/data-catalog/data-catalog-how-to-annotate?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json
+"
+5059,5141,Task,2,,1 - Classify data,Govern,"https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/govern/policy-compliance/data-classification
+"
+5060,5114,Task,2,,1 - Microsoft Cloud Economic Assessment,Strategy,"Various partner offerings in Azure MarketPlace: https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services?search=economic%20assessment&page=1
+"
+5061,5105,Task,2,,4 - Evaluate Enterprise-Scale,Ready,"Microsoft's prescriptive guidance to establish policy-based landing zone. 
+https://docs.microsoft.com/azure/cloud-adoption-framework/ready/enterprise-scale/
+
+"
+5062,5105,Task,2,,3 - Evaluate Terraform Landing Zone,Ready,"https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/terraform-landing-zone
+"
+5063,5105,Task,2,,2 - Evaluate the CAF Foundation and Migrate Landing Zone blueprint,Ready,"Evaluate the CAF Migrate Landing Zone blueprint or the Terraform Landing Zone.
+"
+5064,5105,Task,2,,"1 - Decide on the path to create landing zone. Start Small and Growth, Enterprise Scale or Partner",Ready,"Update the landing zone: https://docs.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone/
+"
+5065,5109,Task,2,,3 - Map Skills needed for Cloud organization,Plan,Map roles and skills: https://docs.microsoft.com/azure/cloud-adoption-framework/plan/suggested-skills?WT.mc_id=devops_userstory_service_sprg-inproduct-devopsportal
+5066,5124,Task,2,,13 - Azure for GCP Professionals,Ready,Azure for GCP Professionals: https://docs.microsoft.com/azure/architecture/gcp-professional/?WT.mc_id=devops_userstory_service_sprg-inproduct-devopsportal
+5067,5124,Task,2,,13 - Azure for AWS Professionals,Ready,Azure for AWS Professionals: https://docs.microsoft.com/azure/architecture/aws-professional/?WT.mc_id=devops_userstory_service_sprg-inproduct-devopsportal
+5068,5109,Task,2,,2 - Review skills needed for Cloud organization and build readiness plan,Plan,Build a readiness plan: https://docs.microsoft.com/azure/cloud-adoption-framework/plan/adapt-roles-skills-processes?WT.mc_id=devops_userstory_service_sprg-inproduct-devopsportal
+5069,,Task,2,,3 - Understand and align the portfolio hierarchy,Govern,https://docs.microsoft.com/azure/cloud-adoption-framework/reference/fundamental-concepts/hosting-hierarchy?WT.mc_id=devops_userstory_service_sprg-inproduct-devopsportal
+5070,,Task,2,,8 - Microsoft Learn: Azure Fundamentals Learning Path,Govern,https://docs.microsoft.com/learn/paths/azure-fundamentals/?WT.mc_id=devops_userstory_service_sprg-inproduct-devopsportal - Azure fundamentals
+5071,5121,Task,2,,3 - Use the Azure Security Benchmark as the foundational security policy set,Govern,https://docs.microsoft.com/azure/security/benchmarks/overview
+5072,5109,Task,2,,1- Define team structures for the cloud. Cloud based organization,Plan,https://docs.microsoft.com/azure/cloud-adoption-framework/plan/initial-org-alignmenthttps://docs.microsoft.com/azure/cloud-adoption-framework/organize/
+5073,5119,Task,2,,4 - Define budgets and budget alerts,Govern,"Setup budgets by various scopes and alerting on the budgets: reference here
+
+ARM Template on Github: https://github.com/Azure/azure-quickstart-templates/tree/master/create-budget/
+"
+5074,5119,Task,2,,3 - Identify accountability for billing and cost attribution,Govern,"Accountability and access to the data: reference here
+"
+5075,5115,Task,2,,1 - Build list of applications / workloads destined for Cloud,Strategy,https://docs.microsoft.com/azure/cloud-adoption-framework/strategy/balance-the-portfolio?WT.mc_id=devops_userstory_service_sprg-inproduct-devopsportal
+5076,5123,Task,2,,2 - Update the Cloud Adoption Plan,Govern,"Once you have determined which policies need to be applied, be sure to update the Cloud Adoption Plan"
+5077,5122,Task,2,,2 - Update the Cloud Adoption Plan,Govern,"Once you have determined which policies need to be applied, be sure to update the Cloud Adoption Plan"
+5078,5121,Task,2,,2 - Update the Cloud Adoption Plan,Govern,"Once you have determined which policies need to be applied, be sure to update the Cloud Adoption Plan"
+5079,5120,Task,2,,2 - Update the Cloud Adoption Plan,Govern,"Once you have determined which policies need to be applied, be sure to update the Cloud Adoption Plan"
+5080,5119,Task,2,,2 - Update the Cloud Adoption Plan,Govern,"Once you have determined which policies need to be applied, be sure to update the Cloud Adoption Plan"
+5081,5123,Task,2,,1 - Review the sample policies,Govern,"A default set of policies have been defined for the MVP, review these policies in the Cloud Adoption Framework documentation"
+5082,5122,Task,2,,1 - Review the sample policies,Govern,"A default set of policies have been defined for the MVP, review these policies in the Cloud Adoption Framework documentation"
+5083,5121,Task,2,,1 - Review the sample policies,Govern,"A default set of policies have been defined for the MVP, review these policies in the Cloud Adoption Framework documentation"
+5084,5120,Task,2,,1 - Review the sample policies,Govern,"A default set of policies have been defined for the MVP, review these policies in the Cloud Adoption Framework documentation"
+5085,5119,Task,2,,1 - Review the sample policies,Govern,"A default set of policies have been defined for the MVP, review these policies in the Cloud Adoption Framework documentation"
+5086,5118,Task,2,,2 - Update Cloud Adoption Plan with risks and compliance requirements,Govern,"Post gap identification, and the evaluation of the risk which need to be mititgated we need to ensure that this is documented within the plan."
+5087,5118,Task,2,,1 - Reference data for Control Mapping for specific compliance requirements,Govern,"Control mapping for Azure Blueprint / Policy. Blueprint samples
+"
+5088,5111,Task,2,,3 - Document Members of the Cloud Teams in Cloud Adoption Plan,Plan,"https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/organize/
+"
+5089,5111,Task,2,,"2 - Skills Readiness Plan for Developers, IT Staff and Business Users",Plan,Map out the new skills required for Cloud Adoption across the organization:https://docs.microsoft.com/azure/cloud-adoption-framework/plan/suggested-skills
+5090,5111,Task,2,,1 - Prioritize workloads and projects,Plan,"Define and prioritize workloads in the backlog for the adoption projects
+"
+5091,5104,Task,2,,11 - Azure Naming and Tagging Convention,Ready,Recommended naming and tagging conventions: https://docs.microsoft.com/azure/cloud-adoption-framework/ready/azure-setup-guide/organize-resources?tabs=NamingStandards
+5092,5104,Task,2,,10 - Automation and Planning for a DevOps approach,Ready,Platform Automation : https://docs.microsoft.com/azure/cloud-adoption-framework/ready/enterprise-scale/platform-automation-and-devops
+5093,5104,Task,2,,9 - BCDR Design Considerations,Ready,Design considerations as per Enteprise Scale: https://docs.microsoft.com/azure/cloud-adoption-framework/ready/enterprise-scale/business-continuity-and-disaster-recovery
+5094,5104,Task,2,,8 - Compliance and Policy Enforcement Decision Guide,Ready,Compliance and Policy Enforcement Decision Guidehttps://docs.microsoft.com/azure/cloud-adoption-framework/decision-guides/policy-enforcement/
+5095,5104,Task,2,,7 - Security Decision Guide and Best practices,Ready,https://docs.microsoft.com/azure/cloud-adoption-framework/security/security-top-10
+5096,5104,Task,2,,6 - Monitoring Decision Guide,Ready,"All organizations need mechanisms for notifying IT teams of performance, uptime, and security issues before they become serious problems.  Logging and reporting decision guide
+"
+5097,5104,Task,2,,5 - Policy Enforcement Decision Guide,Ready,https://docs.microsoft.com/azure/cloud-adoption-framework/decision-guides/policy-enforcement/
+5098,5104,Task,2,,4 - Network Decision Guide,Ready,https://docs.microsoft.com/azure/cloud-adoption-framework/decision-guides/software-defined-network/
+5099,5104,Task,2,,3 - Identity Decision Guide,Ready,"Identity and access management (IAM) services enable you to manage access control in the cloud
+"
+5100,,Test Plan,,,Test - Created from Form Request bikeconnect10 & 6/17/2020 4:51:16 PM,,Created new work item - wayneme@microsoft.com & bikeconnect107
+5101,,Test Plan,,,Test - Created from Form Request AMIT & 6/15/2020 6:20:25 PM,,Created new work item - wayneme@microsoft.com & AMIT
+5102,,Test Plan,,,Test - Created from Form Request 6/15/2020 5:19:23 PM,,Created new work item - wayneme@microsoft.com & Climber_App
+5103,,Test Plan,,,Test - Created from Form Request 6/15/2020 5:17:21 PM,,Created new work item - wayneme@microsoft.com & CoffeeNet
+5104,4905,User Story,2,Business,1 - Architectural Decision Guide,Ready,"Update Cloud Adoption Framework Ready and Adopt doc.
+"
+5105,4905,User Story,2,Business,2 - Landing zone considerations,Ready,"Review landing zone considerations to understand the alternative decisions which could impact your landing zone design.
+"
+5106,4905,User Story,2,Business,3 - Create Azure Subscriptions,Ready,"Start your Azure adoption by creating an initial set of subscriptions. Learn what subscriptions you should begin with based on your initial requirements.
+"
+5107,4905,User Story,2,Business,4 - Establish your Network,Ready,"Hub and spoke is a networking model for more efficient management of common communication or security requirements. It also helps avoid Azure subscription limitations.
+"
+5108,4905,User Story,3,Business,5 - Identity and Access Management,Ready,https://docs.microsoft.com/azure/role-based-access-control/overview?WT.mc_id=devops_userstory_service_sprg-inproduct-devopsportal - What is RBAC
+5109,4906,User Story,2,Business,1 - Initial organizational alignment,Plan,"Establish a plan for organizational alignment, included defined RACI diagrams.
+"
+5110,4906,User Story,2,Business,2 - Digital Estate,Plan,Inventory digital estate and align outcomes. https://docs.microsoft.com/azure/cloud-adoption-framework/digital-estate/inventory?WT.mc_id=devops_userstory_service_sprg-inproduct-devopsportal
+5111,4906,User Story,2,Business,3 - Update the Cloud Adoption Plan,Plan,"Plan template cloud adoption plan to manage effort and change.
+"
+5112,4907,User Story,2,Business,1 - Motivations,Strategy,"Meet with key stakeholders and executives to document the motivations which are driving an interest in cloud adoption.
+Consider classifying your priorities by horizon 1, 2 and 3.
+"
+5113,4907,User Story,2,Business,2 - Business Outcomes,Strategy,"Engage motivated stakeholders and executives to document specific business outcomes.
+"
+5114,4907,User Story,2,Business,3 - Business Case,Strategy,"Develop a business case to validate the financial model supporting the motivations and outcomes.
+"
+5115,4907,User Story,2,Business,4 - Adoption Project(s),Strategy,Identify all the workloads / projects and update the Cloud Adoption Plan
+5116,4907,User Story,2,Business,"5 - Who will deploy your environment. Self-build, Microsoft Services or Partner",Strategy,Check out the Cloud Adoption Framework partner offers: http://aka.ms/adopt/partneroffers?WT.mc_id=devops_userstory_service_sprg-inproduct-devopsportal
+5117,4908,User Story,2,Business,1 - Cloud Adoption Framework Governance Benchmark tool,Govern,"Leverage the governance benchmark tool to determine current governance requirements and gap.
+
+Tool can be found here
+"
+5118,4908,User Story,2,Business,"2 - Identify business risks across apps, data and infrastructure",Govern,"Identify risks and convert risks into policies and compliance statements
+"
+5119,4908,User Story,2,Business,3 - Cost Management Discipline,Govern,"https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/govern/cost-management/policy-statements
+"
+5120,4908,User Story,2,Business,4 - Resource Consistency Discipline,Govern,"https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/govern/resource-consistency/policy-statements
+"
+5121,4908,User Story,2,Business,5 - Security Baseline Discipline,Govern,"https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/govern/security-baseline/policy-statements
+"
+5122,4908,User Story,2,Business,6 - Identity Baseline Discipline,Govern,"https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/govern/identity-baseline/policy-statements
+"
+5123,4908,User Story,2,Business,7 - Deployment Acceleration Discipline,Govern,"https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/govern/deployment-acceleration/policy-statements
+"
+5124,4904,User Story,2,Business,1 - Azure Fundamentals,Ready,"Azure Fundamentals: Review the Azure Readiness Guide to become familiar with the tools and approaches needed in landing zone creation.
+"
+5125,4904,User Story,2,Business,2 - Skills readiness plan,Ready,"Create a plan for addressing skills readiness gaps.
+
+
+
+Azure quickstart ARM templates: https://github.com/Azure/azure-quickstart-templates
+"
+5126,4909,User Story,2,Business,1 - Azure Active Directory Basics,Govern,Azure Active Directory Basics
+5127,4909,User Story,2,Business,2 - Azure Policy,Govern,https://docs.microsoft.com/azure/governance/policy/overview?WT.mc_id=devops_userstory_service_sprg-inproduct-devopsportal - What is Azure Policy
+5128,4909,User Story,2,Business,3 - Resource Locks,Govern,https://docs.microsoft.com/azure/azure-resource-manager/management/lock-resources?WT.mc_id=devops_userstory_service_sprg-inproduct-devopsportal - Lock resources to preventunexpected changes
+5129,4909,User Story,2,Business,4 - Azure Blueprints,Govern,https://docs.microsoft.com/azure/governance/blueprints/overview?WT.mc_id=devops_userstory_service_sprg-inproduct-devopsportal - What is Azure Blueprints?
+5130,4909,User Story,2,Business,5 - Azure Service Health,Govern,https://docs.microsoft.com/azure/service-health/overview?WT.mc_id=devops_userstory_service_sprg-inproduct-devopsportal - What is Azure Service Health?
+5131,4909,User Story,2,Business,6 - Azure Advisor,Govern,https://docs.microsoft.com/azure/advisor/advisor-overview?WT.mc_id=devops_userstory_service_sprg-inproduct-devopsportal - Introduction to Azure Advisor
+5132,4909,User Story,2,Business,7 - Azure Cost Management,Govern,Azure Governance | Azure Cost Management
+5133,4909,User Story,2,Business,8 - Azure Resource Graph,Govern,https://docs.microsoft.com/azure/governance/resource-graph/overview?WT.mc_id=devops_userstory_service_sprg-inproduct-devopsportal - What is Azure Resource Graph?
+5134,4909,User Story,2,Business,9 - Azure Monitor,Govern,"https://docs.microsoft.com/en-gb/azure/cloud-adoption-framework/manage/monitor/
+"
+5135,4909,User Story,2,Business,10 - Application Insights,Govern,"https://docs.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview
+"
+5136,4909,User Story,2,Business,11 - Log Analytics,Govern,"https://docs.microsoft.com/en-us/azure/azure-monitor/log-query/log-query-overview
+"
+5137,4909,User Story,2,Business,12 - Express Route,Govern,"Express Route
+"
+5138,4909,User Story,2,Business,14 - Network Watcher,Govern,"https://docs.microsoft.com/en-us/azure/network-watcher/
+"
+5139,4909,User Story,2,Business,13 - Visualizing your data,Govern,"Visualizations
+"
+5140,4909,User Story,2,Business,15 - Alerting,Govern,"https://docs.microsoft.com/en-us/azure/azure-monitor/platform/alerts-overview
+"
+5141,4908,User Story,2,Business,8 - Data Governance,Govern,"https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/govern/policy-compliance/data-classification
+"
