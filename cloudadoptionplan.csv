@@ -1,0 +1,183 @@
+﻿Project: Cloud Adoption Plan    Server: dev.azure.com/wayneme    Query: all items    List type: Flat    ,,,,,,,
+ID,Parent,Work Item Type,Priority,Value Area,Title,Tags,Description
+4807,,Epic,2,Business,Cloud Adoption Strategy,Strategy,Cloud Adoption Strategy
+4808,,Epic,2,Business,Cloud Adoption Plan,Plan,Cloud Adoption Plan
+4809,,Epic,2,Business,Cloud Ready,Ready,Cloud Ready
+4810,,Epic,2,Business,Cloud Innovation,Innovation,Cloud Innovation
+4811,,Epic,2,Business,Cloud Migration,Migration,Cloud Migration
+4812,4811,Feature,2,Business,First Workload,First Workload,"Migrate the first workload to learn and refine your migration process.
+"
+4813,4811,Feature,2,Business,First Host,First Host,"Migrate your first VMWare Host
+"
+4814,4811,Feature,1,Business,Workload Template,Workload Template,"Using Excel's Team add-on, copy all work items with the tag ""Workload Template"". Past those tags in the excel table & change the Tags & the name of the feature to match your workload's name."
+4815,4809,Feature,2,Business,Landing zone creation,Ready,Landing zone creation
+4816,4808,Feature,2,Business,Define the Cloud Adoption Plan,Plan,Define the Cloud Adoption Plan
+4817,4807,Feature,2,Business,Define Adoption Strategy,Strategy,Define Adoption Strategy
+4818,4895,Task,2,,Prioritize workloads,Plan,"Define and prioritize workloads in the backlog
+"
+4819,4895,Task,2,,Align assets to workloads,Plan,"Ensure that all assets are aligned to at least one workload
+"
+4820,4895,Task,2,,Define iterations and releases,Plan,"Update the iteration path of each workload to define iterations of work and iterations of production workload releases.
+"
+4821,4895,Task,2,,Create timelines,Plan,"Create timelines to align expectations across the business and IT teams.
+"
+4822,4882,Task,2,,Review test results,Workload Template,"Review results of the workload test to evaluate data and proper sizing https://docs.microsoft.com/en-us/azure/architecture/cloud-adoption/migrate/migration-considerations/optimize/optimize
+"
+4823,4881,Task,2,,Set up Azure Monitor to track performance,Workload Template,"Implement Azure monitor to track CPU, Memory, and other performance metrics on VMs"
+4824,4878,Task,2,,Assess,Workload Template,"Evaluate readiness, architecture, cost, and appropriate migration tooling
+Guide: https://docs.microsoft.com/en-us/azure/architecture/cloud-adoption/migrate/azure-migration-guide/assess
+Considerations: https://docs.microsoft.com/en-us/azure/architecture/cloud-adoption/migrate/migration-considerations/assess/
+Decision Tree: https://docs.microsoft.com/en-us/azure/architecture/cloud-adoption/decision-guides/migrate-decision-guide/
+"
+4825,4876,Task,2,,Decisions,Workload Template,"Evaluate decisions that impact migration efforts: https://docs.microsoft.com/en-us/azure/architecture/cloud-adoption/migrate/migration-considerations/prerequisites/decisions
+"
+4826,4884,Task,2,,Power down assets,Workload Template,"Turn off existing VMs https://docs.microsoft.com/en-us/azure/architecture/cloud-adoption/migrate/migration-considerations/optimize/decommission
+"
+4827,4883,Task,2,,Network dependencies,Workload Template,"Validate network traffic based on scale test to identify unplanned dependencies https://docs.microsoft.com/en-us/azure/architecture/cloud-adoption/migrate/migration-considerations/optimize/promote
+"
+4828,4812,Task,2,,Azure Migration Guide,First Workload,"Follow the Azure Migration Guide to deploy the first workload in the cloud adoption plan. https://docs.microsoft.com/en-us/azure/architecture/cloud-adoption/migrate/azure-migration-guide/?tabs=Overview
+"
+4829,4877,Task,2,,Evaluate workload and asset readiness,Workload Template,"https://docs.microsoft.com/en-us/azure/architecture/cloud-adoption/migrate/migration-considerations/assess/evaluate
+"
+4830,4880,Task,2,,Assess,Workload Template,"Evaluate readiness, architecture, cost, and appropriate migration tooling
+Guide: https://docs.microsoft.com/en-us/azure/architecture/cloud-adoption/migrate/azure-migration-guide/assess
+Considerations: https://docs.microsoft.com/en-us/azure/architecture/cloud-adoption/migrate/migration-considerations/assess/
+Decision Tree: https://docs.microsoft.com/en-us/azure/architecture/cloud-adoption/decision-guides/migrate-decision-guide/"
+4831,4879,Task,2,,Assess,Workload Template,"Evaluate readiness, architecture, cost, and appropriate migration tooling
+Guide: https://docs.microsoft.com/en-us/azure/architecture/cloud-adoption/migrate/azure-migration-guide/assess
+Considerations: https://docs.microsoft.com/en-us/azure/architecture/cloud-adoption/migrate/migration-considerations/assess/
+Decision Tree: https://docs.microsoft.com/en-us/azure/architecture/cloud-adoption/decision-guides/migrate-decision-guide/"
+4832,4886,Task,2,,Prerequisites,First Host,"https://docs.azure.cloudsimple.com/migrate-workloads/#prerequisites
+"
+4833,4887,Task,2,,Evaluate migration options used to migrate the first host,First Host,"Determine which approaches are to be supported during iterative migration processes
+"
+4834,4885,Task,2,,Escalate private cloud privileges,First Host,"https://docs.azure.cloudsimple.com/escalate-privileges/
+"
+4835,4885,Task,2,,Configure on-premises DNS for private cloud,First Host,"https://docs.azure.cloudsimple.com/on-premises-dns-setup/
+"
+4836,4886,Task,2,,Migrate ISOs and Templates,First Host,"https://docs.azure.cloudsimple.com/migrate-workloads/#migrate-isos-and-templates
+"
+4837,4879,Task,2,,Migrate,Workload Template,"Leverage the define migration solution to automate migration of the asset to the cloud. This step may be best executed as a single task for all assets associated with this workload.
+Guide https://docs.microsoft.com/en-us/azure/architecture/cloud-adoption/migrate/azure-migration-guide/migrate
+Considerations: https://docs.microsoft.com/en-us/azure/architecture/cloud-adoption/migrate/migration-considerations/migrate/"
+4838,4880,Task,2,,Migrate,Workload Template,"Leverage the define migration solution to automate migration of the asset to the cloud. This step may be best executed as a single task for all assets associated with this workload.
+Guide https://docs.microsoft.com/en-us/azure/architecture/cloud-adoption/migrate/azure-migration-guide/migrate
+Considerations: https://docs.microsoft.com/en-us/azure/architecture/cloud-adoption/migrate/migration-considerations/migrate/"
+4839,4877,Task,2,,Architect workload,Workload Template,"Define future state architecture for the workload: https://docs.microsoft.com/en-us/azure/architecture/cloud-adoption/migrate/migration-considerations/assess/architect
+"
+4840,4812,Task,2,,Select the first workload,First Workload,"Select a first workload that is suitable as a trial run or pilot of your migration process. https://docs.microsoft.com/en-us/azure/architecture/cloud-adoption/digital-estate/rationalize#selecting-the-first-workload
+"
+4841,4883,Task,2,,Security Review,Workload Template,"Validate adherence to security baseline https://docs.microsoft.com/en-us/azure/architecture/cloud-adoption/migrate/migration-considerations/optimize/promote
+"
+4842,4884,Task,2,,Workload monitoring period,Workload Template,"Monitor application performance for a period of time to validate that the application is free of unplanned dependencies on decommissioned assets https://docs.microsoft.com/en-us/azure/architecture/cloud-adoption/migrate/migration-considerations/optimize/decommission
+"
+4843,4876,Task,2,,Roles and Responsibilities,Workload Template,"The various functions required during this migration are represented by one or more members of the team. https://docs.microsoft.com/en-us/azure/architecture/cloud-adoption/migrate/migration-considerations/prerequisites/culture-complexity
+"
+4844,4878,Task,2,,Migrate,Workload Template,"Leverage the define migration solution to automate migration of the asset to the cloud. This step may be best executed as a single task for all assets associated with this workload.
+Guide https://docs.microsoft.com/en-us/azure/architecture/cloud-adoption/migrate/azure-migration-guide/migrate
+Considerations: https://docs.microsoft.com/en-us/azure/architecture/cloud-adoption/migrate/migration-considerations/migrate/
+"
+4845,4881,Task,2,,Manual test with power users,Workload Template,"Observe power users from the business performing manual validation of the workload https://docs.microsoft.com/en-us/azure/architecture/cloud-adoption/migrate/migration-considerations/optimize/business-test
+"
+4846,4882,Task,2,,Decide on optimization timing,Workload Template,"Decide if testing is sufficient to optimize (Or if optimization should happen after promotion) https://docs.microsoft.com/en-us/azure/architecture/cloud-adoption/migrate/migration-considerations/optimize/optimize
+"
+4847,4882,Task,2,,Adjust sizing,Workload Template,"Change the size of the deployed asset https://docs.microsoft.com/en-us/azure/architecture/cloud-adoption/migrate/migration-considerations/optimize/optimize
+"
+4848,4881,Task,2,,Create/select automated test,Workload Template,Use an existing test or create a test script based on power user testing.
+4849,4878,Task,2,,Optimize workload(s),Workload Template,"Test, measure performance, and optimize workloads. When ready promote the workload to production
+Guide: https://docs.microsoft.com/en-us/azure/architecture/cloud-adoption/migrate/azure-migration-guide/optimize-and-transform
+Considerations: https://docs.microsoft.com/en-us/azure/architecture/cloud-adoption/migrate/migration-considerations/optimize/
+"
+4850,4883,Task,2,,Governance Review,Workload Template,"Validate adherence to governance or compliance requirements https://docs.microsoft.com/en-us/azure/architecture/cloud-adoption/migrate/migration-considerations/optimize/promote
+"
+4851,4812,Task,2,,Review Expanded Scope Checklist,First Workload,"Review the expanded scope checklist to identify any scope requirements which would cause significant deviations from the Azure Migration Guide: https://docs.microsoft.com/en-us/azure/architecture/cloud-adoption/migrate/expanded-scope/
+"
+4852,4877,Task,2,,Estimate Cloud Costs,Workload Template,"Estimate cost of the proposed workload. Update the business justification and budget accordingly. https://docs.microsoft.com/en-us/azure/architecture/cloud-adoption/migrate/migration-considerations/assess/estimate
+"
+4853,4880,Task,2,,Optimize workload(s),Workload Template,"Test, measure performance, and optimize workloads. When ready promote the workload to production
+Guide: https://docs.microsoft.com/en-us/azure/architecture/cloud-adoption/migrate/azure-migration-guide/optimize-and-transform
+Considerations: https://docs.microsoft.com/en-us/azure/architecture/cloud-adoption/migrate/migration-considerations/optimize/"
+4854,4879,Task,2,,Optimize workload(s),Workload Template,"Test, measure performance, and optimize workloads. When ready promote the workload to production
+Guide: https://docs.microsoft.com/en-us/azure/architecture/cloud-adoption/migrate/azure-migration-guide/optimize-and-transform
+Considerations: https://docs.microsoft.com/en-us/azure/architecture/cloud-adoption/migrate/migration-considerations/optimize/"
+4855,4886,Task,2,,Migrate VMs using PowerCLI,First Host,"https://docs.azure.cloudsimple.com/migrate-workloads/#migrate-vms-using-powercli
+"
+4856,4886,Task,2,,Migrate VMs using NSX Layer 2 VPN,First Host,"https://docs.azure.cloudsimple.com/migrate-workloads/#migrate-vms-using-nsx-layer-2-vpn
+"
+4857,4879,Task,2,,Secure and Manage,Workload Template,"Ideally governance, security, and operations have each been factored into the operating model for your cloud environments. If they have not, take a moment to validate security and management constraints for this asset.
+Guide: https://docs.microsoft.com/en-us/azure/architecture/cloud-adoption/migrate/azure-migration-guide/secure-and-manage
+Considerations: https://docs.microsoft.com/en-us/azure/architecture/cloud-adoption/migrate/migration-considerations/secure-and-manage/"
+4858,4880,Task,2,,Secure and Manage,Workload Template,"Ideally governance, security, and operations have each been factored into the operating model for your cloud environments. If they have not, take a moment to validate security and management constraints for this asset.
+Guide: https://docs.microsoft.com/en-us/azure/architecture/cloud-adoption/migrate/azure-migration-guide/secure-and-manage
+Considerations: https://docs.microsoft.com/en-us/azure/architecture/cloud-adoption/migrate/migration-considerations/secure-and-manage/"
+4859,4877,Task,2,,Migration tool choice(s),Workload Template,"Evaluate the approach to migrate the workload based on future state architecture decisions https://docs.microsoft.com/en-us/azure/architecture/cloud-adoption/decision-guides/migrate-decision-guide/
+"
+4860,4812,Task,2,,Review Best Practices,First Workload,"Review migration best practices to identify additional technical requirements that would aid in the success of your migration effort: https://docs.microsoft.com/en-us/azure/architecture/cloud-adoption/migrate/azure-best-practices/
+"
+4861,4883,Task,2,,Final test,Workload Template,Validate availability of all assets before production
+4862,4878,Task,2,,Secure and Manage,Workload Template,"Ideally governance, security, and operations have each been factored into the operating model for your cloud environments. If they have not, take a moment to validate security and management constraints for this asset.
+Guide: https://docs.microsoft.com/en-us/azure/architecture/cloud-adoption/migrate/azure-migration-guide/secure-and-manage
+Considerations: https://docs.microsoft.com/en-us/azure/architecture/cloud-adoption/migrate/migration-considerations/secure-and-manage/
+
+"
+4863,4876,Task,2,,Environment readiness (Landing Zone),Workload Template,"Has the cloud migration target been established? Are the necessary migration tools in place? Has a resource organization and naming standard been set for this workload's assets? https://docs.microsoft.com/en-us/azure/architecture/cloud-adoption/migrate/migration-considerations/prerequisites/planning-checklist
+"
+4864,4884,Task,2,,Decommission,Workload Template,"Terminate or resuse the allocated resources https://docs.microsoft.com/en-us/azure/architecture/cloud-adoption/migrate/migration-considerations/optimize/decommission
+"
+4865,4878,Task,2,,Document configuration,Workload Template,Document Configuration of the VM in the User Story
+4866,4881,Task,2,,Scale Test,Workload Template,Execute the test at scale to test asset performance under load.
+4867,4882,Task,2,,Document change,Workload Template,"Record the change in sizing in the parent feature, along with the reason for change"
+4868,4883,Task,2,,Promotion,Workload Template,"Re-route production traffic to deployed assets https://docs.microsoft.com/en-us/azure/architecture/cloud-adoption/migrate/migration-considerations/optimize/promote
+"
+4869,4812,Task,2,,Update the adoption plan,First Workload,"Update the migration plan with any process or task changes based on the first workload
+"
+4870,4877,Task,2,,Change approval process,Workload Template,"Approve proposed changes with necessary change control mechanisms: https://docs.microsoft.com/en-us/azure/architecture/cloud-adoption/migrate/migration-considerations/assess/approve
+"
+4871,4880,Task,2,,Document configuration,Workload Template,Document Configuration of the VM in the User Story
+4872,4879,Task,2,,Document configuration,Workload Template,Document Configuration of the VM in the User Story
+4873,4885,Task,2,,Configure workload DNS and DHCP setup,First Host,"https://docs.azure.cloudsimple.com/dns-dhcp-setup/
+"
+4874,4887,Task,2,,Update the migration tooling decision tree to reflect VMWare migration options,First Host,"Download and modify the migration tool decision tree to align to your expanded migration processes https://docs.microsoft.com/en-us/azure/architecture/cloud-adoption/decision-guides/migrate-decision-guide/
+"
+4875,4886,Task,2,,Migrate VMs using backup and disaster recovery tools,First Host,"https://docs.azure.cloudsimple.com/migrate-workloads/#migrate-vms-using-backup-and-disaster-recovery-tools
+"
+4876,4814,User Story,2,Business,Prerequisites,Workload Template,Validate completion of prerequisites & document answers
+4877,4814,User Story,2,Business,Assess the workload,Workload Template,"https://docs.microsoft.com/en-us/azure/architecture/cloud-adoption/migrate/migration-considerations/assess/?branch=pr-en-us-47
+"
+4878,4814,User Story,2,Business,VM - UX Server,Workload Template,VM to be migrated
+4879,4814,User Story,2,Business,VM - Middle Tier,Workload Template,VM to be migrated
+4880,4814,User Story,2,Business,VM 3 - SQL Server,Workload Template,VM to be migrated
+4881,4814,User Story,2,Business,Test Workload,Workload Template,Validate funcationality of the workload
+4882,4814,User Story,2,Business,Optimize Workload Assets,Workload Template,Tune the migrated assets based on observations
+4883,4814,User Story,2,Business,Promote Workload,Workload Template,Tune the migrated assets based on testing feedback
+4884,4814,User Story,2,Business,Decomission Retired Assets,Workload Template,Realize cost savings by terminating retired assets
+4885,4813,User Story,2,Business,Extend the landing zone for VMWare,First Host,"Resolve defined prerequisites necessary to migrate VMWare assets to Azure
+"
+4886,4813,User Story,2,Business,Migrate VMs,First Host,"Migrate a select group of VMs from the on-premises host to a host on Azure
+"
+4887,4813,User Story,2,Business,"Update migration assessment, decision tree, and tooling",First Host,"Evaluate the results of the migration from the first host to inform iterative processes
+"
+4888,4815,User Story,2,Business,Azure Readiness Guide,Ready,"Review the Azure Readiness Guide to become familiar with the tools and approaches needed in landing zone creation.
+"
+4889,4815,User Story,2,Business,CAF Migrate Landing Zone blueprint,Ready,"Evaluate the CAF Migrate Landing Zone blueprint. If the assumptions and decisions in that article align to your business and technical objectives, the blueprint can be used to create your landing zone.
+"
+4890,4815,User Story,2,Business,Landing zone considerations,Ready,"Review landing zone considerations to understand the alternative decisions which could impact your landing zone design.
+"
+4891,4815,User Story,2,Business,Deploy the modified blueprint,Ready,"Update the landing zone blueprint based on the impacted considerations and deploy the modified blueprint.
+"
+4892,4816,User Story,2,Business,Digital Estate,Plan,"Inventory and rationalize the digital estate based on assumptions which align with motivations and business outcomes.
+"
+4893,4816,User Story,2,Business,Initial organizational alignment,Plan,"Establish a plan for organizational alignment, included defined RACI diagrams.
+"
+4894,4816,User Story,2,Business,Skills readiness plan,Plan,"Create a plan for addressing skills readiness gaps.
+"
+4895,4816,User Story,2,Business,Update this Cloud Adoption Plan,Plan,"Update this cloud adoption plan to manage effort and change.
+"
+4896,4817,User Story,2,Business,Motivations,Strategy,"Meet with key stakeholders and executives to document the motivations which are driving an interest in cloud adoption.
+"
+4897,4817,User Story,2,Business,Business Outcomes,Strategy,"Engage motivated stakeholders and executives to document specific business outcomes.
+"
+4898,4817,User Story,2,Business,Business Case,Strategy,"Develop a business case to validate the financial model supporting the motivations and outcomes.
+"
+4899,4817,User Story,2,Business,First Adoption Project,Strategy,"In parallel to strategy and plan development, technical staff should begin implementation of a first adoption project to expand cloud skills.
+"
