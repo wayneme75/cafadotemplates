@@ -1,0 +1,514 @@
+﻿Project: Retail Recommender - Solution Accelerator    Server: dev.azure.com/wayneme    Query: all items    List type: Flat    ,,,,,,,
+ID,Parent,Work Item Type,Priority,Value Area,Title,Tags,Description
+4208,4613,User Story,2,Business,Step1: Data Gathering,Adopt,
+4209,4613,User Story,2,Business,Step2: Create Azure Synapse,Adopt,
+4210,4613,User Story,2,Business,Step3: Upload Assets and Data to Synapse and assign permissions,Adopt,
+4211,4613,User Story,2,Business,Step4: Setting up Cosmos DB and Azure Synapse Link,Adopt,"In this section we will be creating containers for recommendations and product details
+"
+4212,4613,User Story,2,Business,Step5: Running of the Notebooks and SQL Scripts,Adopt,
+4213,4613,User Story,2,Business,Step6: Setup Item-based Recommendation Web Service,Adopt,"In this section we will set up the Item-Based Recommendation Web Service by using Azure Machine Learning Service to package and deploy the model and Azure Kubernetes Service to host the model.
+NOTE: You will need Python 3.7+ installed on your local machine.
+
+"
+4214,4613,User Story,2,Business,Step7: Setting up API infrastructure,Adopt,
+4215,4613,User Story,2,Business,Step8: Setting up the Event Hub,Adopt,"Azure Event Hubs is a Big Data streaming platform and event ingestion service that can receive and process millions of events per second. Event Hubs can process and store events, data, or telemetry produced by distributed software and devices. Data sent to an event hub can be transformed and stored using any real-time analytics provider or batching/storage adapters.
+
+Azure Quickstart - Create an event hub using the Azure portal - Azure Event Hubs | Microsoft Docs
+"
+4216,,Epic,2,Business,Planning,Planning,
+4218,,Epic,2,Business,Ready the platform,Ready,
+4219,4218,Feature,2,Business,Landing Zone,Ready,"Landing Zone
+"
+4220,,Epic,2,Business,Build the environment,Adopt,
+4223,4216,Feature,2,Business,Organization enablement,Planning,
+4224,4223,User Story,2,Business,Readiness,Planning,"Microsoft Learn
+"
+4225,4224,Task,2,,1. Tutorial: Azure Synapse,Planning,"Introduction to Azure Synapse Analytics
+
+Integrate Data with Azure Data Factory or Azure Synapse Pipeline
+
+Explore Azure Synapse Studio
+"
+4226,4224,Task,2,,2. Tutorial: Azure Kubernetes Service,Planning,"Introduction to Azure Kubernetes Service
+
+Deploy a containerized application on Azure Kubernetes Service
+"
+4227,4224,Task,2,,3. Tutorial: Azure Machine Learning,Planning,"Introduction to Azure Machine Learning SDK
+
+Use automated machine learning in Azure Machine Learning
+
+Automate machine learning model selection with Azure Machine Learning
+"
+4228,4224,Task,2,,4. Tutorial: Data Role Learning Paths on Microsoft Learn,Planning,"Data Scientist Learning Path on Microsoft Docs
+
+Data engineer Learning Path on Microsoft Docs
+
+Data Analyst Learning Path on Microsoft Docs
+"
+4229,4223,User Story,2,Business,Team,Planning,"Organization Alignment
+"
+4230,4229,Task,2,,"Alignment of the CCOE, Platform, Governance and Data teams",Planning,"Ensure that common principles and operating environment are adhered to.
+
+Cloud Function Alignment
+Strategy & CCOE informed and cleared the path to proceed with project
+Governance & Security informed and no blockers from a compliance perspective
+Data and Platform/Adoption function have the correct rights, roles and operating environment
+"
+4231,4219,User Story,2,Business,Build Environment (landing zone),Ready,
+4232,4219,User Story,2,Business,Governance and policies,Ready,
+4233,4231,Task,2,,1. Subscription & Resource Groups,Ready,"You will need to know which subscription and resource group you are deploying to.
+
+Subscription name & ID
+Resource group
+"
+4234,4232,Task,2,,1. Verify and validate policies for compliance,Ready,"If this is a demo environment are their policies which prevent you from building the demo.
+Validate compliance requirements for data usage
+"
+4235,4208,Task,2,,Download data from Kaggle Open Dataset,Adopt,"- 2019-Oct.csv
+- 2019-Nov.csv
+- 2019-Dec.csv.gz (available here)
+- 2020-Jan.csv.gz (available here)
+"
+4236,4209,Task,2,,1. Get Azure Subscription ID and Resource Group Name,Adopt," *  Subscription: Azure Subscription Id
+ *  Resource Group: Name of the resource group to create
+
+
+"
+4237,4209,Task,2,,2. Define a globally unique resource name,Adopt,"Quickstart: Get started - create a Synapse workspace - Azure Synapse Analytics | Microsoft Docs
+"
+4238,4209,Task,2,,3. Username and Password for Synapse workspace,Adopt," *  Username: SQL user for Synapse workspace
+ *  Password: SQL user for Synapse workspace (must be at least 8 characters)
+
+
+"
+4239,4209,Task,2,,4. Location for resources,Adopt,"Location: the location to deploy all the resources
+"
+4240,4209,Task,2,,5. Directory path for dataset,Adopt,"Directory Path: the directory path where the dataset is located locally on your computer
+"
+4241,4209,Task,2,,6. Cosmos DB account name,Adopt,"Cosmos DB Account Name: the name of the Cosmos DB Account that will be used to store the User Recommendations and Product Details
+"
+4242,4209,Task,2,,7. NOTE: Azure CLI extension for Azure Synapse,Adopt," *  Open Powershell as Administrator
+ *  Navigate to this folder Azure-Synapse-Solution-Accelerator-Retail-Recommender/Resource_Deployment/deployment/backend at master · microsoft/Azure-Synapse-Solution-Accelerator-Retail-Recommender (github.com)
+ *  Run the following command: ./deployment_script.ps1
+
+
+"
+4243,4209,Task,2,,8. Storage Account permissions,Adopt,"In order to read files from your Azure Storage Account from the Synapse workspace, you will need to grant Storage Blob Data Contributor. Follow the steps below to assign Storage Blob Data Contributor to the users.
+
+ *  Go to the Azure Data Lake Storage Account created in Step 2
+ *  Go to the Access Control (IAM)
+ *  Click ""+ Add""
+ *  Click ""Add role assignment""
+ *  Now click the Role dropdown and select Storage Blob Data Contributor and search for your username and the other user's usernames to be added by using the search bar.
+ *  Click ""Save"" at the bottom
+
+
+"
+4244,4210,Task,2,,1. Import data into Synapse,Adopt," *  Launch the Synapse workspace:
+
+ *  Go to the resource page in the portal and click the ""Launch Synapse Studio""
+
+ *  Go to ""Develop"", click the ""+"", and click Import:
+
+ *  In the demo's repository, go to Analytics Deployment\synapse-workspace\notebooks to select all of the the Spark Notebooks
+
+ *  Click Publish and confirm the assets to be published
+
+
+"
+4245,4210,Task,2,,2. Upload configuration packages,Adopt," *  Go to the ""Manage"" tab in the Synapse workspace and click on the Apache Spark pools
+ *  Click on the Spark Pool that you deployed and click ""Packages, then click ""Upload environment config file""
+
+ *  Go to Analytics Deployment\synapse-workspace\cluster_config to get the requirements.txt for upload
+
+
+"
+4246,4210,Task,2,,3. Assign permissions,Adopt,"Ensure that you give yourself and any other user admin privilages for this accelerator by going to the Manage tab, then Access control underneath Security and click ""+ Add""
+
+Admin roles
+
+ *  Workspace Admin
+ *  SQL Admin
+ *  Apache Spark admin
+
+"
+4247,4211,Task,2,,1. Create New Database,Adopt," *  
+Go to the Cosmos DB service that was created in Step 2
+ *  
+Go to the Data Explorer and create a database named product_data with the configurations below:
+
+Provision throughput: checked
+Select manual, throughput variable of 1,000
+
+"
+4248,4211,Task,2,,2. Create First Container,Adopt,"Database ID: use existing: product_data
+Container id: product_details
+Partition key: /productID
+
+Analytics store: Off
+"
+4249,4211,Task,2,,3. Create Second Container,Adopt,"Database id: Use existing: product_data
+Container id: user_recommendations
+Partition key: /user_id
+Analytics store: On
+"
+4250,4211,Task,2,,4. Link Cosmos db to your Synapse Workspace,Adopt,"Connect to Azure Synapse Link (preview) for Azure Cosmos DB - Azure Synapse Analytics | Microsoft Docs
+
+NOTE: Make sure to create a Linked Service in the Synapse workspace for the Cosmos DB connection and name it retail_ai_cosmos_synapse_link
+"
+4252,4211,Task,2,,5. Upload JSON to ADLS,Adopt,"Use the product_details.json file: Azure-Synapse-Solution-Accelerator-Retail-Recommender/Analytics_Deployment/data at master · microsoft/Azure-Synapse-Solution-Accelerator-Retail-Recommender (github.com)
+
+ *  Upload the JSON to the Azure Data Lake Storage Account attached to your Synapse workspace
+
+ *  Make sure you put it into the filesystem that is the Primary Filesystem for the Synapse workspace
+ *  Put it in the folder synapse/workspaces in the filesystem that is the primary filesystem for the Synapse workspace
+
+
+
+"
+4253,4211,Task,2,,6. Import the notebook,Adopt," *  Import Analytics_Deployment\synapse-workspace\notebooks\01_CreateOrUpdateProductDetails.ipynb to the Synapse workspace and fill out the parameters for the filesystem name and the account name
+ *  Execute the Notebook
+
+
+"
+4254,4212,Task,2,,1. Deploy Azure Machine Learning Service,Adopt,"Tutorial: Get started in Jupyter Notebooks (Python) - Azure Machine Learning | Microsoft Docs
+
+NOTE: Along with the service comes the following:
+
+ *  Azure Key Vault
+ *  Azure Storage
+ *  Azure Application Insights
+ *  Azure Container Registry (ATTENTION: The name of this service will be needed in the deployment of the Azure Kubernetes Service)
+
+ *  You can find the name of the associated Container Registry in the resource page of the deployed Azure Machine Learning Service
+
+
+"
+4255,4212,Task,2,,2. Create Service Principal,Adopt,"Service Principal needs contributor access to Azure Machine Learning Service. Creating Service Principal
+
+Note: Save the client-id and password of this Service Principal for future steps in the Notebook. This will install the Azure Machine Learning CLI Extention.
+
+#After running the script, it will propt you to login to the portal or enter a device code. 
+az login
+
+#Install the Azure Machine Learning CLI Extention 
+az extension add -n azure-cli-ml
+
+# Set the subscription you will be using for this solution accelerator
+# NOTE: you will need to replace the following 
+# - <subscription-id>
+az account set --subscription <subsciption-id>
+
+# Create a Service Principal
+# NOTE: you will need to replace the following 
+# - <service-principal-name>: Desired name for the serive principal
+az ad sp create-for-rbac --sdk-auth --name <service-principal-name>
+
+# Get details of your service principal 
+# NOTE: you will need to replace the following
+# - <client-id>: the client id from the previous step
+az ad sp show --id <client-id>
+
+# Assign contributor role to the Azure Machine Learning Service 
+# NOTE: you will need to replace the following
+# - <workspace-name>: Azure Machine learning workspace name
+# - <resource-group>: name of the resource group used for this solution accelerator 
+# - <object-id>: the object id of the service principal 
+az ml workspace share -w <workspace-name> -g <resource-group> --user <object-id> --role contributor
+
+"
+4256,4212,Task,2,,3. Configure and Train data models,Adopt,"Fill out the parameters in the following files and run in order.
+
+ *  Clean training data: https://github.com/microsoft/Azure-Synapse-Solution-Accelerator-Retail-Recommender/blob/master/Analytics_Deployment/synapse-workspace/notebooks/02_Clean_Training_Data.ipynb
+ *   ALS Model training: https://github.com/microsoft/Azure-Synapse-Solution-Accelerator-Retail-Recommender/blob/master/Analytics_Deployment/synapse-workspace/notebooks/03_ALS_Model_Training.ipynb
+ *  Recommendation Refresh: https://github.com/microsoft/Azure-Synapse-Solution-Accelerator-Retail-Recommender/blob/master/Analytics_Deployment/synapse-workspace/notebooks/04_RecommendationRefresh.ipynb
+
+
+"
+4257,4213,Task,2,,1. Create new inference cluster,Adopt," *  
+Launch the Azure Machine Learning Studio:
+
+ *  Go to the resource page in the portal and click the ""Launch Studio""
+
+ *  
+Go to ""Compute"", click ""Inference Clusters"" and click ""+ New""
+
+ *  fill in the Compute Name, Region, choose the Dev-test or Production for the cluster purpose and select Create.
+
+Create a compute cluster for Machine Learning
+"
+4258,4213,Task,2,,2. Create data model,Adopt," *  
+In the repository on your local machine, open Azure-Synapse-Solution-Accelerator-Retail-Recommender/Analytics_Deployment/amls/model_deployment at master · microsoft/Azure-Synapse-Solution-Accelerator-Retail-Recommender (github.com) in an IDE like VS Code
+ *  
+Run pip install -r requirements.txt
+ *  
+Edit the download_model.py file:
+
+ *  In the file download_model.py, edit the following:
+# Enter the name of the Azure Data Lake Storage Gen2 Account
+DATA_LAKE_NAME=""""
+# Enter the name of the filesystem
+DATA_LAKE_FILE_SYSTEM_NAME=""""
+# Enter the Primary Key of the Data Lake Account
+DATA_LAKE_PRIMARY_KEY=""""
+ *  Now run python download_model.py
+
+ *  This should create a ZIP of the model on your local machine.
+
+
+"
+4259,4213,Task,2,,3. Deploy the model: Prepare score.py,Adopt,"Update the score.py file
+
+Azure-Synapse-Retail-Recommender-Solution-Accelerator/Analytics_Deployment/amls/model_deployment at main · microsoft/Azure-Synapse-Retail-Recommender-Solution-Accelerator (github.com)
+
+def init():
+    ## Add in your Data Lake Details Here
+    
+    ## The DATA_LAKE_NAME should be the attached Data Lake to your Synapse workspace where the saved ALS Model is
+    DATA_LAKE_NAME=""""
+    ## DATA_LAKE_FILE_SYSTEM_NAME should be the filesystem that is attached to the Synapse workspace where the Model is saved
+    DATA_LAKE_FILE_SYSTEM_NAME=""""
+    ## DATA_LAKE_PRIMARY_KEY is the Primary Key of the Azure Data Lake Storage Gen2 that can be found in the portal
+    DATA_LAKE_PRIMARY_KEY=""""
+
+"
+4260,4213,Task,2,,4. Deploy the model: Prepare deploy_model.py,Adopt,"Update deploy_model.py
+
+Azure-Synapse-Retail-Recommender-Solution-Accelerator/Analytics_Deployment/amls/model_deployment at main · microsoft/Azure-Synapse-Retail-Recommender-Solution-Accelerator (github.com)
+# Subscription ID for the Solution Accelerator
+SUBSCRIPTION_ID=""""
+# Resource Group that you are using for the Solution Accelerator
+RESOURCE_GROUP=""""
+# Found in the output of the Service Principal created earlier
+TENANT_ID=""""
+# Found in the output of the Service Principal created earlier
+APP_ID=""""
+# Found in the output of the Service Principal created earlier
+SP_PASSWORD=""""
+# Name of the Azure Machine Learning Service that you deployed
+WORKSPACE_NAME=""""
+# Name of the Azure Kubernetes Service that you deployed
+AKS_CLUSTER_NAME=""""
+
+"
+4261,4213,Task,2,,5. Run the model,Adopt,"run python deploy_model.py and the model will be registered with AMLS and deployed to the AKS cluster.
+
+Azure-Synapse-Retail-Recommender-Solution-Accelerator/Analytics_Deployment/amls/model_deployment at main · microsoft/Azure-Synapse-Retail-Recommender-Solution-Accelerator (github.com)
+"
+4262,4214,Task,2,,1. Prerequisites ,Adopt," *  Azure CLI - For Azure Resources and Source code deployment (Install the Azure CLI | Microsoft Docs)
+ *  Kubectl- For Deploying API Services and Configuration (Install and Set Up kubectl | Kubernetes)
+ *  Docker Desktop - For Debugging in local or containerizing codes in Deployment process (Get Started with Docker | Docker)
+ *  PowerShell 7.x - For executing Deployment Script (PowerShell/PowerShell: PowerShell for every system! (github.com)
+ *  Helm 3.x - For installing cert-manager, ingress-nginx Ingress Controller (Helm | Installing Helm)
+
+
+"
+4263,4214,Task,2,,2. Local Build and Test,Adopt,"Local build and test : Open solution file Azure-Synapse-Solution-Accelerator-Retail-Recommender/Contoso.Retail.NextGen.API.sln at master · microsoft/Azure-Synapse-Solution-Accelerator-Retail-Recommender (github.com) from your Visual Studio.
+
+NOTE: Through Azure Pipeline, you may deploy on Kubernetes cluster. Check deployment.yml and service.yml in manifests folder and azure-pipelines.yml
+"
+4264,4214,Task,2,,3. Deploy Azure Resources using deploy1.bat,Adopt,"The following script will deploy these services. Azure-Synapse-Solution-Accelerator-Retail-Recommender/Step1,2.md at master · microsoft/Azure-Synapse-Solution-Accelerator-Retail-Recommender (github.com)
+
+ *  Deploy Azure Container Registry Service (quickstart)
+ *  Deploy Azure Kubernetes Service  (quickstart)
+ *  Deploy Azure Storage Account (quickstart)
+ *  Deploy Azure CosmosDB Mongo API (quickstart)
+ *  Setting Service Principal to work together with ACR and AKS (overview)
+
+
+
+"
+4265,4214,Task,2,,4. Configure Kubernetes Ingress Controller and Cert Manager,Adopt,"Update parameters in deploy1.bat.
+Azure-Synapse-Solution-Accelerator-Retail-Recommender/Deploy1.bat at master · microsoft/Azure-Synapse-Solution-Accelerator-Retail-Recommender (github.com)
+
+ *  Deploy API Services in Kubernetes
+ *  Deploy Nginix Ingress Controller in Kubernetes
+ *  Deploy cert-manager to preparing self-signed certificate to support SSL
+
+
+
+NOTE: Email address should be valid for your certificate
+
+ Wait for a while ingress-nginx-controller-* 's READY status from 0/1 to 1/1. Once nginx controller's READY status is 1/1, press CTRL+C and exit the batch process.
+"
+4266,4214,Task,2,,5. Configure SSL,Adopt,"Your API services has been already deployed in Kubernetes but you can't access their service endpoint so far.
+Because they don't expose any public network endpoint. so we are going to set up Network Ingress configuration and apply SSL encryption.
+
+ *  Creating Certificate Issuer
+ *  Creating Certicifate with LetsEncrypt
+ *  Config Ingress Controller for Services to support SSL
+
+
+
+Azure-Synapse-Retail-Recommender-Solution-Accelerator/Step3.md at main · microsoft/Azure-Synapse-Retail-Recommender-Solution-Accelerator (github.com)
+"
+4267,4214,Task,2,,"6. Initialize, Deploy and Upload data",Adopt,"In this step we are going to deploy master data and upload images for Product and Profile APIs
+
+Azure-Synapse-Retail-Recommender-Solution-Accelerator/Step4.md at main · microsoft/Azure-Synapse-Retail-Recommender-Solution-Accelerator (github.com)
+
+
+"
+4268,4214,Task,2,,7. Deploy Azure API Management,Adopt,"Deploy to resource group for this solution accelerator
+
+Quickstart - Create an Azure API Management instance | Microsoft Docs
+"
+4269,4214,Task,2,,8. Create and Configure API,Adopt," *  In the Azure API Management, go to APIs and choose Blank API
+ *  Configure the name of your API and click Create
+
+Now you are ready to integrate the API with your front-end by utilizing the API you built in Azure API Management
+Example recommendation call
+https://{ENTER_YOUR_APIM_NAME}.net/{VERSION_NUM_OF_API}/get_shopper_recommendations?subscription-key={APIM_SUBSCRIPTION_KEY}&user_id=568778435
+"
+4270,4215,Task,2,,1. Create Event Hub and Namespace,Adopt,"Deploy into the Resource Group you are using for this solution accelerator
+Quickstart: Create Event Hub and Namespace
+
+# Set your Azure subscription to the subscription used in this solution accelerator
+
+# NOTE: you will need to replace the following: 
+# - <Subscription-Id>
+az account set --subscription <Subscription-Id>
+
+# Create Event Hub namespace 
+
+# NOTE: you will need to replace the following: 
+# - <event-hub-namespace>, <resourse-group>, <location>
+az eventhubs namespace create --name <event-hub-namespace> --resource-group <resource-group> -l <location>
+
+# Creat Event Hub called clickthrough
+
+# NOTE: you will need to replace the followng: 
+# - <resource-group>, <event-hub-namespace>
+az eventhubs eventhub create --name clickthrough --resource-group <resource-group> --namespace-name <event-hub-namespace>
+
+"
+4271,4215,Task,2,,2. Configure the Event Hub,Adopt," *  
+
+ *  From the Overview, go to Event Hubs, click the clickthrough Event Hub created in the previous step
+ *  Click Capture events to turn on and configure the settings to send events to the storage account you are using for this solution accelerator.
+
+ *  
+Navigate to the clickthrough Event Hub and click Shared access policies, click ""+ Add"" and configure a new policy and click send.
+
+ *  Click Create
+
+
+Reference: Features and Terminology
+"
+4272,4215,Task,2,,3. Configure Application Front-end,Adopt,"Navigate to the Application Front-end config.ts file: Azure-Synapse-Solution-Accelerator-Retail-Recommender/config.ts at master · microsoft/Azure-Synapse-Solution-Accelerator-Retail-Recommender (github.com)
+
+add the EVENT_HUB_ACCESS_KEY, EVENT_HUB_KEYNAME, and EVENT_HUB_NAMESPACE created in the previous steps to the application
+
+"
+4607,4229,Task,2,,Accountability and responsibility for the build,Planning,"Who is on point for the actual build
+Agreement on naming standards, tagging rules for ownership and reporting
+"
+4613,4220,Feature,2,Business,Resource Deployment,Adopt,"Resource Deployment GitHub repo
+"
+4614,4634,User Story,2,Business,Analytics Deployment,Adopt,"Azure-Synapse-Retail-Recommender-Solution-Accelerator/Analytics_Deployment at main · microsoft/Azure-Synapse-Retail-Recommender-Solution-Accelerator (github.com)
+
+This folder contains the Notebooks needed to complete this solution accelerator. Once you have deployed all the required resources from ResourceDeploymnet.md, run through the Notebooks following the instructions in Resource Deployment.
+
+"
+4615,4220,Feature,2,Business,Application Front-end Web Application Deployment,Adopt,
+4616,4634,User Story,2,Business,Application Backend API Deployment,Adopt,"This folder contains the resources for product details and managing the list of products that are presented to the Portal.
+
+Azure-Synapse-Retail-Recommender-Solution-Accelerator/Application_Backend_Deployment at main · microsoft/Azure-Synapse-Retail-Recommender-Solution-Accelerator (github.com)
+"
+4617,4634,User Story,2,Business,ML Model Building,Adopt,"This user story contains the resources for exploring how the model was constructed.
+
+Azure-Synapse-Retail-Recommender-Solution-Accelerator/ML_Model_Building at main · microsoft/Azure-Synapse-Retail-Recommender-Solution-Accelerator (github.com)
+"
+4625,4613,User Story,2,Business,Step4.1: Upload Additional Dataset,Adopt,
+4626,4625,Task,2,,1. Upload JSON to Datalake,Adopt,"product_detail.json
+
+Upload this JSON to the Azure Data Lake Storage Account attached to your Synapse workspace
+
+ *  Make sure you put it into the filesystem that is the Primary Filesystem for the Synapse workspace
+ *  Put it in the folder synapse/workspaces in the filesystem that is the primary filesystem for the Synapse workspace
+
+
+"
+4627,4625,Task,2,,2. Import to CreateOrUpdateProductDetails.ipynb to Synapse workspace,Adopt,"Import Analytics_Deployment\synapse-workspace\notebooks\01_CreateOrUpdateProductDetails.ipynb to the Synapse workspace and fill out the parameters for the filesystem name and the account name.
+"
+4628,4625,Task,2,,3. Execute the notebook,Adopt,"Synapse Studio notebooks - Azure Synapse Analytics | Microsoft Docs
+"
+4630,4615,User Story,2,Business,Step1: UI Demo,Adopt,"Azure-Synapse-Retail-Recommender-Solution-Accelerator/Application_Frontend_Deployment at main · microsoft/Azure-Synapse-Retail-Recommender-Solution-Accelerator (github.com)
+"
+4631,4630,Task,2,,1. Edit config.ts,Adopt,"Edit the Config.ts file
+/contoso-retail/src/config.ts
+
+
+ /** USER PROFILE API from API Management URL */ 
+    export const GET_USER_PROFILES = ""[ENTER USERS PROFILE API]"" +""?subscription-key="" + SUBSCRIPTION_KEY;
+
+    /** ITEM RECOMMENDATION from API Management URL */
+    export function getItemRecommendations(product_id: number) {
+            return ""[ENTER ITEM RECOMMENDER API ]"" + product_id + ""?subscription-key="" + SUBSCRIPTION_KEY;
+    }
+
+    /** GET USER RECOMMENDATION API from API Management */ 
+    export function getUserRecommendations(user_id: string) {
+        return ""[ENTER GET USER RECOMMENDATION API]"" + user_id + ""?subscription-key="" + SUBSCRIPTION_KEY;
+    }
+
+    /** GET PRODUCT DETAILS API from API Management */
+    export function getProductDetails(product_id: string) {
+        return ""[ENTER GET PRODUCT DETAILS API]"" + product_id + ""?subscription-key="" + SUBSCRIPTION_KEY;
+    }
+
+    /** GET PRODUCT BY CATEGORY API from API Management */ 
+    export const GET_PRODUCTS_BY_CATEGORY = ""[ENTER GET PRODUCT BY CATEGORY ID API]"" + ""?subscription-key="" + SUBSCRIPTION_KEY + ""&categoryname="";
+
+    /** EVENT HUB NAMESPACE from Event Hub */
+    export const EVENT_HUB_NAMESPACE = ""[ENTER NAMESPACE]"";
+
+    /** EVENT HUB KEY NAME from Event Hubs */ 
+    export const EVENT_HUB_KEYNAME = ""[ENTER KEY NAME]"";
+
+    /** EVENT HUB ACCESS KEY from Event Hub */ 
+    export const EVENT_HUB_ACCESS_KEY = ""[ENTER ACCESS KEY]"";
+    
+    /** PRODUCT IMAGE STORAGE ACCOUNT NAME from Application_Backend_Deploymnet */ 
+    export const STORAGE_ACCOUNT = ""[ENTER STORAGE ACCOUNT NAME]""
+
+    /** POWER BI URL */
+    export const POWER_BI_URL = ""[ENTER POWER BI NAME]""
+
+"
+4632,4630,Task,2,,2. Demo Site,Adopt,"View Demo: https://synapsefornextgenretail.azurewebsites.net/
+"
+4633,4630,Task,2,,3. Available Scripts,Adopt,"In the project directory contoso-retail, you can run:
+
+yarn start
+
+Runs the app in the development mode.
+Open http://localhost:3000 to view it in the browser.
+The page will reload if you make edits.
+You will also see any lint errors in the console.
+
+yarn test
+
+Launches the test runner in the interactive watch mode.
+See the section about running tests for more information.
+
+yarn build
+
+Builds the app for production to the build folder.
+It correctly bundles React in production mode and optimizes the build for the best performance.
+The build is minified and the filenames include the hashes.
+Your app is ready to be deployed!
+See the section about deployment for more information.
+
+yarn eject
+
+Note: this is a one-way operation. Once you eject, you can’t go back!
+If you aren’t satisfied with the build tool and configuration choices, you can eject at any time. This command will remove the single build dependency from your project.
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except eject will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+You don’t have to ever use eject. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+"
+4634,4220,Feature,2,Business,Resources and Reference,Adopt,
+4635,4231,Task,2,,2. Connectivity,Ready,"Verify connectivity and routing requirements
+"
+4636,4231,Task,2,,3. Identity and Access,Ready,"Ensure team have correct access rights and roles to build and deploy
+"
