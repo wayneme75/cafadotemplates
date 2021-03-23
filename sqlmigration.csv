@@ -1,0 +1,199 @@
+﻿Project: SQL Migration    Server: dev.azure.com/wayneme    Query: All Items    List type: Flat    ,,,,,,,
+ID,Parent,Work Item Type,Priority,Value Area,Title,Tags,Description
+3373,,Epic,1,Architectural,SQL Migration ,Migrate,CAF SQL Migration Project Plan
+3374,3627,Feature,2,Business,"Strategy, Plan, Readiness",Plan,"Strategy, Plan, Readiness"
+3375,3373,Feature,2,Architectural,SQL Migration Scenarios and paths,Migrate,CAF SQL Migration
+3376,3373,Feature,2,Architectural,CAF SQL Migration - Governance and Manage,Govern,CAF SQL Migration - Governance and Manage
+3378,3420,Task,2,,Sign off on Project delivery,,Sign off on Project delivery
+3379,3419,Task,2,,1 - Manage Governance (Inventory / Operational Compliance),Govern,"Review Governance policies for the platform as well as determine the data governance needs
+
+https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/govern/?WT.mc_id=devops_userstory_service_sql-inproduct-devopsportal
+"
+3380,3416,Task,2,,1 - OnPrem to Azure Virtual Machine Overview,Migrate,"OnPrem to Azure Virtual Machine Overview
+
+Rehost an application on Azure VMs by using Azure Migrate - Cloud Adoption Framework | Microsoft Docs
+"
+3381,3415,Task,2,,2 - Create and/or Verify Landing Zone,Plan,"Decide and Create Landing Zone, this is where the assets will reside and how they will be managed and governed.
+
+https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/implementation-options?WT.mc_id=devops_userstory_service_sql-inproduct-devopsportal
+"
+3382,,Task,2,,Azure Backup,,Azure Backup
+3383,,Task,2,,Marketplace images,,Marketplace images
+3384,3413,Task,2,,1 - Review Cloud Adoption Plan,Plan,"Review Cloud Adoption Plan for principles and motivations.
+
+https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/strategy/?WT.mc_id=devops_userstory_service_sql-inproduct-devopsportal
+"
+3385,3413,Task,2,,2 - Align SQL Migration project to business motivations,Plan,"Define Business Motivations, Security, Cost and Innovation strategies
+
+https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/strategy/motivations?WT.mc_id=devops_userstory_service_sql-inproduct-devopsportal
+"
+3386,3414,Task,2,,1 - Digital Estate: Collect Current Inventory with DMA,Plan,"Digital Estate: Collect Current Inventory using Database Migrate Assistant
+
+https://docs.microsoft.com/en-us/sql/dma/dma-overview?view=sql-server-ver15?WT.mc_id=devops_userstory_service_sql-inproduct-devopsportal
+"
+3387,3414,Task,2,,2 - Align assets to cloud offerings to calculate pricing,Plan,"Align assets to cloud offerings to calculate pricing
+
+https://docs.microsoft.com/en-us/sql/dma/dma-sku-recommend-sql-db?view=sql-server-ver15?WT.mc_id=devops_userstory_service_sql-inproduct-devopsportal
+"
+3388,3414,Task,2,,3 - Initial Organization Alignment,Plan,"Initial Organization Alignment - what are the cloud data functions needed
+
+https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/organize/cloud-data?WT.mc_id=devops_userstory_service_sql-inproduct-devopsportal
+
+"
+3389,3414,Task,2,,4 - Skills Readiness Plan,Plan,"Skills Readiness Plan - Leverage Learn portal to help define learning path for data teams
+
+http://docs.microsoft.com/learn?WT.mc_id=devops_userstory_service_sql-inproduct-devopsportal
+"
+3390,3414,Task,2,,5 - Cloud Adoption plan,Plan,"Develop / Update Cloud Adoption plan,
+
+https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/plan/plan-intro?WT.mc_id=devops_userstory_service_sql-inproduct-devopsportal
+"
+3391,3415,Task,2,,1 - Azure Setup Guide,Plan,"Validate that you have covered all areas specified in the Azure Setup Guide
+
+https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-setup-guide/?WT.mc_id=devops_userstory_service_sql-inproduct-devopsportal
+"
+3392,3415,Task,2,,3 - Pros and Cons of Landing Zones and Migration Tools Decision Guide,Plan,"Migration Tools Decision Guide
+
+https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/decision-guides/migrate-decision-guide/?WT.mc_id=devops_userstory_service_sql-inproduct-devopsportal
+"
+3393,3415,Task,2,,"4 - Guide: Migrate SSIS, SSAS and SSRS to Azure",Plan,"Migrate SSIS, SSAS and SSRS to Azure
+
+SSIS: https://docs.microsoft.com/en-us/azure/data-factory/scenario-ssis-migration-overview?WT.mc_id=devops_userstory_service_sql-inproduct-devopsportal
+
+SSRS: https://docs.microsoft.com/en-us/sql/reporting-services/report-data/sql-azure-connection-type-ssrs?WT.mc_id=devops_userstory_service_sql-inproduct-devopsportal
+
+"
+3395,3416,Task,2,,2 - Assessment,Migrate,"Assessment
+
+https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/migrate/azure-migration-guide/assess?WT.mc_id=devops_userstory_service_sql-inproduct-devopsportal
+"
+3396,3416,Task,2,,3 - Deployment and Migration Testing,Migrate,"Deployment and Migration Testing
+
+https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/migrate/azure-migration-guide/migrate?WT.mc_id=devops_userstory_service_sql-inproduct-devopsportal
+"
+3397,3416,Task,2,,4 - Release and Additional Resources,Migrate,"Release and Additional Resources
+
+https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/migrate/azure-migration-guide/optimize-and-transform?WT.mc_id=devops_userstory_service_sql-inproduct-devopsportal
+"
+3398,3417,Task,2,,3 - Release and Additional Resources,Migrate,"Release and Additional Resources
+
+https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/migrate/azure-best-practices/contoso-migration-sql-server-db-to-azure?WT.mc_id=devops_userstory_service_sql-inproduct-devopsportal
+
+
+"
+3399,3417,Task,2,,2 - Deployment and Migration Testing,Migrate,"Deployment and Migration Testing - Data Migration Assistannt
+
+https://docs.microsoft.com/en-us/sql/dma/dma-overview?WT.mc_id=devops_userstory_service_sql-inproduct-devopsportal
+"
+3400,3417,Task,2,,1 - Assessment,Migrate,"Assessment
+
+https://docs.microsoft.com/en-us/sql/dma/dma-migrateonpremsqltosqldb?WT.mc_id=devops_userstory_service_sql-inproduct-devopsportal
+
+https://docs.microsoft.com/en-us/sql/dma/dma-consolidatereports?WT.mc_id=devops_userstory_service_sql-inproduct-devopsportal
+"
+3402,3418,Task,2,,1 - OnPrem to Azure SQL Managed Instance,Migrate,"OnPrem to Azure SQL Managed Instance
+
+https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/migrate/azure-best-practices/contoso-migration-rehost-vm-sql-managed-instance?WT.mc_id=devops_userstory_service_sql-inproduct-devopsportal
+"
+3403,3418,Task,2,,2 - Assessment,Migrate,"Assess SQL Managed Instance Compatibility
+
+https://docs.microsoft.com/en-us/azure/azure-sql/managed-instance/migrate-to-instance-from-sql-server#assess-sql-managed-instance-compatibility?WT.mc_id=devops_userstory_service_sql-inproduct-devopsportal
+"
+3404,3418,Task,2,,3 - Deployment and Migration Testing,Migrate,"Deployment and Migration Guide
+
+https://docs.microsoft.com/en-us/azure/azure-sql/migration-guides/managed-instance/sql-server-to-managed-instance-guide?WT.mc_id=devops_userstory_service_sql-inproduct-devopsportal
+"
+3405,3418,Task,2,,4 - Release and Additional Resources,Migrate,"Release and Additional How To Resources:
+
+https://docs.microsoft.com/en-us/azure/azure-sql/managed-instance/how-to-content-reference-guide?WT.mc_id=devops_userstory_service_sql-inproduct-devopsportal
+"
+3406,3419,Task,2,,2 - Organize resources,Govern,"Well organized resources ensure security, simplified management and enables you to track costs and operational issues related to workloads:
+
+https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-setup-guide/organize-resources?WT.mc_id=devops_userstory_service_sql-inproduct-devopsportal
+
+
+
+
+"
+3407,3419,Task,2,,3 - Manage Access,Govern,"Do the correct individuals have the right access to assets:
+
+https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-setup-guide/manage-access?WT.mc_id=devops_userstory_service_sql-inproduct-devopsportal
+
+
+"
+3408,3419,Task,2,,4 - Manage Costs,Govern,"Cost management is an effective way to understand usage as well as potential optimization paths.
+
+https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-setup-guide/manage-costs?WT.mc_id=devops_userstory_service_sql-inproduct-devopsportal
+"
+3409,3419,Task,2,,"5 - Governance, Security and Compliance",Govern,"Review how you govern data to ensure compliance and security:
+
+https://docs.microsoft.com/en-us/azure/architecture/data-guide/scenarios/securing-data-solutions?WT.mc_id=devops_userstory_service_sql-inproduct-devopsportal
+
+https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/migrate/azure-best-practices/governance-or-compliance?WT.mc_id=devops_userstory_service_sql-inproduct-devopsportal
+"
+3410,3419,Task,2,,6 - Monitoring and Reporting,Govern,"Cloud Monitoring guide:
+
+https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/manage/monitor/?WT.mc_id=devops_userstory_service_sql-inproduct-devopsportal
+"
+3411,3420,Task,2,,SQL Data Migration Project review meeting,,SQL Data Migration Project review meeting
+3412,3420,Task,2,,SQL Data Migration documents review,,SQL Data Migration documents review
+3413,3374,User Story,2,Business,Define Strategy,Plan,Define Strategy
+3414,3374,User Story,2,Business,Plan and Assessment,Plan,Plan and Assessment
+3415,3374,User Story,2,Business,SQL Migration Readiness,Plan,CAF SQL Migration Readiness
+3416,3375,User Story,2,Architectural,Migration of On-Prem to Azure VM,Migrate,Migration of On-Prem to Azure VM
+3417,3375,User Story,1,Architectural,Migration - On-Prem to Azure SQL Database,Migrate,Migration - On-Prem to Azure SQL Database
+3418,3375,User Story,2,Architectural,Migration - On-Prem to Azure SQL Managed Instance,Migrate,Migration - On-Prem to Azure SQL Managed Instance
+3419,3376,User Story,2,Architectural,SQL Migration - Governance,Govern,SQL Migration - Governance
+3420,,User Story,2,Architectural,CAF SQL Migration Project Review and Closer,,CAF SQL Migration Project Review and Closer
+3626,3413,Task,2,,3 - Define Objectives and Key Results,Plan,"A key part of driving alignment in the organization is to have a core set of objectives and key results which teams can snap to.
+
+https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/strategy/business-outcomes/okr?WT.mc_id=devops_userstory_service_sql-inproduct-devopsportal
+"
+3627,,Epic,2,Business,Build the Plan,Plan,"Validate your plan, ensure that adoption aligns with the CCOE or Strategy teams guidance.
+"
+4058,3416,Task,2,,5 - Azure Quickstart for SQL VMs,Migrate,"Azure Quickstarts for SQL VMs
+
+Azure Quickstart Templates (microsoft.com)
+
+"
+4059,3417,Task,2,,4 - Azure Quickstart SQL Database,Migrate,"Azure Quickstart code for Azure SQL Database
+
+Azure Quickstart Templates (microsoft.com)
+"
+4060,3418,Task,2,,5 - Azure Quickstart SQL Managed Instance,Migrate,"Azure Quickstart for SQL Managed Instance
+
+Azure Quickstart Templates (microsoft.com)
+"
+4061,3419,Task,2,,7 - Additional Resources for Governance,Govern,"Governance assets and materials:
+
+azuredevopsgenerator/azuregovernance/docs at master · microsoft/azuredevopsgenerator (github.com)
+
+Also review the Governance ADO project in the Generator.
+
+
+"
+4062,3415,Task,2,,5 - Reference Architectures,Plan,"Windows N-Tier application on Azure
+https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/n-tier/n-tier-sql-server?WT.mc_id=devops_userstory_service_sql-inproduct-devopsportal
+
+Loan Credit Risk with SQL Server
+https://docs.microsoft.com/en-us/azure/architecture/solution-ideas/articles/loan-credit-risk-with-sql-server?WT.mc_id=devops_userstory_service_sql-inproduct-devopsportal
+
+Scalable Sitecore marketing website
+https://docs.microsoft.com/en-us/azure/architecture/solution-ideas/articles/digital-marketing-sitecore?WT.mc_id=devops_userstory_service_sql-inproduct-devopsportal
+"
+4063,3415,Task,2,,7 - Tutorial: Database migration to Azure,Ready,"Microsoft Mechanics video, Database migration to Azure
+
+https://azure.microsoft.com/en-us/resources/videos/database-migration-to-azure/?WT.mc_id=devops_userstory_service_sql-inproduct-devopsportal
+"
+4064,3415,Task,2,,8 - Tutorial: Migrate your relational data stored in SQL to Azure SQL DB,Ready,"Plan and implement the migration of relational data from SQL Server to Azure SQL Database
+
+https://docs.microsoft.com/en-us/learn/modules/migrate-sql-server-relational-data/?WT.mc_id=devops_userstory_service_sql-inproduct-devopsportal
+"
+4065,3414,Task,2,,6 - Review Database Compatibility,Plan,"Read the compatibility certification article.
+
+http://aka.ms/dbcompat?WT.mc_id=devops_userstory_service_sql-inproduct-devopsportal
+"
+4066,3415,Task,2,,6 - Tutorial: Azure SQL Fundamentals,Ready,"Azure SQL Fundamentals
+
+https://docs.microsoft.com/en-us/learn/paths/azure-sql-fundamentals/?WT.mc_id=devops_userstory_service_sql-inproduct-devopsportal
+"
