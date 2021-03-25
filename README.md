@@ -16,7 +16,9 @@ Each CSV has the following fields:
 
 NOTE: the description field provides detail on the work item. These details are further supported with content on the https://docs.microsoft.com platform.
 
-Microsoft project files (To Be Completed)
+Microsoft project: you can use Microsoft Project to connect to your Azure DevOps boards.
+- https://docs.microsoft.com/en-us/azure/devops/boards/backlogs/office/create-your-backlog-tasks-using-project?view=tfs-2018&viewFallbackFrom=azure-devops&tabs=office-365 
+- https://docs.microsoft.com/en-us/azure/devops/boards/backlogs/office/track-work?view=tfs-2018&tabs=open-excel 
 
 
 Should you need additional fields in the CSV, you can [create a new Azure DevOps organization](https://docs.microsoft.com/en-us/azure/devops/organizations/accounts/create-organization?view=azure-devops), deploy the template and use Excel to create the CSV:
